@@ -1,0 +1,51 @@
+@import './index.scss';
+
+.form-control {
+    color: white;
+    background: #021D40;
+    border-color: #021D40;
+    border-radius: 30px;
+    box-shadow: 0px 9px 5px #0000003C !important;
+  }
+  
+.form-control:focus {
+  color: white;
+  background: #021D40;
+  border-color: #021D40;
+}
+
+.form-select {
+  color: white;
+  background: #021D40;
+  border-color: #021D40;
+  border-radius: 30px;
+  box-shadow: 0px 9px 5px #0000003C !important;
+}
+
+.form-select:focus {
+  color: white;
+  background: #021D40;
+  border-color: #021D40;
+}
+
+#submitButton {
+  margin: auto;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.form-floating {
+  
+  label {
+    padding-left: 20px;
+  }
+
+  .form-control {
+    padding-left: 20px;
+  }
+
+  .form-select {
+    padding-left: 20px;
+  }
+
+}

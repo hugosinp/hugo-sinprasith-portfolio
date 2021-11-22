@@ -1,0 +1,10 @@
+@import './index.scss';
+
+.a-title {
+    :only-child {
+        display: inline-block;
+        color: white;
+
+        letter-spacing: 0px;
+    }
+}

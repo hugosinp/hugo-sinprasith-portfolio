@@ -1,0 +1,147 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap";
+
+$color-darker-blue: #021226;
+$color-dark-blue: #021D40;
+$color-softer-blue: #325573;
+$color-soft-blue: #0B2D59;
+$color-soft-yellow: #F2DC6B;
+$color-soft-orange: #F2935C;
+$color-soft-red: #F2594B;
+$color-dark-red: #732509;
+
+/* ======================Background====================== */
+.bg-dark-blue {
+  background-color: $color-dark-blue;
+}
+
+.bg-soft-blue {
+  background-color: $color-soft-blue;
+}
+
+.bg-softer-blue {
+  background-color: $color-softer-blue;
+}
+
+.bg-soft-yellow {
+  background-color: $color-soft-yellow;
+}
+
+.bg-soft-red {
+  background-color: $color-soft-red;
+}
+
+.bg-dark-red {
+  background-color: $color-dark-red;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+  border-radius: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 17px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.bold {
+  font-weight: bold !important;
+}
+
+.shadow {
+  box-shadow: 0px 9px 5px #0000003C !important;
+}
+
+.underline {
+  margin-bottom: 18px !important;
+  text-decoration: underline 4px lightgrey !important;
+  text-underline-offset: 8px !important;
+}
+
+.zoom {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.nav-pills {
+
+  .nav-link {
+    color: lightgray;
+    border-radius: 30px;
+    background: none !important;
+    cursor: pointer;
+  }
+  
+  .nav-link.active {
+    border-left: solid white !important;
+  }
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.6em;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ul li:before {
+	content: "🔰";
+	position: absolute;
+	left: 0;
+}
+
+.mainBg {
+	height: 100vh;
+	background: url("../img/home-bg.gif") no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.sg-logo {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: url("../img/sg-logo.png") no-repeat center;
+  background-size: cover;
+}
+
+.axa-logo {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: url("../img/axa-logo.png") no-repeat center;
+  background-size: cover;
+}
+
+.sopra-logo {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background: url("../img/sopra-logo.png") no-repeat center;
+  background-size: cover;
+}
