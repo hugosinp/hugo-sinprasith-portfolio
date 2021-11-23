@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../static/scss/aTitle.scss'
+import '../../static/scss/atomes/aTitle.scss'
 
 const ATitle = ({ id, className, heading_tag, text }) => {
 

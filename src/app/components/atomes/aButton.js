@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../static/scss/aButton.scss'
+import '../../static/scss/atomes/aButton.scss'
 
 const AButton = ({ id, className, text, onClick}) => {
     return (

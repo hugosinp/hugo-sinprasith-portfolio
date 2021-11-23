@@ -1,14 +1,15 @@
 import React from 'react'
 
 import { Row, Col, Tab, Nav } from 'react-bootstrap'
-import ATitle from './aTitle'
-import AParagraph from './aParagraph'
+import AParagraph from '../atomes/aParagraph'
 
-const Entreprise = ({ id, className, data }) => {
+import '../../static/scss/organisms/oEntrepriseTab.scss'
+
+const OEntrepriseTab = ({ id, className, data }) => {
     return (
         <div>
-            <Tab.Container defaultActiveKey="1" >
-                <Row className="m-auto" style={{ width: "800px" }}>
+            <Tab.Container className="o-entrepriseTab" defaultActiveKey="1" >
+                <Row className="">
                     <Col sm={3}>
                         <Nav variant="pills" className="flex-column pt-2">
                             {    
@@ -60,4 +61,4 @@ const Entreprise = ({ id, className, data }) => {
     )
 }
 
-export default Entreprise
+export default OEntrepriseTab

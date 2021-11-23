@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Row, Col } from 'react-bootstrap'
 
-import ALink from '../aLink'
-import ATitle from '../aTitle'
+import ALink from '../atomes/aLink'
+import ATitle from '../atomes/aTitle'
 
 import { mainDico } from '../../static/dico'
 

@@ -2,19 +2,19 @@ import React from 'react'
 
 import { Row, Col, Button, Form, FloatingLabel } from 'react-bootstrap'
 
-import ATitle from './aTitle'
+import ATitle from '../atomes/aTitle'
 
-import '../static/scss/oContactForm.scss'
+import '../../static/scss/organisms/oContactForm.scss'
 
 const OContactForm = () => {
     return (
         <div>
-            <Form className="p-5 bg-soft-blue text-light shadow" style={{ width: "700px", borderRadius: "50px", margin: "auto" }}>
+            <Form className="bg-soft-blue text-light shadow o-contactForm">
                 <Row className="text-center">
                     <ATitle 
                         className="mb-4 bold"
                         heading_tag="h1"
-                        text="Feel free to contact me !"
+                        text="Let's talk !"
                     />
                 </Row>
                 <Row className="mb-1">
@@ -27,7 +27,7 @@ const OContactForm = () => {
                             <Form.Control type="text" placeholder="Enter your name" />
                         </FloatingLabel>
                     </Form.Group>
-                    <Form.Group as={Col} controlId="formGridEmail">
+                    <Form.Group as={Col} sm controlId="formGridEmail">
                         <FloatingLabel
                             controlId="floatingInput"
                             label="Email address"

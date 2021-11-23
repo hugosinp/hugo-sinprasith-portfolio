@@ -1,4 +1,4 @@
-@import './index.scss';
+@import '../index.scss';
 
 .a-paragraph {
     
@@ -7,8 +7,14 @@
     
     text-align: justify;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     letter-spacing: 0px;
     
+}
+
+@media only screen and (max-width: 600px) {
+    .a-paragraph {
+        font-size: 16px;
+    }
 }

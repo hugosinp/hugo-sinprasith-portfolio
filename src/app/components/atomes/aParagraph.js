@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../static/scss/aParagraph.scss'
+import '../../static/scss/atomes/aParagraph.scss'
 
 const AParagraph = ({ id, className, text }) => {
     return (

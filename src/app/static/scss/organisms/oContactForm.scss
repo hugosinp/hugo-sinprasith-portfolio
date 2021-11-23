@@ -1,4 +1,21 @@
-@import './index.scss';
+@import '../index.scss';
+
+
+.o-contactForm {
+  width: 50%; 
+  border-radius: 50px; 
+  margin: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .o-contactForm {
+    width: 100%; 
+    border-radius: 50px; 
+    margin: auto;
+    padding: 25px;
+  }
+}
 
 .form-control {
     color: white;

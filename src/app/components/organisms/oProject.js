@@ -2,11 +2,13 @@ import React from 'react'
 
 import { Card } from 'react-bootstrap'
 
-const Project = ({ title, head, tech, link, image }) => {
+import '../../static/scss/organisms/oProject.scss'
+
+const OProject = ({ title, head, tech, link, image }) => {
 
     return (
         <div>
-            <Card className="bg-dark-blue p-2 zoom shadow" style={{ borderRadius:"17px" }}>
+            <Card className="bg-dark-blue zoom shadow o-project">
                 <lottie-player src={image}  background="transparent"  speed="1"  style={{ margin:"auto", width: "200px", height: "200px" }}  loop  autoplay></lottie-player>
                 <Card.Body>
                     <Card.Title>
@@ -24,4 +26,4 @@ const Project = ({ title, head, tech, link, image }) => {
     )
 }
 
-export default Project
+export default OProject

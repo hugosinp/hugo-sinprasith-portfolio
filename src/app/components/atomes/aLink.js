@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../static/scss/aLink.scss'
+import '../../static/scss/atomes/aLink.scss'
 
 const ALink = ({ id, className, background, href, text}) => {
     return (

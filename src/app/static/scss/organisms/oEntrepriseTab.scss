@@ -1,0 +1,50 @@
+@import '../index.scss';
+
+.nav-pills {
+
+  text-align: right;
+
+  .nav-link {
+    display: inline-block;
+
+    margin-top: 5px;
+    color: lightgray;
+    transition: 0.15s ease-in-out;
+    border-radius: 30px;
+    background: none !important;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    border: solid white !important;
+  }
+
+  .nav-link.active {
+    border: solid white !important;
+  }
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.6em;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ul li:before {
+	content: "🔰";
+	position: absolute;
+	left: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-pills {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -2,11 +2,13 @@ import React from 'react'
 
 import { Row, Col, Image, Button, Container } from 'react-bootstrap'
 
-import AParagraph from '../aParagraph'
-import ALink from '../aLink'
-import ATitle from '../aTitle'
+import AParagraph from '../atomes/aParagraph'
+import ALink from '../atomes/aLink'
+import ATitle from '../atomes/aTitle'
 
 import { skillDico } from '../../static/dico'
+
+import '../../static/scss/views/skillView.scss'
 
 import reactLogo from '../../static/img/react-logo.png'
 import reduxLogo from '../../static/img/redux-logo.png'
@@ -16,6 +18,7 @@ import pythonLogo from '../../static/img/python-logo.svg'
 import postgreLogo from '../../static/img/postgre-logo.svg'
 import mysqlLogo from '../../static/img/mysql-logo.png'
 import javaLogo from '../../static/img/java-logo.png'
+
 
 const SkillView = ({ id }) => {
     
@@ -30,17 +33,17 @@ const SkillView = ({ id }) => {
 
     return (
         <div id={id}>
-            <Row className="text-light bg-dark-blue p-5" style={{ height: "100vh" }} fluid>
-                <Row className="p-5">
-                    <Container className="text-center">
+            <Row className="text-light bg-dark-blue skillView" fluid>
+                <Row className="m-auto">
+                    <Container className="text-center mb-5">
                         <ATitle 
-                            className=""
+                            className="bold"
                             heading_tag="h1"
                             text={SKILL_HEAD}
                         />
                     </Container>
                     <Col>
-                        <Container className="p-5">
+                        <Container className="mb-5">
                             <ATitle 
                                 className="bold"
                                 heading_tag="h3"
@@ -67,8 +70,8 @@ const SkillView = ({ id }) => {
                         </Container>
                     </Col>
 
-                    <Col>
-                        <Container className="p-5">
+                    <Col sm>
+                        <Container className="">
                             <Image src={reactLogo} className="zoom" style={{ width:"50%" }} />
                             <Image src={reduxLogo} className="zoom" style={{ width:"20%" }} />
                             <Image src={djangoLogo} className="zoom" style={{ width:"20%" }} />

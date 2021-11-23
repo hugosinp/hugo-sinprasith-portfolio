@@ -17,7 +17,7 @@ export const skillDico = {
     "SKILL_SECTION_HEAD": "Skills & Tech Stack",
     "SKILL_INTRO": "Throughout my programming journey, I've experienced many technologies and IT concepts.",
     "SKILL_EXPERTISE": "Full-Stack Developpment became my main expertise.",
-    "SKILL_TECH": "Front-end dev, back-end dev, RESTful API building, database management, I've worked on many web apps from conception to deployment.",
+    "SKILL_TECH": "Front-end dev, back-end dev, REST API building, database management, I've worked on many web apps from conception to deployment.",
     "SKILL_FAVORITE": "Python and JavaScript are my favorite programming languages but I remain aware of the newest technologies on the market and do not miss an occasion to learn more."
 }
 

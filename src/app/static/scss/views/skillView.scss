@@ -1,0 +1,16 @@
+@import '../index.scss';
+
+.skillView {
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

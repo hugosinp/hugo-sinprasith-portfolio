@@ -50,11 +50,23 @@ $color-dark-red: #732509;
   background: #555;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+main {
   margin: 0;
   height: 100vh;
   font-family: 'Ubuntu', sans-serif;
-  scroll-behavior: smooth;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  main {
+    margin: auto;
+  }
+
+
 }
 
 .rotate-logo:hover {
@@ -78,6 +90,12 @@ body {
   text-underline-offset: 8px !important;
 }
 
+.no-link-decoration {
+  i {
+    text-decoration: none;
+  }
+}
+
 .zoom {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -90,37 +108,7 @@ body {
   transform: scale(1.05);
 }
 
-.nav-pills {
-
-  .nav-link {
-    color: lightgray;
-    border-radius: 30px;
-    background: none !important;
-    cursor: pointer;
-  }
-  
-  .nav-link.active {
-    border-left: solid white !important;
-  }
-}
-
-ul {
-	position: relative;
-	list-style: none;
-	margin-left: 0;
-	padding-left: 1.6em;
-}
-
-li{
-  margin-bottom: 10px;
-}
-
-ul li:before {
-	content: "🔰";
-	position: absolute;
-	left: 0;
-}
-
+// IMAGES
 .mainBg {
 	height: 100vh;
 	background: url("../img/home-bg.gif") no-repeat center center fixed;

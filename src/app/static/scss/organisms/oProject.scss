@@ -1,0 +1,13 @@
+@import '../index.scss';
+
+.o-project {
+    border-radius: 17px;
+    padding: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .o-project {
+        margin-bottom: 40px;
+    }
+}

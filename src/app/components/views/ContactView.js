@@ -2,12 +2,13 @@ import React from 'react'
 
 import { Row, Col, Container, Image } from 'react-bootstrap'
 
-import ATitle from '../aTitle'
-import Entreprise from '../Entreprise'
-import OContactForm from '../oContactForm'
+import ATitle from '../atomes/aTitle'
+import OEntrepriseTab from '../organisms/oEntrepriseTab'
+import OContactForm from '../organisms/oContactForm'
 
 import { entreprises } from '../../static/data'
 import { contactDico } from '../../static/dico'
+import '../../static/scss/views/contactView.scss'
 
 const ContactView = ({ id }) => {
 
@@ -18,8 +19,8 @@ const ContactView = ({ id }) => {
 
     return (
         <div id={id}>
-            <Row className="text-light bg-dark-blue p-5" style={{ height: "180vh" }}>
-                <Container className="text-center m-auto">
+            <Row className="text-light bg-dark-blue contactView">
+                <Container className="text-center">
                     <ATitle 
                         className="bold"
                         heading_tag="h1"
@@ -27,20 +28,21 @@ const ContactView = ({ id }) => {
                     />
                     <ATitle 
                         className=""
-                        heading_tag="h1"
+                        heading_tag="h2"
                         text={CONTACT_SUBHEAD}
                     />
                 </Container>
 
-                <Row>
-                    <Entreprise
+                <Row id="entrepriseRow" className="">
+                    <OEntrepriseTab
                         data={entreprises}
                     />
                 </Row>
 
-                <Row>
+                <Container className="text-center">
                     <OContactForm />
-                </Row>
+                </Container>
+            
             </Row>
         </div>
     )
