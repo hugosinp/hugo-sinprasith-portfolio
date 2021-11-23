@@ -36,6 +36,7 @@ $color-dark-red: #732509;
   background-color: $color-dark-red;
 }
 
+//Scroll Bar
 ::-webkit-scrollbar {
   width: 10px;
   background: #30363d;
@@ -49,6 +50,17 @@ $color-dark-red: #732509;
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+//Navbar
+.navbar-notscrolled{
+  color: white !important;
+}
+
+.navbar-scrolled {
+  background-color: $color-soft-blue;
+  backdrop-filter: blur(8px);
+}
+
 
 html {
   scroll-behavior: smooth;

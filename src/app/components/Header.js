@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Navbar, Nav, Container } from 'react-bootstrap'
 
 const Header = () => {
+
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        console.log(window.scrollY)
+        if (window.scrollY >= 800) {
+          setNavbar(true)
+        } else {
+          setNavbar(false)
+        }
+    }
+
+    useEffect(() => {
+        changeBackground()
+        window.addEventListener("scroll", changeBackground)
+    })
+
     return (
         <div>
-            <Navbar  scrolling dark fixed="top" variant="dark" expand="lg">
-                <Container className="">
+            <Navbar className={navbar ? "navbar-scrolled navbar-dark" : "navbar-notscrolled navbar-dark"} scrolling  fixed="top"  expand="lg">
+                <Container className="text-light">
                     <Navbar.Brand className="bold rotate-logo" href="/">
                         <i class="fas fa-moon"></i> HSinp
                     </Navbar.Brand>
