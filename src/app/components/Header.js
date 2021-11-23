@@ -7,8 +7,8 @@ const Header = () => {
         <div>
             <Navbar  scrolling dark fixed="top" variant="dark" expand="lg">
                 <Container className="px-5">
-                    <Navbar.Brand className="bold px-5" href="/">
-                        HSinp
+                    <Navbar.Brand className="bold rotate-logo px-5" href="/">
+                        <i class="fas fa-moon"></i> HSinp
                     </Navbar.Brand>
                     
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

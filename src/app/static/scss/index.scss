@@ -37,8 +37,7 @@ $color-dark-red: #732509;
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: transparent;
-  border-radius: 17px;
+  background: #30363d;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,6 +56,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.rotate-logo:hover {
+  i {
+    transition: 0.2s ease;
+    transform: rotate(360deg);
+  }
+}
 
 .bold {
   font-weight: bold !important;
