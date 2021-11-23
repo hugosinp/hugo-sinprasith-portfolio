@@ -69,14 +69,14 @@ const SkillView = ({ id }) => {
 
                     <Col>
                         <Container className="p-5">
-                            <Image src={reactLogo} style={{ width:"20%" }} />
-                            <Image src={reduxLogo} style={{ width:"20%" }} />
-                            <Image src={djangoLogo} style={{ width:"20%" }} />
-                            <Image src={pythonLogo} style={{ width:"20%" }} />
-                            <Image src={jsLogo} style={{ width:"20%" }} />
-                            <Image src={postgreLogo} style={{ width:"20%" }} />
-                            <Image src={javaLogo} style={{ width:"20%" }} />
-                            <Image src={mysqlLogo} style={{ width:"20%" }} />  
+                            <Image src={reactLogo} className="zoom" style={{ width:"50%" }} />
+                            <Image src={reduxLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={djangoLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={pythonLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={jsLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={postgreLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={javaLogo} className="zoom" style={{ width:"20%" }} />
+                            <Image src={mysqlLogo} className="zoom" style={{ width:"20%" }} />  
                         </Container>
                     </Col>
                 </Row>

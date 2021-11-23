@@ -1,3 +1,3 @@
 # hugo-sinprasith-portfolio
 
-https://hugo-sinprasith-portfolio.herokuapp.com/#projectSection
+https://hugo-sinprasith-portfolio.herokuapp.com/
