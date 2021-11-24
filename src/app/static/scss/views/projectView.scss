@@ -3,11 +3,17 @@
 .projectView {
     height: 100vh;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+#projectRow {
+    margin-top: 50px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
     .projectView {
         height: 100%;
         padding-top: 100px;
@@ -16,5 +22,67 @@
 
     #projectRow {
         margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small devices (768px and down) */
+@media only screen and (max-width: 768px) {
+    .projectView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projectRow {
+        margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Medium devices (992px and down) */
+@media only screen and (max-width: 992px) {
+    .projectView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projectRow {
+        margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Large devices (1200px and down) */
+@media only screen and (max-width: 1200px) {
+    .projectView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projectRow {
+        margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Extra Large devices (1400px and down) */
+@media only screen and (max-width: 1400px) {
+    .projectView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projectRow {
+        margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

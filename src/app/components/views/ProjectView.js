@@ -36,10 +36,10 @@ const ProjectView = ({ id }) => {
                     </a>
                 </Container>
 
-                <Row id="projectRow" className="m-auto fade-in">
+                <Row id="projectRow" className="fade-in">
                     {
                         projects.map(project => (
-                            <Col key={project.id}>
+                            <Col sm={12} md={12} lg={4} key={project.id}>
                                 <OProject 
                                     title={project.title}
                                     head={project.head}
