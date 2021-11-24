@@ -11,8 +11,10 @@
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .o-contactForm {
-    width: 100%; 
-    padding: 25px;
+    width: 100% !important;
+    padding-top: 25px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 
@@ -35,16 +37,16 @@
 /* Large devices (1200px and down) */
 @media only screen and (max-width: 1200px) {
   .o-contactForm {
-    width: 80% !important; 
-    padding: 30px !important;
+    width: 80%; 
+    padding: 30px;
   }
 }
 
 /* Extra Large devices (1400px and down) */
 @media only screen and (max-width: 1400px) {
   .o-contactForm {
-    width: 80% !important; 
-    padding: 30px !important;
+    width: 80%; 
+    padding: 30px;
   }
 }
 

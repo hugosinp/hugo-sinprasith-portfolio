@@ -35,7 +35,7 @@ export const entreprises = [
         "description": 
             {
                 "paragraph1": "Developed a modern web app for Société Générale's bankers using ReactJS and Redux",
-                "paragraph2": "Created a Data Warehouse",
+                "paragraph2": "Participated actively in the app life cycle, from conception to deployment",
                 "paragraph3": "Operated Agile Software Developpment methods (SCRUM)",
             },
         "tech": "ReactJS, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
@@ -49,11 +49,11 @@ export const entreprises = [
         "job_type": "Apprenticeship",
         "description": 
             {
-                "paragraph1": "Implemented an ETL Process from Data Extraction to Reporting publish",
+                "paragraph1": "Implemented an ETL Process from Data Extraction to PowerBI Reporting export",
                 "paragraph2": "Created a Data Warehouse",
                 "paragraph3": "Led Python programming training sessions for new staff",
             },
-        "tech": "ReactJS, Redux, Redux-Saga, TypeScript, Java Spring Boot",
+        "tech": "Python/Anaconda, Pandas, SQLite3, PowerBI, VBA",
         "image": "axa-logo"
     },
     {
