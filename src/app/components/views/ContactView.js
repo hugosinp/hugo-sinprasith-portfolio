@@ -33,15 +33,15 @@ const ContactView = ({ id }) => {
                     />
                 </Container>
 
-                <Row id="entrepriseRow" className="fade-in">
+                <Row id="entrepriseRow" className="fade-in" sm={12}>
                     <OEntrepriseTab
                         data={entreprises}
                     />
                 </Row>
 
-                <Container className="text-center fade-in">
+                <Row id="contactFormRow" className="text-center fade-in" sm={12}>
                     <OContactForm />
-                </Container>
+                </Row>
             
             </Row>
         </div>

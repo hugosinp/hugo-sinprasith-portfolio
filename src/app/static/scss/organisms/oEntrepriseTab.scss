@@ -46,5 +46,6 @@ ul li:before {
   .nav-pills {
     text-align: center;
     margin-bottom: 20px;
+    flex-direction: row !important;
   }
 }

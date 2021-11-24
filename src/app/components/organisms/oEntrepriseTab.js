@@ -10,7 +10,7 @@ const OEntrepriseTab = ({ id, className, data }) => {
         <div>
             <Tab.Container className="o-entrepriseTab" defaultActiveKey="1" >
                 <Row className="">
-                    <Col sm={3}>
+                    <Col sm={4}>
                         <Nav variant="pills" className="flex-column pt-2">
                             {    
                                 data.map(entreprise => (
@@ -23,7 +23,7 @@ const OEntrepriseTab = ({ id, className, data }) => {
                             }
                         </Nav>
                     </Col>
-                    <Col sm={9}>
+                    <Col sm={8}>
                         <Tab.Content>
                             {
                                 data.map(item => (

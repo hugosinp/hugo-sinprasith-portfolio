@@ -3,7 +3,7 @@ export const projects = [
         "id": 1,
         "title": "E-commerce",
         "head": "E-commerce website, ready to adapt and deploy",
-        "tech": "ReactJS, Redux, Django REST Framework, PostgreSQL",
+        "tech": "ReactJS, Django REST Framework, PostgreSQL",
         "link": "https://github.com/hugosinp",
         "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
     },
@@ -71,4 +71,5 @@ export const entreprises = [
         "tech": "UIPath (RPA), PowerBI, VBA, PowerQuery/Pivot, Jira",
         "image": "sopra-logo"
     },
+    
 ]
