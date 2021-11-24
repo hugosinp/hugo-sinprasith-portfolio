@@ -42,7 +42,7 @@ const SkillView = ({ id }) => {
                             text={SKILL_HEAD}
                         />
                     </Container>
-                    <Col>
+                    <Col sm={12} md={12} lg={12} xl={12} xxl={7}>
                         <Container className="mb-5 fade-in">
                             <ATitle 
                                 className="bold"
@@ -70,7 +70,7 @@ const SkillView = ({ id }) => {
                         </Container>
                     </Col>
 
-                    <Col sm>
+                    <Col sm={12} md={12} lg={12} xl={12} xxl={5}>
                         <Container className="fade-in">
                             <Image src={reactLogo} className="zoom" style={{ width:"50%" }} />
                             <Image src={reduxLogo} className="zoom" style={{ width:"20%" }} />

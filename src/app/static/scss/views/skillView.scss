@@ -2,12 +2,48 @@
 
 .skillView {
     height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Small devices (768px and down) */
+@media only screen and (max-width: 768px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Medium devices (992px and down) */
+@media only screen and (max-width: 992px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Large devices (1200px and down) */
+@media only screen and (max-width: 1200px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Extra Large devices (1400px and down) */
+@media only screen and (max-width: 1400px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
