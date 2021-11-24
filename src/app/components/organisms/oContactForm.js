@@ -59,7 +59,7 @@ const OContactForm = () => {
                 </Form.Group>
 
                 <Row>
-                    <Button id="submitButton" className="zoom bold" type="submit">
+                    <Button id="submitButton" className="zoom bold shadow" type="submit">
                         Submit
                     </Button>
                 </Row>

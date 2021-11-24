@@ -98,3 +98,20 @@
         margin-right: auto;
     }
 }
+
+/* Extra Large devices (1600px and down) */
+@media only screen and (max-width: 1600px) {
+    .projectView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #projectRow {
+        margin-top: 50px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

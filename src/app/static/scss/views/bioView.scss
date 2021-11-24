@@ -86,3 +86,18 @@
         margin: auto;
     }
 }
+
+/* Extra Large devices (1600px and down) */
+@media only screen and (max-width: 1600px) {
+    .bioView {
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
+    }
+}
