@@ -6,11 +6,71 @@
     padding-bottom: 200px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.bioRow {
+    margin: auto;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
     .bioView {
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
+    }
+}
+
+/* Small devices (768px and down) */
+@media only screen and (max-width: 768px) {
+    .bioView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
+    }
+}
+
+/* Medium devices (992px and down) */
+@media only screen and (max-width: 992px) {
+    .bioView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
+    }
+}
+
+/* Large devices (1200px and down) */
+@media only screen and (max-width: 1200px) {
+    .bioView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
+    }
+}
+
+/* Extra Large devices (1400px and down) */
+@media only screen and (max-width: 1400px) {
+    .bioView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bioRow {
+        margin: auto;
     }
 }

@@ -25,8 +25,8 @@ const BioView = ({ id }) => {
     return (
         <div id={id}>
             <Row className="text-light bg-soft-blue bioView" fluid>
-                <Row className="m-auto">
-                    <Col>
+                <Row className="bioRow">
+                    <Col sm={12} md={12} lg={12} xl={3} xxl={3}>
                         <Container className="text-center fade-in">
                             <ATitle 
                                 className="bold"
@@ -42,7 +42,7 @@ const BioView = ({ id }) => {
                         </Container>
                     </Col>
 
-                    <Col sm>
+                    <Col sm={12} md={12} lg={12} xl={9} xxl={9}>
                         <Container className="fade-in">
                             <ATitle 
                                 className="bold"

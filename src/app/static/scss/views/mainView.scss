@@ -23,9 +23,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .mainHeading {
+        position: absolute; 
+        top: 35%; 
+        left: 20%; 
+        right: 20%;
+    }
+
     .secondHeading {
         position: absolute; 
-        top: 75%; 
+        top: 78%; 
         left: 20%; 
         right: 20%;
     }
