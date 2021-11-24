@@ -61,7 +61,6 @@ $color-dark-red: #732509;
   backdrop-filter: blur(8px);
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -72,8 +71,8 @@ main {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
   main {
     margin: auto;
   }
@@ -87,14 +86,13 @@ main {
 }
 
 .fade-in {
-  animation: fadeIn linear 1.8s !important;
+  animation: fadeIn linear 1.5s !important;
 }
 
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 
 .bold {
   font-weight: bold !important;

@@ -8,13 +8,43 @@
   padding: 40px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
   .o-contactForm {
     width: 100%; 
-    border-radius: 50px; 
-    margin: auto;
     padding: 25px;
+  }
+}
+
+/* Small devices (768px and down) */
+@media only screen and (max-width: 768px) {
+  .o-contactForm {
+    width: 100%; 
+    padding: 25px;
+  }
+}
+
+/* Medium devices (992px and down) */
+@media only screen and (max-width: 992px) {
+  .o-contactForm {
+    width: 100%; 
+    padding: 25px;
+  }
+}
+
+/* Large devices (1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .o-contactForm {
+    width: 80% !important; 
+    padding: 30px !important;
+  }
+}
+
+/* Extra Large devices (1400px and down) */
+@media only screen and (max-width: 1400px) {
+  .o-contactForm {
+    width: 80% !important; 
+    padding: 30px !important;
   }
 }
 
@@ -47,6 +77,8 @@
 }
 
 #submitButton {
+  background-color: $color-soft-red;
+  border-color: $color-soft-red;
   margin: auto;
   width: 200px;
   border-radius: 30px;

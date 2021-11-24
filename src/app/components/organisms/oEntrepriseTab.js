@@ -24,7 +24,7 @@ const OEntrepriseTab = ({ id, className, data }) => {
                         </Nav>
                     </Col>
                     <Col sm={8}>
-                        <Tab.Content>
+                        <Tab.Content className="m-auto">
                             {
                                 data.map(item => (
                                     <Tab.Pane eventKey={item.id}>
@@ -46,10 +46,9 @@ const OEntrepriseTab = ({ id, className, data }) => {
                                                 {item.description.paragraph3}
                                             </li>
                                         </ul>
-                                        <AParagraph
-                                            className="text-muted"
-                                            text={item.tech}
-                                        />
+                                        <small className="text-muted">
+                                            {item.tech}
+                                        </small>
                                     </Tab.Pane>
                                 ))
                             }

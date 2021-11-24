@@ -7,20 +7,28 @@
   .nav-link {
     display: inline-block;
 
+    font-size: 1.2rem;
     margin-top: 5px;
-    color: lightgray;
+    color: grey;
     transition: 0.15s ease-in-out;
-    border-radius: 30px;
-    background: none !important;
     cursor: pointer;
+    border-right: solid grey;
+    border-radius: 0;
+    border-width: 5px;
   }
   
   .nav-link:hover {
-    border: solid white !important;
+    border-width: 10px !important;
+    color: white;
+    border-right: solid $color-soft-red;
   }
 
   .nav-link.active {
-    border: solid white !important;
+    font-size: 1.3rem;
+    border-width: 10px !important;
+    font-weight: bold;
+    border-right: solid $color-soft-red;
+    background: none !important;
   }
 }
 
@@ -33,6 +41,7 @@ ul {
 
 li{
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 ul li:before {
@@ -41,11 +50,31 @@ ul li:before {
 	left: 0;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
   .nav-pills {
     text-align: center;
     margin-bottom: 20px;
     flex-direction: row !important;
+
+    justify-content: center !important;
+
+    .nav-link {
+      border-right: none !important;
+      border-bottom: solid grey !important;
+      border-radius: 0;
+    }
+
+    .nav-link:hover {
+      border-width: 4px !important;
+      color: white;
+      border-right: solid $color-soft-red;
+    }
+
+    .nav-link.active {
+      border-bottom: solid $color-soft-red !important;
+      background: none !important;
+      border-width: 4px !important;
+    }
   }
 }

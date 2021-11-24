@@ -48,7 +48,7 @@ const OContactForm = () => {
                     </FloatingLabel>
                 </Form.Group>
 
-                <Form.Group className="mb-4" controlId="formGridAddress2">
+                <Form.Group className="mb-5" controlId="formGridAddress2">
                     <FloatingLabel controlId="floatingTextarea2" label="Add your message !">
                         <Form.Control
                         as="textarea"
@@ -59,7 +59,7 @@ const OContactForm = () => {
                 </Form.Group>
 
                 <Row>
-                    <Button id="submitButton" variant="dark" type="submit">
+                    <Button id="submitButton" className="zoom bold" type="submit">
                         Submit
                     </Button>
                 </Row>
