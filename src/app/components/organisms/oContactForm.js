@@ -14,7 +14,7 @@ const OContactForm = () => {
                     <ATitle 
                         className="mb-4 bold"
                         heading_tag="h1"
-                        text="Let's talk !"
+                        text="Feel free to contact me now !"
                     />
                 </Row>
                 <Row className="mb-1">

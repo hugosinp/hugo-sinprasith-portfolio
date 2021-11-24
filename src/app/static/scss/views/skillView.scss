@@ -19,8 +19,8 @@
     }
 }
 
-/* Small devices (768px and down) */
-@media only screen and (max-width: 768px) {
+/* Small devices (576px and up) */
+@media only screen and (min-width: 576px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
@@ -30,8 +30,8 @@
     }
 }
 
-/* Medium devices (992px and down) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
@@ -41,8 +41,8 @@
     }
 }
 
-/* Large devices (1200px and down) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (992px and up) */
+@media only screen and (min-width: 992px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
@@ -52,8 +52,8 @@
     }
 }
 
-/* Extra Large devices (1400px and down) */
-@media only screen and (max-width: 1400px) {
+/* Extra Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
@@ -63,13 +63,35 @@
     }
 }
 
-/* Extra Large devices (1600px and down) */
-@media only screen and (max-width: 1600px) {
+/* Extra Large devices (1400px and up) */
+@media only screen and (min-width: 1400px) {
     .skillView {
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+/* Extra Large devices (1500px and up) */
+@media only screen and (min-width: 1500px) {
+    .skillView {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+/* Extra Large devices (1600px and up) */
+@media only screen and (min-width: 1600px) {
+    .skillView {
+        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 300px;
+        padding-right: 300px;
     }
 }
