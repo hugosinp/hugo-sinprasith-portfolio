@@ -27,7 +27,7 @@ const BioView = ({ id }) => {
             <Row className="text-light bg-soft-blue bioView" fluid>
                 <Row className="m-auto">
                     <Col>
-                        <Container className="text-center">
+                        <Container className="text-center fade-in">
                             <ATitle 
                                 className="bold"
                                 heading_tag="h1" 
@@ -43,7 +43,7 @@ const BioView = ({ id }) => {
                     </Col>
 
                     <Col sm>
-                        <Container className="">
+                        <Container className="fade-in">
                             <ATitle 
                                 className="bold"
                                 heading_tag="h3"

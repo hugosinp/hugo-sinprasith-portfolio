@@ -20,7 +20,7 @@ const ProjectView = ({ id }) => {
     return (
         <div id={id}>
             <Row className="text-light bg-soft-blue projectView">
-                <Container className="text-center">
+                <Container className="text-center fade-in">
                     <ATitle
                         className="bold"
                         heading_tag="h1" 
@@ -31,12 +31,12 @@ const ProjectView = ({ id }) => {
                         heading_tag="h3" 
                         text={PROJECT_SUBHEAD}
                     />
-                    <a href="https://github.com/hugosinp" target="_blank" className="text-light">
+                    <a href="https://github.com/hugosinp" target="_blank" className="text-light" rel="noopener noreferrer">
                         <i class="fab fa-github fa-3x"></i>
                     </a>
                 </Container>
 
-                <Row id="projectRow" className="m-auto">
+                <Row id="projectRow" className="m-auto fade-in">
                     {
                         projects.map(project => (
                             <Col key={project.id}>

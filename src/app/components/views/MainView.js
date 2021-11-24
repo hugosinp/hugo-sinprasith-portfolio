@@ -6,6 +6,7 @@ import ALink from '../atomes/aLink'
 import ATitle from '../atomes/aTitle'
 
 import { mainDico } from '../../static/dico'
+import '../../static/scss/views/mainView.scss'
 
 const MainView = () => {
 
@@ -18,20 +19,21 @@ const MainView = () => {
         <div>
             <Row>
                 <Col className="mainBg text-center text-light">
-                    <div style={{ position:'absolute', top:"30%", left: "20%", right: "20%" }}>
-                        <ATitle 
-                            className="bold"
+                    <div className="mainHeading">
+                        <ATitle
+                            className="bold fade-in"
                             heading_tag="h1" 
                             text={MAIN_HEAD}
                         />
                         <ATitle 
+                            className="fade-in"
                             heading_tag="h4" 
                             text={MAIN_SUBHEAD}
                         />
                     </div>
-                    <div style={{ position:'absolute', top:"70%", left: "20%", right: "20%" }}>
+                    <div className="secondHeading">
                         <ALink
-                            className="shadow"
+                            className="shadow fade-in"
                             background="bg-dark-red"
                             href="#bioSection"
                             text="Explore >>"

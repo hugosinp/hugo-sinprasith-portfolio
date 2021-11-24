@@ -77,8 +77,6 @@ main {
   main {
     margin: auto;
   }
-
-
 }
 
 .rotate-logo:hover {
@@ -87,6 +85,16 @@ main {
     transform: rotate(360deg);
   }
 }
+
+.fade-in {
+  animation: fadeIn linear 2s !important;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 
 .bold {
   font-weight: bold !important;
@@ -118,14 +126,6 @@ main {
 .zoom:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-}
-
-// IMAGES
-.mainBg {
-	height: 100vh;
-	background: url("../img/home-bg.gif") no-repeat center center;
-	background-size: cover;
-	-webkit-background-size: cover;
 }
 
 .sg-logo {

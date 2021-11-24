@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col, Container, Image } from 'react-bootstrap'
+import { Row, Container, } from 'react-bootstrap'
 
 import ATitle from '../atomes/aTitle'
 import OEntrepriseTab from '../organisms/oEntrepriseTab'
@@ -20,7 +20,7 @@ const ContactView = ({ id }) => {
     return (
         <div id={id}>
             <Row className="text-light bg-dark-blue contactView">
-                <Container className="text-center">
+                <Container className="text-center fade-in">
                     <ATitle 
                         className="bold"
                         heading_tag="h1"
@@ -33,13 +33,13 @@ const ContactView = ({ id }) => {
                     />
                 </Container>
 
-                <Row id="entrepriseRow" className="">
+                <Row id="entrepriseRow" className="fade-in">
                     <OEntrepriseTab
                         data={entreprises}
                     />
                 </Row>
 
-                <Container className="text-center">
+                <Container className="text-center fade-in">
                     <OContactForm />
                 </Container>
             

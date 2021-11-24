@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col, Image, Button, Container } from 'react-bootstrap'
+import { Row, Col, Image, Container } from 'react-bootstrap'
 
 import AParagraph from '../atomes/aParagraph'
 import ALink from '../atomes/aLink'
@@ -35,7 +35,7 @@ const SkillView = ({ id }) => {
         <div id={id}>
             <Row className="text-light bg-dark-blue skillView" fluid>
                 <Row className="m-auto">
-                    <Container className="text-center mb-5">
+                    <Container className="text-center mb-5 fade-in">
                         <ATitle 
                             className="bold"
                             heading_tag="h1"
@@ -43,7 +43,7 @@ const SkillView = ({ id }) => {
                         />
                     </Container>
                     <Col>
-                        <Container className="mb-5">
+                        <Container className="mb-5 fade-in">
                             <ATitle 
                                 className="bold"
                                 heading_tag="h3"
@@ -71,7 +71,7 @@ const SkillView = ({ id }) => {
                     </Col>
 
                     <Col sm>
-                        <Container className="">
+                        <Container className="fade-in">
                             <Image src={reactLogo} className="zoom" style={{ width:"50%" }} />
                             <Image src={reduxLogo} className="zoom" style={{ width:"20%" }} />
                             <Image src={djangoLogo} className="zoom" style={{ width:"20%" }} />

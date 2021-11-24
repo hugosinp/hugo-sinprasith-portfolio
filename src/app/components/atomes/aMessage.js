@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Alert } from 'react-bootstrap'
 
-const Message = ({ text, type }) => {
+const AMessage = ({ text, type }) => {
     return (
         <div>
             <Alert variant={type}>
@@ -14,4 +14,4 @@ const Message = ({ text, type }) => {
     )
 }
 
-export default Message
+export default AMessage

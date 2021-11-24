@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container } from 'react-bootstrap'
 
-const Footer = () => {
+const AFooter = () => {
     return (
         <div>
             <footer>
@@ -14,4 +14,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default AFooter

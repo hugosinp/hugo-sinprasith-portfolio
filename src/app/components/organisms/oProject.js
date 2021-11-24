@@ -9,10 +9,10 @@ const OProject = ({ title, head, tech, link, image }) => {
     return (
         <div>
             <Card className="bg-dark-blue zoom shadow o-project">
-                <lottie-player src={image}  background="transparent"  speed="1"  style={{ margin:"auto", width: "200px", height: "200px" }}  loop  autoplay></lottie-player>
+                <lottie-player src={image}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
                 <Card.Body>
                     <Card.Title>
-                        {title} <a href={link} target="_blank"><i class="far fa-file-code"></i></a>
+                        {title} <a href={link} target="_blank" rel="noopener noreferrer"><i class="far fa-file-code"></i></a>
                     </Card.Title>
                     <Card.Text>
                         {head}

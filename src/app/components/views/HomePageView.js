@@ -7,9 +7,7 @@ import SkillView from './SkillView'
 import ProjectView from './ProjectView'
 import ContactView from './ContactView'
 
-
-
-const HomePageView = ({ loading, data, error }) => {
+const HomePageView = () => {
     return (
         <div>
             <Container fluid>
