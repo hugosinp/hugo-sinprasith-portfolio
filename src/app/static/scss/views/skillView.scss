@@ -2,8 +2,10 @@
 
 .skillView {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 /* Extra small devices (phones, 576px and down) */
@@ -12,6 +14,8 @@
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -21,6 +25,8 @@
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -30,6 +36,8 @@
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -39,6 +47,8 @@
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -48,5 +58,7 @@
         height: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

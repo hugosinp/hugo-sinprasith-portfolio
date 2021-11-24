@@ -1,11 +1,11 @@
 export const mainDico = {
     "MAIN_HEAD": "Hugo Sinprasith",
-    "MAIN_SUBHEAD": "Welcome to my world"
+    "MAIN_SUBHEAD": "Full-Stack Developper based in Paris."
 }
 
 export const bioDico = {
     "BIO_HEAD": "Hugo Sinprasith",
-    "BIO_SUBHEAD": "Full-stack developper",
+    "BIO_SUBHEAD": "Student, Apprentice, Freelance",
     "BIO_SECTION_HEAD": "About me",
     "BIO_ME": " Hi I'm Hugo, a Computer Science Enthusiast. I'm currently preparing a Computer Science Master's degree at EFREI Paris Engineering School. Besides that, I am working at Société Générale as a Full-Stack developper apprentice.",
     "BIO_GOAL": "My passion for IT is such that I decided to begin a freelance activity appart from my studies and apprenticeship. Resolving real-life problems with code actually became a hobby.",
@@ -13,7 +13,7 @@ export const bioDico = {
 }
 
 export const skillDico = {
-    "SKILL_HEAD": "Full-Stack Developper based in Paris.",
+    "SKILL_HEAD": "Learn, experience, improve and repeat",
     "SKILL_SECTION_HEAD": "Skills & Tech Stack",
     "SKILL_INTRO": "Throughout my programming journey, I've experienced many technologies and IT concepts.",
     "SKILL_EXPERTISE": "Full-Stack Developpment became my main expertise.",

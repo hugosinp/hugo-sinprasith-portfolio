@@ -3,7 +3,7 @@
 
 .o-contactForm {
   width: 50%; 
-  border-radius: 50px; 
+  border-radius: 17px; 
   margin: auto;
   padding: 40px;
 }
@@ -54,7 +54,7 @@
     color: white;
     background: #021D40;
     border-color: #021D40;
-    border-radius: 30px;
+    border-radius: 17px;
     box-shadow: 0px 9px 5px #0000003C !important;
   }
   
@@ -68,7 +68,7 @@
   color: white;
   background: #021D40;
   border-color: #021D40;
-  border-radius: 30px;
+  border-radius: 17px;
   box-shadow: 0px 9px 5px #0000003C !important;
 }
 
@@ -79,11 +79,11 @@
 }
 
 #submitButton {
-  background-color: $color-soft-red;
-  border-color: $color-soft-red;
+  background-color: $color-dark-blue;
+  border-color: $color-dark-blue;
   margin: auto;
   width: 200px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .form-floating {

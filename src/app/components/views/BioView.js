@@ -26,7 +26,7 @@ const BioView = ({ id }) => {
         <div id={id}>
             <Row className="text-light bg-soft-blue bioView" fluid>
                 <Row className="bioRow">
-                    <Col sm={12} md={12} lg={12} xl={3} xxl={3}>
+                    <Col sm={12} md={12} lg={12} xl={5} xxl={5}>
                         <Container className="text-center fade-in">
                             <ATitle 
                                 className="bold"
@@ -34,7 +34,7 @@ const BioView = ({ id }) => {
                                 text={BIO_HEAD}
                             />
                             <ATitle 
-                                className="bold"
+                                className="bold italic"
                                 heading_tag="h4" 
                                 text={BIO_SUBHEAD}
                             />
@@ -42,7 +42,7 @@ const BioView = ({ id }) => {
                         </Container>
                     </Col>
 
-                    <Col sm={12} md={12} lg={12} xl={9} xxl={9}>
+                    <Col sm={12} md={12} lg={12} xl={7} xxl={7}>
                         <Container className="fade-in">
                             <ATitle 
                                 className="bold"
