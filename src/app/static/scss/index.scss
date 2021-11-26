@@ -1,6 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.css";
-@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap";
-@import 'https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap';
+
+@import 'https://fonts.googleapis.com/css2?family=Epilogue:wght@900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap';
 
 $color-darker-blue: #021226;
 $color-dark-blue: #021D40;
@@ -10,6 +11,23 @@ $color-soft-yellow: #F2DC6B;
 $color-soft-orange: #F2935C;
 $color-soft-red: #F2594B;
 $color-dark-red: #732509;
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  main {
+    margin: auto;
+  }
+}
 
 
 /* ======================Background====================== */
@@ -60,23 +78,6 @@ $color-dark-red: #732509;
 .navbar-scrolled {
   background-color: $color-soft-blue;
   backdrop-filter: blur(8px);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-main {
-  margin: 0;
-  height: 100vh;
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-/* Extra small devices (phones, 576px and down) */
-@media only screen and (max-width: 576px) {
-  main {
-    margin: auto;
-  }
 }
 
 .rotate-logo:hover {

@@ -3,7 +3,7 @@ export const projects = [
         "id": 1,
         "title": "E-commerce",
         "head": "E-commerce website, ready to adapt and deploy",
-        "tech": "ReactJS, Django REST Framework, PostgreSQL",
+        "tech": "React, Django REST Framework, Postgre",
         "link": "https://github.com/hugosinp",
         "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
     },
@@ -38,7 +38,7 @@ export const entreprises = [
                 "paragraph2": "Participated actively in the app life cycle, from conception to deployment",
                 "paragraph3": "Operated Agile Software Developpment methods (SCRUM)",
             },
-        "tech": "ReactJS, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
+        "tech": "React, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
         "image": "sg-logo"
     },
     {
