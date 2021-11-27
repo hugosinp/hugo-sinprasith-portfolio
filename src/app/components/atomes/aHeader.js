@@ -1,13 +1,25 @@
 import React, { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Image } from 'react-bootstrap'
+
+import { switchLanguage } from '../../redux/actions/appActions'
+
+import usIcon from '../../static/img/us.png'
+import franceIcon from '../../static/img/france.png'
 
 const AHeader = () => {
+
+    const dispatch = useDispatch()
+
+    const myApp = useSelector(state => state.myApp)
+    const {
+        us_lang
+    } = myApp
 
     const [navbar, setNavbar] = useState(false)
 
     const changeBackground = () => {
-        console.log(window.scrollY)
         if (window.scrollY >= 800) {
           setNavbar(true)
         } else {
@@ -38,10 +50,18 @@ const AHeader = () => {
                             <Nav.Link className="mx-3" href="#contactSection">Contact</Nav.Link>
                         </Nav>
                         <Nav className="">
-                            <Nav.Link href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank">
+                            <Nav.Link className="m-auto" onClick={() => (dispatch(switchLanguage()))}>
+                                {
+                                    us_lang === true ?
+                                        <Image src={usIcon} height="25px" rounded />
+                                    :
+                                        <Image src={franceIcon} height="25px" rounded />
+                                }
+                            </Nav.Link>
+                            <Nav.Link className="m-auto" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank">
                                 <i class="fab fa-linkedin fa-lg"></i>
                             </Nav.Link>
-                            <Nav.Link href="https://github.com/hugosinp" target="_blank">
+                            <Nav.Link className="m-auto" href="https://github.com/hugosinp" target="_blank">
                                 <i class="fab fa-github fa-lg"></i>
                             </Nav.Link>
                         </Nav>

@@ -5,17 +5,16 @@ import { Row, Col, Container, } from 'react-bootstrap'
 import ATitle from '../atomes/aTitle'
 import OProject from '../organisms/oProject'
 
-import { projectDico } from '../../static/dico'
 import '../../static/scss/views/projectView.scss'
 
 import { projects } from '../../static/data'
 
-const ProjectView = ({ id }) => {
+const ProjectView = ({ id, dico }) => {
 
     const {
         PROJECT_HEAD,
         PROJECT_SUBHEAD
-    } = projectDico
+    } = dico
 
     return (
         <div id={id}>

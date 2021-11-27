@@ -5,15 +5,15 @@ import { Row, Col } from 'react-bootstrap'
 import ALink from '../atomes/aLink'
 import ATitle from '../atomes/aTitle'
 
-import { mainDico } from '../../static/dico'
 import '../../static/scss/views/mainView.scss'
 
-const MainView = () => {
+const MainView = ({ id, dico }) => {
 
     const {
         MAIN_HEAD,
-        MAIN_SUBHEAD
-    } = mainDico
+        MAIN_SUBHEAD,
+        MAIN_BUTTON,
+    } = dico
 
     return (
         <div>
@@ -36,7 +36,7 @@ const MainView = () => {
                             className="shadow fade-in"
                             background="bg-dark-red"
                             href="#bioSection"
-                            text="Explore >>"
+                            text={MAIN_BUTTON}
                         />
                     </div>
                 </Col>

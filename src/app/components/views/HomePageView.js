@@ -7,15 +7,15 @@ import SkillView from './SkillView'
 import ProjectView from './ProjectView'
 import ContactView from './ContactView'
 
-const HomePageView = () => {
+const HomePageView = ({ dico }) => {
     return (
         <div>
             <Container fluid>
-                <MainView id="mainSection"/>
-                <BioView id="bioSection"/>
-                <SkillView id="skillSection"/>
-                <ProjectView id="projectSection"/>
-                <ContactView id="contactSection"/>
+                <MainView id="mainSection" dico={dico}/>
+                <BioView id="bioSection" dico={dico}/>
+                <SkillView id="skillSection" dico={dico}/>
+                <ProjectView id="projectSection" dico={dico}/>
+                <ContactView id="contactSection" dico={dico}/>
             </Container>
         </div>
     )

@@ -6,12 +6,11 @@ import AParagraph from '../atomes/aParagraph'
 import ALink from '../atomes/aLink'
 import ATitle from '../atomes/aTitle'
 
-import { bioDico } from '../../static/dico'
 import me from '../../static/img/me.png'
 
 import '../../static/scss/views/bioView.scss'
 
-const BioView = ({ id }) => {
+const BioView = ({ id, dico }) => {
     
     const {
         BIO_HEAD,
@@ -19,8 +18,9 @@ const BioView = ({ id }) => {
         BIO_SECTION_HEAD,
         BIO_ME,
         BIO_GOAL,
-        BIO_HOBBY 
-    } = bioDico
+        BIO_HOBBY,
+        BIO_BUTTON
+    } = dico
 
     return (
         <div id={id}>
@@ -61,7 +61,7 @@ const BioView = ({ id }) => {
                             <ALink
                                 className="shadow"
                                 href="#skillSection"
-                                text="Discover my expertise >>"
+                                text={BIO_BUTTON}
                                 background="bg-dark-blue"
                             />
                         </Container>

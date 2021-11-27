@@ -7,15 +7,14 @@ import OEntrepriseTab from '../organisms/oEntrepriseTab'
 import OContactForm from '../organisms/oContactForm'
 
 import { entreprises } from '../../static/data'
-import { contactDico } from '../../static/dico'
 import '../../static/scss/views/contactView.scss'
 
-const ContactView = ({ id }) => {
+const ContactView = ({ id, dico}) => {
 
     const {
         CONTACT_HEAD,
         CONTACT_SUBHEAD
-    } = contactDico
+    } = dico
 
     return (
         <div id={id}>

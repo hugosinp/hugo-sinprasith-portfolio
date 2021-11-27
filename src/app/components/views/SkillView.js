@@ -6,8 +6,6 @@ import AParagraph from '../atomes/aParagraph'
 import ALink from '../atomes/aLink'
 import ATitle from '../atomes/aTitle'
 
-import { skillDico } from '../../static/dico'
-
 import '../../static/scss/views/skillView.scss'
 
 import reactLogo from '../../static/img/react-logo.png'
@@ -20,7 +18,7 @@ import mysqlLogo from '../../static/img/mysql-logo.png'
 import javaLogo from '../../static/img/java-logo.png'
 
 
-const SkillView = ({ id }) => {
+const SkillView = ({ id, dico }) => {
     
     const {
         SKILL_HEAD,
@@ -28,8 +26,9 @@ const SkillView = ({ id }) => {
         SKILL_INTRO,
         SKILL_EXPERTISE,
         SKILL_TECH,
-        SKILL_FAVORITE
-    } = skillDico
+        SKILL_FAVORITE,
+        SKILL_BUTTON
+    } = dico
 
     return (
         <div id={id}>
@@ -64,7 +63,7 @@ const SkillView = ({ id }) => {
                             <ALink
                                 className="shadow"
                                 href="#projectSection"
-                                text="See my projects >>"
+                                text={SKILL_BUTTON}
                                 background="bg-soft-blue"
                             />
                         </Container>
