@@ -6,10 +6,9 @@ import ATitle from '../atomes/aTitle'
 import OEntrepriseTab from '../organisms/oEntrepriseTab'
 import OContactForm from '../organisms/oContactForm'
 
-import { entreprises } from '../../static/data'
 import '../../static/scss/views/contactView.scss'
 
-const ContactView = ({ id, dico}) => {
+const ContactView = ({ id, dico, entreprises }) => {
 
     const {
         CONTACT_HEAD,
@@ -39,7 +38,9 @@ const ContactView = ({ id, dico}) => {
                 </Row>
 
                 <Row id="contactFormRow" className="text-center fade-in" sm={12}>
-                    <OContactForm />
+                    <OContactForm 
+                        dico={dico}
+                    />
                 </Row>
             
             </Row>

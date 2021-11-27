@@ -1,4 +1,4 @@
-export const projects = [
+export const us_projects = [
     {
         "id": 1,
         "title": "E-commerce",
@@ -25,7 +25,7 @@ export const projects = [
     },
 ]
 
-export const entreprises = [
+export const us_entreprises = [
     {
         "id": 1,
         "name": "Société Générale",
@@ -34,7 +34,7 @@ export const entreprises = [
         "job_type": "Apprenticeship",
         "description": 
             {
-                "paragraph1": "Developed a modern web app for Société Générale's bankers using ReactJS and Redux",
+                "paragraph1": "Developed a modern web app for Société Générale's bankers using ReactJS",
                 "paragraph2": "Participated actively in the app life cycle, from conception to deployment",
                 "paragraph3": "Operated Agile Software Developpment methods (SCRUM)",
             },
@@ -71,5 +71,79 @@ export const entreprises = [
         "tech": "UIPath (RPA), PowerBI, VBA, PowerQuery/Pivot, Jira",
         "image": "sopra-logo"
     },
-    
+]
+
+export const fr_projects = [
+    {
+        "id": 1,
+        "title": "E-commerce",
+        "head": "Site d'e-commerce, prêt à être adapté et déployé",
+        "tech": "React, Django REST Framework, Postgre",
+        "link": "https://github.com/hugosinp",
+        "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
+    },
+    {
+        "id": 2,
+        "title": "MoonPortfolio",
+        "head": "Gestionnaire de portftefeuilles de cryptomonnaies",
+        "tech": "Django, Python, SQLite",
+        "link": "https://github.com/hugosinp/MoonPortfolio",
+        "image": "https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json"
+    },    
+    {
+        "id": 3,
+        "title": "Réseau neuronal",
+        "head": "Modèle réseau neuronal pour la reconnaissance de digits",
+        "tech": "Python, numpy, Tkinter",
+        "link": "https://github.com/hugosinp/Neural-Network",
+        "image": "https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json"
+    },
+]
+
+export const fr_entreprises = [
+    {
+        "id": 1,
+        "name": "Société Générale",
+        "date": "Octobre 2021 - Présent",
+        "job": "Développeur Full-stack",
+        "job_type": "Apprentissage",
+        "description": 
+            {
+                "paragraph1": "Développement d'une web app moderne pour les conseillers Société Générale's en ReactJS",
+                "paragraph2": "Particpation active au cycle de vie de l'application, de la conception jusqu'au deployment",
+                "paragraph3": "Mise en place des méthodes agiles de développement (SCRUM)",
+            },
+        "tech": "React, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
+        "image": "sg-logo"
+    },
+    {
+        "id": 2,
+        "name": "AXA",
+        "date": "Octobre 2020 - Septembre 2021",
+        "job": "Ingénieur Logiciel",
+        "job_type": "Apprenticeship",
+        "description": 
+            {
+                "paragraph1": "Implémentation d'un ETL permettant l'automatisation d'extraction de données et de création de reportings PowerBI",
+                "paragraph2": "Création et gestion d'une Data Warehouse",
+                "paragraph3": "Prise en charge de la formation des collaborateurs en langage Python",
+            },
+        "tech": "Python/Anaconda, Pandas, SQLite3, PowerBI, VBA",
+        "image": "axa-logo"
+    },
+    {
+        "id": 3,
+        "name": "Sopra Steria",
+        "date": "Mai - Juillet 2020",
+        "job": "Développeur BI/RPA",
+        "job_type": "Stage",
+        "description": 
+            {
+                "paragraph1": "Développement d'un logiciel RPA avec l'outil UIPath",
+                "paragraph2": "Automatisation d'extraction de données",
+                "paragraph3": "Consolidationd de reportings PowerBI",
+            },
+        "tech": "UIPath (RPA), PowerBI, VBA, PowerQuery/Pivot, Jira",
+        "image": "sopra-logo"
+    },
 ]

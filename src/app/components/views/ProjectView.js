@@ -7,9 +7,7 @@ import OProject from '../organisms/oProject'
 
 import '../../static/scss/views/projectView.scss'
 
-import { projects } from '../../static/data'
-
-const ProjectView = ({ id, dico }) => {
+const ProjectView = ({ id, dico, projects }) => {
 
     const {
         PROJECT_HEAD,
