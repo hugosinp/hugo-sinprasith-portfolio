@@ -71,14 +71,14 @@ const SkillView = ({ id, dico }) => {
 
                     <Col sm={12} md={12} lg={12} xl={12} xxl={5}>
                         <Container className="fade-in">
-                            <Image src={reactLogo} className="zoom" style={{ width:"50%" }} />
-                            <Image src={reduxLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={djangoLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={pythonLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={jsLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={postgreLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={javaLogo} className="zoom" style={{ width:"20%" }} />
-                            <Image src={mysqlLogo} className="zoom" style={{ width:"20%" }} />  
+                            <Image src={reactLogo} className="zoom" alt="React logo" style={{ width:"50%" }} />
+                            <Image src={reduxLogo} className="zoom" alt="Redux logo" style={{ width:"20%" }} />
+                            <Image src={djangoLogo} className="zoom" alt="Django logo" style={{ width:"20%" }} />
+                            <Image src={pythonLogo} className="zoom" alt="Python logo" style={{ width:"20%" }} />
+                            <Image src={jsLogo} className="zoom" alt="JavaScript logo" style={{ width:"20%" }} />
+                            <Image src={postgreLogo} className="zoom" alt="PostgreSQL logo" style={{ width:"20%" }} />
+                            <Image src={javaLogo} className="zoom" alt="Java logo" style={{ width:"20%" }} />
+                            <Image src={mysqlLogo} className="zoom" alt="MySQL logo" style={{ width:"20%" }} />  
                         </Container>
                     </Col>
                 </Row>

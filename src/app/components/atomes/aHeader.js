@@ -53,9 +53,9 @@ const AHeader = () => {
                             <Nav.Link className="m-auto" onClick={() => (dispatch(switchLanguage()))}>
                                 {
                                     us_lang === true ?
-                                        <Image src={usIcon} height="25px" rounded />
+                                        <Image src={usIcon} height="25px" alt="United States logo" rounded />
                                     :
-                                        <Image src={franceIcon} height="25px" rounded />
+                                        <Image src={franceIcon} height="25px" alt="France logo" rounded />
                                 }
                             </Nav.Link>
                             <Nav.Link className="m-auto" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank">

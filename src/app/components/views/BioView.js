@@ -38,7 +38,7 @@ const BioView = ({ id, dico }) => {
                                 heading_tag="h4" 
                                 text={BIO_SUBHEAD}
                             />
-                            <Image src={me} className="m-4 shadow zoom" height="200px" width="200px" roundedCircle />
+                            <Image src={me} className="m-4 shadow zoom" height="200px" width="200px" alt="Hugo Sinprasith" roundedCircle />
                         </Container>
                     </Col>
 

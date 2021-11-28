@@ -14,7 +14,7 @@ const OEntrepriseTab = ({ id, className, data }) => {
                         <Nav variant="pills" className="flex-column pt-2">
                             {    
                                 data.map(entreprise => (
-                                    <Nav.Item>
+                                    <Nav.Item key={entreprise.id}>
                                         <Nav.Link eventKey={entreprise.id}>
                                             {entreprise.name}
                                         </Nav.Link>
