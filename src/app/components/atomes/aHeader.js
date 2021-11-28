@@ -5,6 +5,7 @@ import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 
 import { switchLanguage } from '../../redux/actions/appActions'
 
+import { FR_DICO, ENG_DICO } from '../../static/dico'
 import usIcon from '../../static/img/us.png'
 import franceIcon from '../../static/img/france.png'
 
@@ -27,6 +28,17 @@ const AHeader = () => {
         }
     }
 
+    let HEADER_SKILLS = "";
+    let HEADER_PROJECTS = "";
+
+    if (us_lang) {
+        HEADER_SKILLS = ENG_DICO.HEADER_SKILLS
+        HEADER_PROJECTS = ENG_DICO.HEADER_PROJECTS
+    } else {
+        HEADER_SKILLS = FR_DICO.HEADER_SKILLS
+        HEADER_PROJECTS = FR_DICO.HEADER_PROJECTS
+    }
+
     useEffect(() => {
         changeBackground()
         window.addEventListener("scroll", changeBackground)
@@ -45,8 +57,8 @@ const AHeader = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
                             <Nav.Link className="mx-3" href="#bioSection">Bio</Nav.Link>
-                            <Nav.Link className="mx-3" href="#skillSection">Skills & Tech Stack</Nav.Link>
-                            <Nav.Link className="mx-3" href="#projectSection">Projects</Nav.Link>
+                            <Nav.Link className="mx-3" href="#skillSection">{HEADER_SKILLS}</Nav.Link>
+                            <Nav.Link className="mx-3" href="#projectSection">{HEADER_PROJECTS}</Nav.Link>
                             <Nav.Link className="mx-3" href="#contactSection">Contact</Nav.Link>
                         </Nav>
                         <Nav className="">

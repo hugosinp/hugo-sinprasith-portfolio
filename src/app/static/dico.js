@@ -1,4 +1,8 @@
 export const ENG_DICO = {
+
+    "HEADER_SKILLS": "Skills & Experience",
+    "HEADER_PROJECTS": "Projects",
+
     "MAIN_HEAD": "Hugo Sinprasith",
     "MAIN_SUBHEAD": "Full-stack Developer based in Paris.",
     "MAIN_BUTTON": "Explore >>",
@@ -33,10 +37,17 @@ export const ENG_DICO = {
     "FORM_SELECT_OPTION_2": "Business",
     "FORM_SELECT_OPTION_3": "Other",
     "FORM_INPUT_MESSAGE": "Add your message !",
-    "FORM_BUTTON": "Submit"
+    "FORM_BUTTON": "Submit",
+
+    "FOOTER_HEAD": "Haven't contacted me yet ?",
+    "FOOTER_TEXT": "Check out my social medias or let's discuss directly by email : hugo.sinprasith@gmail.com",
 }
 
 export const FR_DICO = {
+
+    "HEADER_SKILLS": "Skills & Expérience",
+    "HEADER_PROJECTS": "Projets",
+
     "MAIN_HEAD": "Hugo Sinprasith",
     "MAIN_SUBHEAD": "Développeur Full-stack",
     "MAIN_BUTTON": "Explorer >>",
@@ -71,5 +82,8 @@ export const FR_DICO = {
     "FORM_SELECT_OPTION_2": "Business",
     "FORM_SELECT_OPTION_3": "Autre",
     "FORM_INPUT_MESSAGE": "Ajoutez votre message !",
-    "FORM_BUTTON": "Envoyer"
+    "FORM_BUTTON": "Envoyer",
+
+    "FOOTER_HEAD": "Pas encore convaincu ?",
+    "FOOTER_TEXT": "Consulter mes réseaux sociaux ou discutons directement par mail : hugo.sinprasith@gmail.com",
 }
