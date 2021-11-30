@@ -8,14 +8,14 @@ import ATitle from '../atomes/aTitle'
 
 import '../../static/scss/views/skillView.scss'
 
-import reactLogo from '../../static/img/react-logo.png'
-import reduxLogo from '../../static/img/redux-logo.png'
+import reactLogo from '../../static/img/react-logo.svg'
+import reduxLogo from '../../static/img/redux-logo.svg'
 import djangoLogo from '../../static/img/django-logo.svg'
-import jsLogo from '../../static/img/js-logo.png'
+import jsLogo from '../../static/img/js-logo.svg'
 import pythonLogo from '../../static/img/python-logo.svg'
 import postgreLogo from '../../static/img/postgre-logo.svg'
 import mysqlLogo from '../../static/img/mysql-logo.png'
-import javaLogo from '../../static/img/java-logo.png'
+import javaLogo from '../../static/img/java-logo.svg'
 
 
 const SkillView = ({ id, dico }) => {
@@ -70,15 +70,15 @@ const SkillView = ({ id, dico }) => {
                     </Col>
 
                     <Col sm={12} md={12} lg={12} xl={12} xxl={5}>
-                        <Container className="fade-in">
-                            <Image src={reactLogo} className="zoom" alt="React logo" style={{ width:"50%" }} />
-                            <Image src={reduxLogo} className="zoom" alt="Redux logo" style={{ width:"20%" }} />
-                            <Image src={djangoLogo} className="zoom" alt="Django logo" style={{ width:"20%" }} />
-                            <Image src={pythonLogo} className="zoom" alt="Python logo" style={{ width:"20%" }} />
-                            <Image src={jsLogo} className="zoom" alt="JavaScript logo" style={{ width:"20%" }} />
-                            <Image src={postgreLogo} className="zoom" alt="PostgreSQL logo" style={{ width:"20%" }} />
-                            <Image src={javaLogo} className="zoom" alt="Java logo" style={{ width:"20%" }} />
-                            <Image src={mysqlLogo} className="zoom" alt="MySQL logo" style={{ width:"20%" }} />  
+                        <Container className="fade-in text-center">
+                            <Image src={reactLogo} className="zoom large-logo" alt="React logo" />
+                            <Image src={reduxLogo} className="zoom small-logo" alt="Redux logo" />
+                            <Image src={jsLogo} className="zoom xsmall-logo" alt="JavaScript logo" />
+                            <Image src={pythonLogo} className="zoom small-logo" alt="Python logo" />
+                            <Image src={djangoLogo} className="zoom xsmall-logo" alt="Django logo" />
+                            <Image src={postgreLogo} className="zoom small-logo" alt="PostgreSQL logo" />
+                            <Image src={javaLogo} className="zoom xsmall-logo" alt="Java logo" />
+                            <Image src={mysqlLogo} className="zoom small-logo" alt="MySQL logo" />  
                         </Container>
                     </Col>
                 </Row>
