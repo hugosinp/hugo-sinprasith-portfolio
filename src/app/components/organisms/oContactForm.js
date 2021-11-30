@@ -55,12 +55,10 @@ const OContactForm = ({ dico }) => {
             event.stopPropagation();
 
         } else if (form.checkValidity() === true) {
-            console.log(name);
-            console.log(email);
-            console.log(inquiry);
-            console.log(message);
+            event.preventDefault();
+            event.stopPropagation();
             handleShow();
-            dispatch(sendEmail(name, inquiry, message))
+            dispatch(sendEmail(name, email, inquiry, message))
         }
         setValidated(true);
     };
