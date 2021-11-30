@@ -32,24 +32,23 @@ const AFooter = () => {
                 <Container className="text-center p-4 text-light bg-dark" fluid>
                     <Row className="a-footer-row">
                         <section>
-                            <a className="text-light mx-2" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin fa-3x"></i>
+                            <a className="text-light zoom mx-2" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin fa-3x zoom"></i>
                             </a>
                             <a className="text-light mx-2" href="https://github.com/hugosinp" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github fa-3x"></i>
+                                <i class="fab fa-github fa-3x zoom"></i>
                             </a>
                         </section>
                     </Row>
-                    <Row className="a-footer-row">
+                    <Row className="a-footer-row text-center">
                         <section>
                             <AParagraph
                                 className="text-center"
                                 text={FOOTER_HEAD}
                             />
-                            <AParagraph
-                                className="text-center"
-                                text={FOOTER_TEXT}
-                            />
+                            <p>
+                                {FOOTER_TEXT} <a href="mailto:hugo.sinprasith@gmail.com" className="text-light italic">hugo.sinprasith@gmail.com</a>
+                            </p>
                         </section>
                     </Row> 
                     

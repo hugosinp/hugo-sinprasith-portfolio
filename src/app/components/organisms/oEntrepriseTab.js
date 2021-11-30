@@ -27,7 +27,7 @@ const OEntrepriseTab = ({ id, className, data }) => {
                         <Tab.Content className="m-auto">
                             {
                                 data.map(item => (
-                                    <Tab.Pane eventKey={item.id}>
+                                    <Tab.Pane key={item.id} eventKey={item.id}>
                                         <h3>
                                             {item.job} <div className={`${item.image}`} />
                                         </h3>

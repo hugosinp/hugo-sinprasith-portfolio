@@ -1,12 +1,27 @@
 @import '../index.scss';
 
-
 .o-contactForm {
   width: 50%; 
   border-radius: 17px; 
   margin: auto;
   padding: 40px;
 }
+
+.contact-modal {
+  font-family: 'Nunito', sans-serif;
+
+  .modal-content {
+    border-radius: 17px;
+    i{
+      margin: 20px;
+    }
+
+  }
+  #closeButton {
+    border-radius: 17px;
+  }
+}
+
 
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {

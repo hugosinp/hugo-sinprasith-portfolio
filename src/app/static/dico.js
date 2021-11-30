@@ -39,8 +39,13 @@ export const ENG_DICO = {
     "FORM_INPUT_MESSAGE": "Add your message !",
     "FORM_BUTTON": "Submit",
 
+    "MODAL_HEAD": "Contact Form",
+    "MODAL_RESPONSE":"Message sent successfully !",
+    "MODAL_MESSAGE": "I'll answer you as soon as possible 🚀",
+    "MODAL_BUTTON": "Close",
+
     "FOOTER_HEAD": "Haven't contacted me yet ?",
-    "FOOTER_TEXT": "Check out my social medias or let's discuss directly by email : hugo.sinprasith@gmail.com",
+    "FOOTER_TEXT": "Check out my social medias or let's discuss directly by email : ",
 }
 
 export const FR_DICO = {
@@ -56,7 +61,7 @@ export const FR_DICO = {
     "BIO_SUBHEAD": "Etudiant, Apprenti, Freelance",
     "BIO_SECTION_HEAD": "A propos",
     "BIO_ME": "Salut je m'appelle Hugo et je suis un passioné du monde digital ! J'étudie actuellement à l'école d'ingénieur EFREI Paris pour un Master d'Informatique spécialisé dans le Développement Full-stack. En plus de cela, j'effectue cette formation en apprentissage à la Société Générale en tant que Développeur Full-stack.",
-    "BIO_GOAL": "Mon engouement pour les nouvelles technologies et l'entreprenariat est tel que j'ai décidé de démarrer une carrière de développeur freelance en plus de mes études et de mon apprentissage. Car en effet, résoudre des problématiques du quotidien par des lignes de codes est quelque peu devenu un hobby...",
+    "BIO_GOAL": "Mon engouement pour les nouvelles technologies et l'entrepreneuriat est tel que j'ai décidé de démarrer une carrière de développeur freelance en plus de mes études et de mon apprentissage. Car en effet, résoudre des problématiques du quotidien par des lignes de codes est quelque peu devenu un hobby...",
     "BIO_HOBBY": "En dehors de monde binaire, j'adore jouer de la guitare et perfectionner mes flips en skate.",
     "BIO_BUTTON": "Découvrez mon expertise >>",
 
@@ -64,7 +69,7 @@ export const FR_DICO = {
     "SKILL_SECTION_HEAD": "Compétences techniques",
     "SKILL_INTRO": "A travers mes diverses expériences informatiques, j'ai eu l'occasion de d'apprendre, essayer et maîtriser beaucoup de technologies.",
     "SKILL_EXPERTISE": "Le Développement Full-Stack est devenu mon domaine expertise.",
-    "SKILL_TECH": "Que ce soit du développement Front-end , Back-end, de la consommation, construction d'API REST ou bien de la création et gestion de bases de données, j'ai eu l'opportunités de travailer sur de nombreux projets, de la conception jusqu'au déploiement.",
+    "SKILL_TECH": "Que ce soit du développement Front-end , Back-end, de la consommation, construction d'API REST ou bien de la création et gestion de bases de données, j'ai eu l'opportunité de travailler sur de nombreux projets, de la conception jusqu'au déploiement.",
     "SKILL_FAVORITE": "Python et JavaScript restent mes langages de prédilection mais je demeure à l'affut des dernières technologies et ne rate pas une occasion d'en apprendre une de plus.",
     "SKILL_BUTTON": "Voir mes projets >>",
 
@@ -84,6 +89,11 @@ export const FR_DICO = {
     "FORM_INPUT_MESSAGE": "Ajoutez votre message !",
     "FORM_BUTTON": "Envoyer",
 
+    "MODAL_HEAD": "Formulaire de contact",
+    "MODAL_RESPONSE":"Message envoyé !",
+    "MODAL_MESSAGE": "Je vous réponderai dans les meilleurs délais 🚀",
+    "MODAL_BUTTON": "Fermer",
+
     "FOOTER_HEAD": "Pas encore convaincu ?",
-    "FOOTER_TEXT": "Consulter mes réseaux sociaux ou discutons directement par mail : hugo.sinprasith@gmail.com",
+    "FOOTER_TEXT": "Consulter mes réseaux sociaux ou discutons directement par mail : ",
 }
