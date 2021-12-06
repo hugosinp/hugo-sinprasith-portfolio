@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 
 import { switchLanguage } from '../../redux/actions/appActions'
 
-import { FR_DICO, ENG_DICO } from '../../static/dico'
+import { frDico, engDico} from '../../static/dico'
 import usIcon from '../../static/img/us.png'
 import franceIcon from '../../static/img/france.png'
 
@@ -15,7 +15,7 @@ const AHeader = () => {
 
     const myApp = useSelector(state => state.myApp)
     const {
-        us_lang
+        usLang
     } = myApp
 
     const [navbar, setNavbar] = useState(false)
@@ -31,12 +31,12 @@ const AHeader = () => {
     let HEADER_SKILLS = "";
     let HEADER_PROJECTS = "";
 
-    if (us_lang) {
-        HEADER_SKILLS = ENG_DICO.HEADER_SKILLS
-        HEADER_PROJECTS = ENG_DICO.HEADER_PROJECTS
+    if (usLang) {
+        HEADER_SKILLS = engDico.HEADER_SKILLS
+        HEADER_PROJECTS = engDico.HEADER_PROJECTS
     } else {
-        HEADER_SKILLS = FR_DICO.HEADER_SKILLS
-        HEADER_PROJECTS = FR_DICO.HEADER_PROJECTS
+        HEADER_SKILLS = frDico.HEADER_SKILLS
+        HEADER_PROJECTS = frDico.HEADER_PROJECTS
     }
 
     useEffect(() => {
@@ -64,7 +64,7 @@ const AHeader = () => {
                         <Nav className="">
                             <Nav.Link className="m-auto" onClick={() => (dispatch(switchLanguage()))}>
                                 {
-                                    us_lang === true ?
+                                    usLang === true ?
                                         <Image src={usIcon} height="25px" alt="United States logo" rounded />
                                     :
                                         <Image src={franceIcon} height="25px" alt="France logo" rounded />

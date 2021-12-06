@@ -5,25 +5,25 @@ import { Container, Row } from 'react-bootstrap'
 
 import AParagraph from '../atomes/aParagraph'
 
-import { FR_DICO, ENG_DICO } from '../../static/dico'
+import { frDico, engDico } from '../../static/dico'
 import "../../static/scss/atomes/aFooter.scss"
 
 const AFooter = () => {
 
     const myApp = useSelector(state => state.myApp)
     const {
-        us_lang
+        usLang
     } = myApp
 
     let FOOTER_HEAD = "";
     let FOOTER_TEXT = "";
 
-    if (us_lang) {
-        FOOTER_HEAD = ENG_DICO.FOOTER_HEAD
-        FOOTER_TEXT = ENG_DICO.FOOTER_TEXT
+    if (usLang) {
+        FOOTER_HEAD = engDico.FOOTER_HEAD
+        FOOTER_TEXT = engDico.FOOTER_TEXT
     } else {
-        FOOTER_HEAD = FR_DICO.FOOTER_HEAD
-        FOOTER_TEXT = FR_DICO.FOOTER_TEXT
+        FOOTER_HEAD = frDico.FOOTER_HEAD
+        FOOTER_TEXT = frDico.FOOTER_TEXT
     }
 
     return (

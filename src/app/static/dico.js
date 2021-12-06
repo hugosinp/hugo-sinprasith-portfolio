@@ -1,4 +1,4 @@
-export const ENG_DICO = {
+export const engDico = {
 
     "HEADER_SKILLS": "Skills & Experience",
     "HEADER_PROJECTS": "Projects",
@@ -8,7 +8,7 @@ export const ENG_DICO = {
     "MAIN_BUTTON": "Explore >>",
 
     "BIO_HEAD": "Hugo Sinprasith",
-    "BIO_SUBHEAD": "Student, Apprentice, Freelance",
+    "BIO_SUBHEAD": "Student, Apprentice & Freelance",
     "BIO_SECTION_HEAD": "About me",
     "BIO_ME": " Hi I'm Hugo, a Computer Science Enthusiast. I'm currently preparing a Computer Science Master's degree at EFREI Paris Engineering School. Besides that, I am working at Société Générale as a Full-Stack developper apprentice.",
     "BIO_GOAL": "My passion for IT is such that I decided to begin a freelance activity appart from my studies and apprenticeship. Resolving real-life problems with code actually became a hobby.",
@@ -48,7 +48,7 @@ export const ENG_DICO = {
     "FOOTER_TEXT": "Check out my social medias or let's discuss directly by email : ",
 }
 
-export const FR_DICO = {
+export const frDico = {
 
     "HEADER_SKILLS": "Skills & Expérience",
     "HEADER_PROJECTS": "Projets",
@@ -58,7 +58,7 @@ export const FR_DICO = {
     "MAIN_BUTTON": "Explorer >>",
 
     "BIO_HEAD": "Hugo Sinprasith",
-    "BIO_SUBHEAD": "Etudiant, Apprenti, Freelance",
+    "BIO_SUBHEAD": "Etudiant, Apprenti & Freelance",
     "BIO_SECTION_HEAD": "A propos",
     "BIO_ME": "Salut je m'appelle Hugo et je suis un passioné du monde digital ! J'étudie actuellement à l'école d'ingénieur EFREI Paris pour un Master d'Informatique spécialisé dans le Développement Full-stack. En plus de cela, j'effectue cette formation en apprentissage à la Société Générale en tant que Développeur Full-stack.",
     "BIO_GOAL": "Mon engouement pour les nouvelles technologies et l'entrepreneuriat est tel que j'ai décidé de démarrer une carrière de développeur freelance en plus de mes études et de mon apprentissage. Car en effet, résoudre des problématiques du quotidien par des lignes de codes est quelque peu devenu un hobby...",

@@ -1,12 +1,12 @@
 const initialState = {
-    us_lang: true,
+    usLang: true,
 }
 
 export const appReducer = (state = initialState, action) => {
     switch(action.type){
         case 'SWITCH_LANGUAGE':
             return {
-                us_lang: !state.us_lang,
+                usLang: !state.usLang,
             }
 
         case 'HANDLE_SUBMIT_REQUEST':

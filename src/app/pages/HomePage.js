@@ -3,28 +3,28 @@ import { useSelector } from 'react-redux'
 
 import HomePageView from '../components/views/HomePageView'
 
-import { FR_DICO, ENG_DICO } from '../static/dico'
+import { frDico, engDico } from '../static/dico'
 import { us_projects, us_entreprises, fr_projects, fr_entreprises } from '../static/data'
 
 const HomePage = () => {
 
     const myApp = useSelector(state => state.myApp)
     const {
-        us_lang
+        usLang
     } = myApp
 
     return (
         <div>
             {
-                us_lang === true ?
+                usLang === true ?
                     <HomePageView 
-                        dico={ENG_DICO}
+                        dico={engDico}
                         projects={us_projects}
                         entreprises={us_entreprises}
                     />
                 :
                     <HomePageView 
-                        dico={FR_DICO}
+                        dico={frDico}
                         projects={fr_projects}
                         entreprises={fr_entreprises}
                     />
