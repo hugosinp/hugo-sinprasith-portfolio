@@ -1,4 +1,4 @@
-export const us_projects = [
+export const usProjects = [
     {
         "id": 1,
         "title": "E-commerce",
@@ -25,7 +25,35 @@ export const us_projects = [
     },
 ]
 
-export const us_entreprises = [
+export const frProjects = [
+    {
+        "id": 1,
+        "title": "E-commerce",
+        "head": "Site d'e-commerce, prêt à être adapté et déployé",
+        "tech": "React, Django REST Framework, Postgre",
+        "link": "https://github.com/hugosinp",
+        "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
+    },
+    {
+        "id": 2,
+        "title": "MoonPortfolio",
+        "head": "Gestionnaire de portftefeuilles de cryptomonnaies",
+        "tech": "Django, Python, SQLite",
+        "link": "https://github.com/hugosinp/MoonPortfolio",
+        "image": "https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json"
+    },    
+    {
+        "id": 3,
+        "title": "Réseau neuronal",
+        "head": "Modèle réseau neuronal pour la reconnaissance de digits",
+        "tech": "Python, numpy, Tkinter",
+        "link": "https://github.com/hugosinp/Neural-Network",
+        "image": "https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json"
+    },
+]
+
+
+export const usEntreprises = [
     {
         "id": 1,
         "name": "Société Générale",
@@ -73,34 +101,8 @@ export const us_entreprises = [
     },
 ]
 
-export const fr_projects = [
-    {
-        "id": 1,
-        "title": "E-commerce",
-        "head": "Site d'e-commerce, prêt à être adapté et déployé",
-        "tech": "React, Django REST Framework, Postgre",
-        "link": "https://github.com/hugosinp",
-        "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
-    },
-    {
-        "id": 2,
-        "title": "MoonPortfolio",
-        "head": "Gestionnaire de portftefeuilles de cryptomonnaies",
-        "tech": "Django, Python, SQLite",
-        "link": "https://github.com/hugosinp/MoonPortfolio",
-        "image": "https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json"
-    },    
-    {
-        "id": 3,
-        "title": "Réseau neuronal",
-        "head": "Modèle réseau neuronal pour la reconnaissance de digits",
-        "tech": "Python, numpy, Tkinter",
-        "link": "https://github.com/hugosinp/Neural-Network",
-        "image": "https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json"
-    },
-]
 
-export const fr_entreprises = [
+export const frEntreprises = [
     {
         "id": 1,
         "name": "Société Générale",
@@ -147,3 +149,61 @@ export const fr_entreprises = [
         "image": "sopra-logo"
     },
 ]
+
+export const usSkills = [
+    {
+        "id": 1,
+        "title": "Full-stack Programming",
+        "head": "I keep every part of an app running smoothly, both client & server side.",
+        "subHead": "Always working on my best to deploy and maintain awesome web apps !",
+        "image": "https://assets5.lottiefiles.com/packages/lf20_foZ22A.json",
+        "width": "200px",
+        "height": "200px"
+    },
+    {
+        "id": 2,
+        "title": "Mobile app Dev",
+        "head": "Your business needs a portable & mobile version ?",
+        "subHead": "I can turn your business projects into iOS or Android apps !",
+        "image": "https://assets6.lottiefiles.com/packages/lf20_1VZjMH.json",
+        "width": "200px",
+        "height": "200px"
+    },
+    {
+        "id": 3,
+        "title": "Data science",
+        "head": "Worked on many Data science projects",
+        "subHead": "From Data extracting, analyzing to repoting, I've particpated on the whole data life cycle enhancement",
+        "image": "https://assets5.lottiefiles.com/packages/lf20_5KobUw.json",
+        "width": "150px",
+        "height": "200px"
+    },
+]
+
+export const frSkills = [
+    {
+        "id": 1,
+        "title": "Développement Full-stack",
+        "description": "These are my programming skills haha",
+        "image": "https://assets5.lottiefiles.com/packages/lf20_foZ22A.json",
+        "width": "200px",
+        "height": "200px"
+    },
+    {
+        "id": 2,
+        "title": "Déploiement d'app mobile",
+        "description": "These are my Conception skills haha",
+        "image": "https://assets6.lottiefiles.com/packages/lf20_1VZjMH.json",
+        "width": "200px",
+        "height": "200px"
+    },
+    {
+        "id": 3,
+        "title": "Déploiement d'app",
+        "description": "These are my Conception skills haha",
+        "image": "https://assets5.lottiefiles.com/packages/lf20_5KobUw.json",
+        "width": "200px",
+        "height": "200px"
+    },
+]
+

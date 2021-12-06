@@ -5,6 +5,7 @@ import { Row, Col, Image, Container } from 'react-bootstrap'
 import AParagraph from '../atomes/aParagraph'
 import ALink from '../atomes/aLink'
 import ATitle from '../atomes/aTitle'
+import OSkill from '../organisms/oSkill'
 
 import '../../static/scss/views/skillView.scss'
 
@@ -18,9 +19,10 @@ import mysqlLogo from '../../static/img/mysql-logo.png'
 import javaLogo from '../../static/img/java-logo.svg'
 
 
-const SkillView = ({ id, dico }) => {
+const SkillView = ({ id, dico, skills }) => {
     
     const {
+        SKILL_BIG_HEAD,
         SKILL_HEAD,
         SKILL_SECTION_HEAD,
         SKILL_INTRO,
@@ -33,7 +35,33 @@ const SkillView = ({ id, dico }) => {
     return (
         <div id={id}>
             <Row className="text-light bg-dark-blue skillView" fluid>
-                <Row className="m-auto">
+                <Row className="mx-auto pb-5">
+                    <Container className="text-center mb-5 fade-in">
+                        <ATitle 
+                            className="bold"
+                            heading_tag="h1"
+                            text={SKILL_BIG_HEAD}
+                        />
+                    </Container>
+                    <Row className="mx-auto px-auto">
+                        {
+                            skills.map(skill => (
+                                <Col sm={12} md={12} lg={4} xl={4} xxl={4} key={skill.id}>
+                                    <OSkill
+                                        title={skill.title}
+                                        head={skill.head}
+                                        subHead={skill.subHead}
+                                        image={skill.image}
+                                        width={skill.width}
+                                        height={skill.height}
+                                    />
+                                </Col>
+                            ))
+                        }
+                    </Row>
+                </Row>
+
+                <Row className="m-auto py-5">
                     <Container className="text-center mb-5 fade-in">
                         <ATitle 
                             className="bold"

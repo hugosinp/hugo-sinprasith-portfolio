@@ -7,7 +7,7 @@ import SkillView from './SkillView'
 import ProjectView from './ProjectView'
 import ContactView from './ContactView'
 
-const HomePageView = ({ dico, projects, entreprises }) => {
+const HomePageView = ({ dico, skills, projects, entreprises }) => {
     return (
         <div>
             <Container fluid>
@@ -22,6 +22,7 @@ const HomePageView = ({ dico, projects, entreprises }) => {
                 <SkillView 
                     id="skillSection" 
                     dico={dico}
+                    skills={skills}
                 />
                 <ProjectView 
                     id="projectSection" 

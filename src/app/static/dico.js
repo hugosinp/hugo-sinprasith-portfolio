@@ -15,6 +15,7 @@ export const engDico = {
     "BIO_HOBBY": "When not online, I love to express my creativity by playing the guitar and practicing flips on my skateboard.",
     "BIO_BUTTON": "Discover my expertise >>",
 
+    "SKILL_BIG_HEAD": "Discover my skills !",
     "SKILL_HEAD": "Learn, experience, improve and repeat.",
     "SKILL_SECTION_HEAD": "Skills & Tech Stack",
     "SKILL_INTRO": "Throughout my programming journey, I've experienced many technologies and IT concepts.",
@@ -65,6 +66,7 @@ export const frDico = {
     "BIO_HOBBY": "En dehors de monde binaire, j'adore jouer de la guitare et perfectionner mes flips en skate.",
     "BIO_BUTTON": "Découvrez mon expertise >>",
 
+    "SKILL_BIG_HEAD": "Découvrez mes compétences !",
     "SKILL_HEAD": "Apprendre, expérimenter, améliorer et recommencer.",
     "SKILL_SECTION_HEAD": "Compétences techniques",
     "SKILL_INTRO": "A travers mes diverses expériences informatiques, j'ai eu l'occasion de d'apprendre, essayer et maîtriser beaucoup de technologies.",
