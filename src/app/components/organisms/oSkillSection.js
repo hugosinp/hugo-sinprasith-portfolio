@@ -20,8 +20,8 @@ import postgreLogo from '../../static/img/postgre-logo.svg';
 
 const OSkillSection = () => {
     return (
-        <Container maxW={'3xl'}>
-            <Flex h={{ base: "auto", md: "100vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
+        <Container maxW={'4xl'}>
+            <Flex h={{ base: "auto", md: "80vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
                 
                 <Stack py={5} px={10}>
                     <Heading fontStyle={'italic'} align={'center'}>

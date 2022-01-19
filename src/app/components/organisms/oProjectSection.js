@@ -14,12 +14,11 @@ import { usProjects } from '../../static/data';
 
 const OProjectSection = () => {
     return (
-        <Container maxW={'3xl'}>
-            <Flex h={{ base: "auto", md: "100vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
+        <Container maxW={'5xl'}>
+            <Flex h={{ base: "auto", md: "80vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
                 
                 <Stack py={5} px={10} align={'center'}>
                     <Heading>
-                        My 
                         <Text as={'span'} color={'blue.400'}> Projects</Text>
                     </Heading>
                     <Heading size='md' color={'gray.400'}>
