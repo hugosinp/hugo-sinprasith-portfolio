@@ -1,63 +1,57 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-
-import { Container, Row } from 'react-bootstrap'
-
-import AParagraph from '../atomes/aParagraph'
-
-import { frDico, engDico } from '../../static/dico'
-import "../../static/scss/atomes/aFooter.scss"
+import { Box, Container, Link, Stack, Heading, Text, IconButton, useColorModeValue } from '@chakra-ui/react';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const AFooter = () => {
 
-    const myApp = useSelector(state => state.myApp)
-    const {
-        usLang
-    } = myApp
-
-    let FOOTER_HEAD = "";
-    let FOOTER_TEXT = "";
-
-    if (usLang) {
-        FOOTER_HEAD = engDico.FOOTER_HEAD
-        FOOTER_TEXT = engDico.FOOTER_TEXT
-    } else {
-        FOOTER_HEAD = frDico.FOOTER_HEAD
-        FOOTER_TEXT = frDico.FOOTER_TEXT
-    }
-
     return (
-        <div>
-            <footer className="text-center">
-                <Container className="text-center p-4 text-light bg-dark" fluid>
-                    <Row className="a-footer-row">
-                        <section>
-                            <a className="text-light zoom mx-2" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin fa-3x zoom"></i>
-                            </a>
-                            <a className="text-light mx-2" href="https://github.com/hugosinp" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github fa-3x zoom"></i>
-                            </a>
-                        </section>
-                    </Row>
-                    <Row className="a-footer-row text-center">
-                        <section>
-                            <AParagraph
-                                className="text-center"
-                                text={FOOTER_HEAD}
+        <Box bg={useColorModeValue('gray.50', 'gray.900')} color={useColorModeValue('gray.700', 'gray.200')}>
+            <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
+                
+                <Stack direction={'column'} alignItems="center" py={10} spacing={6}>
+                    <Heading>Hugo Sinprasith</Heading>
+                    <Stack direction={'row'} spacing={6}>
+                        <Link href='https://github.com/hugosinp' isExternal>
+                            <IconButton
+                                aria-label="github"
+                                variant="ghost"
+                                size="lg"
+                                icon={<BsGithub size={30}/>}
+                                _hover={{
+                                    bg: 'blue.500',
+                                    color: useColorModeValue('white', 'gray.700'),
+                                }}
+                                isRound
                             />
-                            <p>
-                                {FOOTER_TEXT} <a href="mailto:hugo.sinprasith@gmail.com" className="text-light italic">hugo.sinprasith@gmail.com</a>
-                            </p>
-                        </section>
-                    </Row> 
-                    
+                        </Link>
+                        <Link href='https://www.linkedin.com/in/hugo-sinprasith-1b5367199/' isExternal>
+                            <IconButton
+                                aria-label="linkedin"
+                                variant="ghost"
+                                size="lg"
+                                icon={<BsLinkedin size={30}/>}
+                                _hover={{
+                                    bg: 'blue.500',
+                                    color: useColorModeValue('white', 'gray.700'),
+                                }}
+                                isRound
+                            />
+                        </Link>
+                    </Stack>
+                </Stack>
+
+            </Container>
+    
+            <Box borderTopWidth={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.700')}>
+                <Container as={Stack} maxW={'6xl'} py={4} direction={{ base: 'column', md: 'row' }} spacing={4} justify={{ base: 'center', md: 'space-between' }} align={{ base: 'center', md: 'center' }}>
+                    <Text>© 2022 Hugo Sinprasith. All rights reserved</Text>
+                    <Stack direction={'row'} spacing={6}>
+                        <BsGithub />
+                        <BsLinkedin />
+                    </Stack>
                 </Container>
-                <Container className="a-footer-row text-light m-0" style={{ backgroundColor: "rgba(0, 0, 0, 0.9)" }} fluid>
-                    Copyright &copy; HSinp
-                </Container>
-            </footer>
-        </div>
+            </Box>
+        </Box>
     )
 }
 

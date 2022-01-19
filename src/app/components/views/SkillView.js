@@ -1,117 +1,16 @@
 import React from 'react'
 
-import { Row, Col, Image, Container } from 'react-bootstrap'
+import { Container, Flex } from '@chakra-ui/react'
 
-import AParagraph from '../atomes/aParagraph'
-import ALink from '../atomes/aLink'
-import ATitle from '../atomes/aTitle'
-import OSkill from '../organisms/oSkill'
+import OSkillSection from '../organisms/oSkillSection';
 
-import '../../static/scss/views/skillView.scss'
-
-import reactLogo from '../../static/img/react-logo.svg'
-import reduxLogo from '../../static/img/redux-logo.svg'
-import djangoLogo from '../../static/img/django-logo.svg'
-import jsLogo from '../../static/img/js-logo.svg'
-import pythonLogo from '../../static/img/python-logo.svg'
-import postgreLogo from '../../static/img/postgre-logo.svg'
-import mysqlLogo from '../../static/img/mysql-logo.png'
-import javaLogo from '../../static/img/java-logo.svg'
-
-
-const SkillView = ({ id, dico, skills }) => {
-    
-    const {
-        SKILL_BIG_HEAD,
-        SKILL_HEAD,
-        SKILL_SECTION_HEAD,
-        SKILL_INTRO,
-        SKILL_EXPERTISE,
-        SKILL_TECH,
-        SKILL_FAVORITE,
-        SKILL_BUTTON
-    } = dico
-
+const SkillView = () => {
     return (
-        <div id={id}>
-            <Row className="text-light bg-dark-blue skillView" fluid>
-                <Row className="mx-auto pb-5">
-                    <Container className="text-center mb-5 fade-in">
-                        <ATitle 
-                            className="bold"
-                            heading_tag="h1"
-                            text={SKILL_BIG_HEAD}
-                        />
-                    </Container>
-                    <Row className="mx-auto px-auto">
-                        {
-                            skills.map(skill => (
-                                <Col sm={12} md={12} lg={4} xl={4} xxl={4} key={skill.id}>
-                                    <OSkill
-                                        title={skill.title}
-                                        head={skill.head}
-                                        subHead={skill.subHead}
-                                        image={skill.image}
-                                        width={skill.width}
-                                        height={skill.height}
-                                    />
-                                </Col>
-                            ))
-                        }
-                    </Row>
-                </Row>
-
-                <Row className="m-auto py-5">
-                    <Container className="text-center mb-5 fade-in">
-                        <ATitle 
-                            className="bold"
-                            heading_tag="h1"
-                            text={SKILL_HEAD}
-                        />
-                    </Container>
-                    <Col sm={12} md={12} lg={12} xl={12} xxl={7}>
-                        <Container className="mb-5 fade-in">
-                            <ATitle 
-                                className="bold"
-                                heading_tag="h3"
-                                text={SKILL_SECTION_HEAD}
-                            />
-                            <AParagraph
-                                text={SKILL_INTRO}
-                            />
-                            <AParagraph
-                                text={SKILL_EXPERTISE}
-                            />
-                            <AParagraph
-                                text={SKILL_TECH}
-                            />
-                            <AParagraph
-                                text={SKILL_FAVORITE}
-                            />                            
-                            <ALink
-                                className="shadow"
-                                href="#projectSection"
-                                text={SKILL_BUTTON}
-                                background="bg-soft-blue"
-                            />
-                        </Container>
-                    </Col>
-
-                    <Col sm={12} md={12} lg={12} xl={12} xxl={5}>
-                        <Container className="fade-in text-center">
-                            <Image src={reactLogo} className="zoom large-logo" alt="React logo" />
-                            <Image src={reduxLogo} className="zoom small-logo" alt="Redux logo" />
-                            <Image src={jsLogo} className="zoom xsmall-logo" alt="JavaScript logo" />
-                            <Image src={pythonLogo} className="zoom small-logo" alt="Python logo" />
-                            <Image src={djangoLogo} className="zoom xsmall-logo" alt="Django logo" />
-                            <Image src={postgreLogo} className="zoom small-logo" alt="PostgreSQL logo" />
-                            <Image src={javaLogo} className="zoom xsmall-logo" alt="Java logo" />
-                            <Image src={mysqlLogo} className="zoom small-logo" alt="MySQL logo" />  
-                        </Container>
-                    </Col>
-                </Row>
-            </Row>
-        </div>
+        <Container maxW="container.xl" p={0}>
+            <Flex height={{ base: 'auto' }}>
+                <OSkillSection />
+            </Flex>
+        </Container>
     )
 }
 

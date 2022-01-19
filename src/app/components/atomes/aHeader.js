@@ -1,87 +1,222 @@
-import React, { useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
 
-import { Navbar, Nav, Container, Image } from 'react-bootstrap'
+import { Link as RouterLink } from 'react-router-dom'
+import {
+    Box,
+    Flex,
+    Text,
+    IconButton,
+    Button,
+    Stack,
+    HStack,
+    Collapse,
+    Icon,
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    useColorModeValue,
+    useBreakpointValue,
+    useDisclosure,
+    useColorMode
+} from '@chakra-ui/react';
 
-import { switchLanguage } from '../../redux/actions/appActions'
-
-import { frDico, engDico} from '../../static/dico'
-import usIcon from '../../static/img/us.png'
-import franceIcon from '../../static/img/france.png'
+import {
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+  MoonIcon,
+  SunIcon 
+} from '@chakra-ui/icons';
 
 const AHeader = () => {
 
-    const dispatch = useDispatch()
-
-    const myApp = useSelector(state => state.myApp)
-    const {
-        usLang
-    } = myApp
-
-    const [navbar, setNavbar] = useState(false)
-
-    const changeBackground = () => {
-        if (window.scrollY >= 800) {
-          setNavbar(true)
-        } else {
-          setNavbar(false)
-        }
-    }
-
-    let HEADER_SKILLS = "";
-    let HEADER_PROJECTS = "";
-
-    if (usLang) {
-        HEADER_SKILLS = engDico.HEADER_SKILLS
-        HEADER_PROJECTS = engDico.HEADER_PROJECTS
-    } else {
-        HEADER_SKILLS = frDico.HEADER_SKILLS
-        HEADER_PROJECTS = frDico.HEADER_PROJECTS
-    }
-
-    useEffect(() => {
-        changeBackground()
-        window.addEventListener("scroll", changeBackground)
-    })
+    const { isOpen, onToggle } = useDisclosure();
+    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-        <div>
-            <Navbar className={navbar ? "navbar-scrolled navbar-dark fade-in" : "navbar-notscrolled navbar-dark fade-in"} scrolling  fixed="top"  expand="lg">
-                <Container className="text-light">
-                    <Navbar.Brand className="bold rotate-logo" href="/">
-                        <i class="fas fa-moon"></i> HSinp
-                    </Navbar.Brand>
-                    
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Box px={{ md: 20, lg: 40 }}>
+        <Flex bg={useColorModeValue('white', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ base: 4 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
+          
+          <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
+            <IconButton onClick={onToggle} icon={ isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} /> } variant={'ghost'} aria-label={'Toggle Navigation'} />
+          </Flex>
 
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="m-auto">
-                            <Nav.Link className="mx-3" href="#bioSection">Bio</Nav.Link>
-                            <Nav.Link className="mx-3" href="#skillSection">{HEADER_SKILLS}</Nav.Link>
-                            <Nav.Link className="mx-3" href="#projectSection">{HEADER_PROJECTS}</Nav.Link>
-                            <Nav.Link className="mx-3" href="#contactSection">Contact</Nav.Link>
-                        </Nav>
-                        <Nav className="">
-                            <Nav.Link className="m-auto" onClick={() => (dispatch(switchLanguage()))}>
-                                {
-                                    usLang === true ?
-                                        <Image src={usIcon} height="25px" alt="United States logo" rounded />
-                                    :
-                                        <Image src={franceIcon} height="25px" alt="France logo" rounded />
-                                }
-                            </Nav.Link>
-                            <Nav.Link className="m-auto" href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" target="_blank">
-                                <i class="fab fa-linkedin fa-lg"></i>
-                            </Nav.Link>
-                            <Nav.Link className="m-auto" href="https://github.com/hugosinp" target="_blank">
-                                <i class="fab fa-github fa-lg"></i>
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
-    )
+          <Flex flex={{ base: 1 }} px={{ xl: 100, }} justify={{ base: 'center', md: 'start' }} alignItems={'center'}>
+            <RouterLink to="/">
+              <Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })} fontFamily={'heading'} color={useColorModeValue('gray.800', 'white')} fontWeight={'bold'}>
+                <MoonIcon />HSinp
+              </Text>
+            </RouterLink>
+            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+              <DesktopNav navItem={navItem} />
+            </Flex>
+          </Flex>
+  
+          <HStack flex={{ base: 1, md: 0 }} px={{ xl: 100, }} justify={'flex-end'} spacing={6}>
+                <Button onClick={toggleColorMode}>
+                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                </Button>
+          </HStack>
+
+        </Flex>
+  
+        <Collapse in={isOpen} animateOpacity>
+          <MobileNav navItem={navItem} />
+        </Collapse>
+
+      </Box>
+    );
 }
+
+
+// Desktop Header Nav
+const DesktopNav = ({ navItem }) => {
+    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkHoverColor = useColorModeValue('gray.800', 'white');
+    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+  
+    return (
+      <HStack spacing={4}>
+        {
+          navItem.map((navItem) => (
+            <Box key={navItem.label}>
+              <Popover trigger={'hover'} placement={'bottom-start'}>
+                <PopoverTrigger>
+                  <Box p={2} fontSize={'sm'} fontWeight={500} color={linkColor} _hover={{ textDecoration: 'none', color: linkHoverColor, }}>
+                    <RouterLink to={navItem.href ?? '#'}>
+                        {navItem.label}
+                    </RouterLink>
+                  </Box>
+                </PopoverTrigger>
+    
+                {
+                  navItem.children && (
+                    <PopoverContent border={0} boxShadow={'xl'} bg={popoverContentBgColor} p={4} rounded={'xl'} minW={'sm'}>
+                      <Stack>
+                        {
+                          navItem.children.map((child) => (
+                            <DesktopSubNav child={child} key={child.label} {...child} />
+                          ))
+                        }
+                      </Stack>
+                    </PopoverContent>
+                  )
+                }
+              </Popover>
+            </Box>
+          ))
+        }
+      </HStack>
+    );
+};
+
+
+// Desktop Header Nav Item
+const DesktopSubNav = ({ child }) => {
+  return (
+    <Box role={'group'} display={'block'} p={2} rounded={'md'} _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+      <HStack align={'center'}>
+        <Box>
+          <RouterLink to={child.href ?? '/'}>
+            <Text transition={'all .3s ease'} _groupHover={{ color: 'pink.400' }} fontWeight={500}>
+              {child.label}
+            </Text>
+            <Text fontSize={'sm'}>
+              {child.subLabel}
+            </Text>
+          </RouterLink>
+        </Box>
+        <Flex transition={'all .3s ease'} transform={'translateX(-10px)'} opacity={0}  _groupHover={{ opacity: '100%', transform: 'translateX(0)' }} justify={'flex-end'} align={'center'} flex={1}>
+          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+        </Flex>
+      </HStack>
+    </Box>
+  );
+};
+
+
+// Mobile Header Nav
+const MobileNav = ({ navItem }) => {
+  return (
+    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+      {
+        navItem.map((navItem) => (
+          <MobileNavItem navItem={navItem} key={navItem.label} {...navItem} />
+        ))
+      }
+    </Stack>
+  );
+};
+
+// Mobile Header Nav Item
+const MobileNavItem = ({ navItem }) => {
+
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+      <Stack spacing={4} onClick={navItem.children && onToggle}>
+        <Flex py={2} justify={'space-between'} align={'center'} _hover={{ textDecoration: 'none', }}>
+            <RouterLink to={navItem.href ?? '#'}>
+              <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
+                {navItem.label}
+              </Text>
+            </RouterLink>
+            {
+              navItem.children && (
+                <Icon
+                  as={ChevronDownIcon}
+                  transition={'all .25s ease-in-out'}
+                  transform={isOpen ? 'rotate(180deg)' : ''}
+                  w={6}
+                  h={6}
+                />
+              )
+            }
+        </Flex>
+
+        <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+            <Stack mt={2} pl={4} borderLeft={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.700')} align={'start'}>
+              {
+                navItem.children &&
+                  navItem.children.map((child) => (
+                    <Box key={child.label} py={2}>
+                      <RouterLink to={navItem.href ?? '/'}>
+                        {child.label}
+                      </RouterLink>
+                    </Box>
+                  ))
+              }
+            </Stack>
+        </Collapse>
+      </Stack>
+  );
+};
+
+const navItem = [
+    {
+      label: 'Bio',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '/',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '/',
+        },
+      ],
+    },
+    {
+      label: 'Skills & Experience',
+      href: '#',
+    },
+    {
+      label: 'Contact',
+      href: '#',
+    },
+];
 
 export default AHeader
