@@ -21,16 +21,16 @@ import postgreLogo from '../../static/img/postgre-logo.svg';
 const OSkillSection = () => {
     return (
         <Container maxW={'4xl'}>
-            <Flex h={{ base: "auto", md: "80vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
+            <Flex h={{ base: "auto", lg: "80vh" }} py={10} direction={{ base: "column", md: "column"}} align={'center'}>
                 
-                <Stack py={5} px={10}>
+                <Stack p={5}>
                     <Heading fontStyle={'italic'} align={'center'}>
                         `Learn, experience and 
                         <Text as={'span'} color={'blue.400'}> repeat.`</Text>
                     </Heading>
                 </Stack>
                 
-                <Stack direction={{ base: "column", md: "row" }} py={5} px={10} spacing={5}>
+                <Stack direction={{ base: "column", lg: "row" }} p={5} spacing={10}>
                     
                     <Stack direction={{ base: "column", md: "column"}} spacing={10}>
                         <Heading align={'center'}>

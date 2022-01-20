@@ -16,7 +16,8 @@ import {
     ModalFooter,
     ModalBody,
     ModalCloseButton,
-    Button
+    Button,
+    Tag,
 } from '@chakra-ui/react';
 
 const OProject = ({ project }) => {
@@ -37,7 +38,6 @@ const OProject = ({ project }) => {
                         {project.head}
                     </Text>
                 </Stack>
-                
             </Box>
 
             <Modal onClose={onClose} isOpen={isOpen} isCentered>
@@ -47,12 +47,15 @@ const OProject = ({ project }) => {
                     <ModalCloseButton />
                     <ModalBody>
                         {project.head}
-                        <Text mt={6} color={'green.500'} textTransform={'uppercase'} fontWeight={500} fontSize={'sm'} letterSpacing={1.1}>
-                            {project.tech}
-                        </Text>
+                        {
+                            project.tech.map(tech => (
+                                <Tag key={tech.name} m={1} bg={'blue.500'} color={'blue.100'} textTransform={'uppercase'} letterSpacing={1.1}>
+                                    {tech.name}
+                                </Tag>
+                            ))
+                        }
                     </ModalBody>
                     <ModalFooter>
-                        
                         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
                             <Link href={project.link} rounded={'md'} fontWeight={'bold'} p={2} isExternal>
                                 More details

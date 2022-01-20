@@ -80,7 +80,7 @@ const OContactSection = () => {
                                 <FormControl isRequired>
                                     <FormLabel>Name</FormLabel>
                                     <InputGroup>
-                                        <InputLeftElement children={<BsPerson />} />
+                                        <InputLeftElement zIndex={0} children={<BsPerson />} />
                                         <Input type="text" name="name" placeholder="Your Name" />
                                     </InputGroup>
                                 </FormControl>
@@ -89,7 +89,7 @@ const OContactSection = () => {
                                     <FormLabel>Email</FormLabel>
 
                                     <InputGroup>
-                                        <InputLeftElement children={<MdOutlineEmail />} />
+                                        <InputLeftElement zIndex={0} children={<MdOutlineEmail />} />
                                         <Input
                                             type="email"
                                             name="email"

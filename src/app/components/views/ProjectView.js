@@ -7,7 +7,7 @@ import OProjectSection from '../organisms/oProjectSection';
 const ProjectView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <Flex height={{ base: 'auto' }}>
+            <Flex height={{ base: 'auto' }} align={'center'}>
                 <OProjectSection />
             </Flex>
         </Container>

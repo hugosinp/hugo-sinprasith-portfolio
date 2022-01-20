@@ -7,7 +7,7 @@ import OContactSection from '../organisms/oContactSection';
 const ContactView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <Flex height={{ base: 'auto' }}>
+            <Flex height={{ base: 'auto' }} align={'center'}>
                 <OContactSection />
             </Flex>
         </Container>

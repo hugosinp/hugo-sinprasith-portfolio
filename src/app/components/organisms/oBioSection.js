@@ -13,12 +13,12 @@ import me from '../../static/img/me.png';
 const OBioSection = () => {
     return (
         <Container maxW={'4xl'}>
-            <Flex h={{ base: "auto", md: "100vh" }} py={10} direction={{ base: "column", lg: "row"}} align={'center'}>
-                <VStack p={10}>
-                    <Heading>
+            <Flex h={{ base: "auto", lg: "100vh" }} py={10} direction={{ base: "column", lg: "row"}} align={'center'}>
+                <VStack p={5}>
+                    <Heading align={'center'}>
                         Hugo Sinprasith
                     </Heading>
-                    <Heading pb={5} size={5} color={'gray.400'} fontStyle={'italic'}>
+                    <Heading pb={5} size={5} color={'gray.400'} fontStyle={'italic'} align={'center'}>
                         Student, Apprentice & Freelance
                     </Heading>
                     <Image
@@ -29,7 +29,7 @@ const OBioSection = () => {
                         alt='Hugo Sinprasith'
                     />
                 </VStack>
-                <VStack p={10}>
+                <VStack p={{ base: 5, lg: 20 }}>
                     <Heading>
                         About me
                     </Heading>

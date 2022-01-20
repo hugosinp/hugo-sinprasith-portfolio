@@ -3,7 +3,11 @@ export const usProjects = [
         "id": 1,
         "title": "E-commerce",
         "head": "E-commerce website, ready to adapt and deploy",
-        "tech": "React, Django REST Framework, Postgre",
+        "tech": [
+            {"name" : "React"}, 
+            {"name" : "Django REST Framework"}, 
+            {"name" : "Postgre"}
+        ],
         "link": "https://github.com/hugosinp",
         "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
     },
@@ -11,7 +15,11 @@ export const usProjects = [
         "id": 2,
         "title": "MoonPortfolio",
         "head": "Cryptocurrency & Asset Portfolio Manager web app",
-        "tech": "Django, Python, SQLite",
+        "tech": [
+            {"name" : "Django"}, 
+            {"name" : "Python"}, 
+            {"name" : "SQLite"}
+        ],
         "link": "https://github.com/hugosinp/MoonPortfolio",
         "image": "https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json"
     },    
@@ -19,7 +27,11 @@ export const usProjects = [
         "id": 3,
         "title": "Neural Network",
         "head": "Digit recognition neural network model in Python",
-        "tech": "Python, numpy, Tkinter",
+        "tech": [
+            {"name" : "Python"}, 
+            {"name" : "numpy"}, 
+            {"name" : "Tkinter"}
+        ],
         "link": "https://github.com/hugosinp/Neural-Network",
         "image": "https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json"
     },

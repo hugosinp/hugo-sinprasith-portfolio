@@ -7,7 +7,7 @@ import OBioSection from '../organisms/oBioSection';
 const BioView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <Flex height={{ base: 'auto', md: '100vh'}}>
+            <Flex height={{ base: 'auto', md: '100vh'}} align={'center'}>
                 <OBioSection />
             </Flex>
         </Container>

@@ -38,8 +38,8 @@ const AHeader = () => {
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-      <Box px={{ md: 20, lg: 40 }} position={'fixed'}  w="100%" css={{ backdropFilter: 'blur(10px)' }} zIndex={1}>
-        <Flex bg={useColorModeValue('#f0e7db', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ base: 4 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
+      <Box position={'fixed'} w="100%" zIndex={1}>
+        <Flex bg={useColorModeValue('#f0e7db', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ md: 20, lg: 40 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
           
           <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton onClick={onToggle} icon={ isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} /> } variant={'ghost'} aria-label={'Toggle Navigation'} />
@@ -145,7 +145,7 @@ const DesktopSubNav = ({ child }) => {
 // Mobile Header Nav
 const MobileNav = ({ navItem }) => {
   return (
-    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+    <Stack bg={useColorModeValue('#f0e7db', 'gray.800')} p={4} display={{ md: 'none' }}>
       {
         navItem.map((navItem) => (
           <MobileNavItem navItem={navItem} key={navItem.label} {...navItem} />
