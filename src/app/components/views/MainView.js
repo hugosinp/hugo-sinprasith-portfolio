@@ -7,7 +7,7 @@ import OHeroSection from '../organisms/oHeroSection';
 const MainView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <Flex height={{ base: '80vh' }}>
+            <Flex height={{ base: '100vh' }}>
                 <OHeroSection />
             </Flex>
         </Container>

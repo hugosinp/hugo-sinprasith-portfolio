@@ -8,14 +8,14 @@ import SkillView from './SkillView'
 import ProjectView from './ProjectView'
 import ContactView from './ContactView'
 
-const HomePageView = ({ skills, projects, entreprises }) => {
+const HomePageView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <MainView />
-            <BioView />
-            <SkillView />
-            <ProjectView />
-            <ContactView />
+            <MainView id="main"/>
+            <BioView id="bioSection"/>
+            <SkillView id="skills"/>
+            <ProjectView id="project"/>
+            <ContactView id="contact"/>
         </Container>
     )
 }

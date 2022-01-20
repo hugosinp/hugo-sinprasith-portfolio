@@ -2,22 +2,22 @@ import React from 'react'
 
 import { Link as RouterLink } from 'react-router-dom'
 import {
-    Box,
-    Flex,
-    Text,
-    IconButton,
-    Button,
-    Stack,
-    HStack,
-    Collapse,
-    Icon,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    useColorModeValue,
-    useBreakpointValue,
-    useDisclosure,
-    useColorMode
+  Box,
+  Flex,
+  Text,
+  IconButton,
+  Button,
+  Stack,
+  HStack,
+  Collapse,
+  Icon,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  useColorModeValue,
+  useBreakpointValue,
+  useDisclosure,
+  useColorMode,
 } from '@chakra-ui/react';
 
 import {
@@ -26,8 +26,11 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
   MoonIcon,
-  SunIcon 
+  SunIcon
 } from '@chakra-ui/icons';
+
+import { GiMoon } from 'react-icons/gi';
+
 
 const AHeader = () => {
 
@@ -35,8 +38,8 @@ const AHeader = () => {
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-      <Box px={{ md: 20, lg: 40 }}>
-        <Flex bg={useColorModeValue('white', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ base: 4 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
+      <Box px={{ md: 20, lg: 40 }} position={'fixed'}  w="100%" css={{ backdropFilter: 'blur(10px)' }} zIndex={1}>
+        <Flex bg={useColorModeValue('#f0e7db', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ base: 4 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
           
           <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton onClick={onToggle} icon={ isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} /> } variant={'ghost'} aria-label={'Toggle Navigation'} />
@@ -44,9 +47,12 @@ const AHeader = () => {
 
           <Flex flex={{ base: 1 }} px={{ xl: 100, }} justify={{ base: 'center', md: 'start' }} alignItems={'center'}>
             <RouterLink to="/">
-              <Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })} fontFamily={'heading'} color={useColorModeValue('gray.800', 'white')} fontWeight={'bold'}>
-                <MoonIcon />HSinp
-              </Text>
+              <HStack>
+                <GiMoon />
+                <Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })} fontFamily={'heading'} color={useColorModeValue('gray.800', 'white')} fontWeight={'bold'}>
+                  HSinp
+                </Text>
+              </HStack>
             </RouterLink>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav navItem={navItem} />
@@ -54,9 +60,9 @@ const AHeader = () => {
           </Flex>
   
           <HStack flex={{ base: 1, md: 0 }} px={{ xl: 100, }} justify={'flex-end'} spacing={6}>
-                <Button onClick={toggleColorMode}>
-                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                </Button>
+            <Button onClick={toggleColorMode}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
           </HStack>
 
         </Flex>
@@ -85,7 +91,7 @@ const DesktopNav = ({ navItem }) => {
                 <PopoverTrigger>
                   <Box p={2} fontSize={'sm'} fontWeight={500} color={linkColor} _hover={{ textDecoration: 'none', color: linkHoverColor, }}>
                     <RouterLink to={navItem.href ?? '#'}>
-                        {navItem.label}
+                      {navItem.label}
                     </RouterLink>
                   </Box>
                 </PopoverTrigger>
@@ -196,26 +202,19 @@ const MobileNavItem = ({ navItem }) => {
 const navItem = [
     {
       label: 'Bio',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          href: '/',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          href: '/',
-        },
-      ],
+      href: '#bioSection',
     },
     {
       label: 'Skills & Experience',
-      href: '#',
+      href: '#skills',
+    },
+    {
+      label: 'Project',
+      href: '#project',
     },
     {
       label: 'Contact',
-      href: '#',
+      href: '#contact',
     },
 ];
 

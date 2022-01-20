@@ -10,13 +10,13 @@ import {
   
 const OHeroSection = () => {
     return (
-        <Container maxW={'4xl'} py={{ base: 20, md: 50 }}>
+        <Container maxW={'4xl'} py={{ base: 40, md: 40 }}>
             <Flex h={{ base: "auto" }} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <Stack as={Box} textAlign={{ base: 'center', lg: 'start' }}>
                     <Heading fontWeight={'bold'} fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }} lineHeight={'110%'}>
                         Hugo Sinprasith
                     </Heading>
-                    <Text fontSize={'xl'} as={'span'} color={'blue.400'}>
+                    <Text fontSize={'xl'} as={'span'} color={'blue.300'}>
                         Full-stack Developer based in Paris.
                     </Text>
                 </Stack>
