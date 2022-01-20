@@ -39,7 +39,7 @@ const AHeader = () => {
 
     return (
       <Box position={'fixed'} w="100%" zIndex={1}>
-        <Flex bg={useColorModeValue('#f0e7db', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ md: 20, lg: 40 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
+        <Flex bg={useColorModeValue('#f0e7db', 'gray.800')} color={useColorModeValue('gray.600', 'white')} minH={'60px'} py={{ base: 2 }} px={{ base: 5, md: 20, lg: 40 }} borderBottom={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.900')} align={'center'}>
           
           <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton onClick={onToggle} icon={ isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} /> } variant={'ghost'} aria-label={'Toggle Navigation'} />
