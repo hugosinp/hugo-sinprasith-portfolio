@@ -13,7 +13,7 @@ import me from '../../static/img/me.png';
 const OBioSection = () => {
     return (
         <Container maxW={'4xl'}>
-            <Flex h={{ base: "auto", lg: "100vh" }} py={10} direction={{ base: "column", lg: "row"}} align={'center'}>
+            <Flex h={{ base: "auto", md: "100vh", lg: "100vh" }} py={10} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <VStack p={5}>
                     <Heading align={'center'}>
                         Hugo Sinprasith

@@ -68,18 +68,39 @@ export const frProjects = [
 export const usEntreprises = [
     {
         "id": 1,
-        "name": "Société Générale",
-        "date": "October 2021 - Present",
-        "job": "Full-stack Developer",
-        "job_type": "Apprenticeship",
-        "description": 
+        "name": "Sopra Steria",
+        "date": "May - July 2020",
+        "job": "BI/RPA Developer",
+        "job_type": "Internship",
+        "description": [
             {
-                "paragraph1": "Developed a modern web app for Société Générale's bankers using ReactJS",
-                "paragraph2": "Participated actively in the app life cycle, from conception to deployment",
-                "paragraph3": "Operated Agile Software Developpment methods (SCRUM)",
+                "paragraph": "Developed RPA Software with UIPath tools"
             },
-        "tech": "React, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
-        "image": "sg-logo"
+            {
+                "paragraph": "Automatised Data Extraction"
+            },
+            {
+                "paragraph": "Consolidated PowerBI reportings"
+            },
+        ],
+        "tech": [
+            {
+                "name" : "UIPath (RPA)"
+            },
+            {
+                "name" : "PowerBI"
+            },
+            {
+                "name" : "VBA"
+            },
+            {
+                "name" : "PowerQuery/Pivot"
+            },
+            {
+                "name" : "Jira"
+            },
+        ],
+        "image": "https://logo.clearbit.com/soprasteria.com"
     },
     {
         "id": 2,
@@ -87,29 +108,68 @@ export const usEntreprises = [
         "date": "October 2020 - September 2021",
         "job": "Software Engineer",
         "job_type": "Apprenticeship",
-        "description": 
+        "description": [
             {
-                "paragraph1": "Implemented an ETL Process from Data Extraction to PowerBI Reporting export",
-                "paragraph2": "Created a Data Warehouse",
-                "paragraph3": "Led Python programming training sessions for new staff",
+                "paragraph": "Implemented an ETL Process from Data Extraction to PowerBI Reporting export"
             },
-        "tech": "Python/Anaconda, Pandas, SQLite3, PowerBI, VBA",
-        "image": "axa-logo"
+            {
+                "paragraph": "Created a Data Warehouse"
+            },
+            {
+                "paragraph": "Led Python programming training sessions for new staff"
+            },
+        ],
+        "tech": [
+            {
+                "name" : "Python"
+            },
+            {
+                "name" : "Pandas"
+            },
+            {
+                "name" : "SQLite3"
+            },
+            {
+                "name" : "PowerBI"
+            },
+            {
+                "name" : "VBA"
+            },
+        ],
+        "image": "https://logo.clearbit.com/axamansard.com"
     },
     {
         "id": 3,
-        "name": "Sopra Steria",
-        "date": "May - July 2020",
-        "job": "BI/RPA Developer",
-        "job_type": "Internship",
-        "description": 
+        "name": "Société Générale",
+        "date": "October 2021 - Present",
+        "job": "Full-stack Developer",
+        "job_type": "Apprenticeship",
+        "description": [
             {
-                "paragraph1": "Developed RPA Software with UIPath tools",
-                "paragraph2": "Automatised Data Extraction",
-                "paragraph3": "Consolidated PowerBI reportings",
+                "paragraph": "Developed a modern web app for Société Générale's bankers using ReactJS"
             },
-        "tech": "UIPath (RPA), PowerBI, VBA, PowerQuery/Pivot, Jira",
-        "image": "sopra-logo"
+            {
+                "paragraph": "Participated actively in the app life cycle, from conception to deployment"
+            },
+            {
+                "paragraph": "Operated Agile Software Developpment methods (SCRUM)"
+            },
+        ],
+        "tech": [
+            {
+                "name" : "React"
+            },
+            {
+                "name" : "Redux"
+            },
+            {
+                "name" : "TypeScript"
+            },
+            {
+                "name" : "Java Spring Boot"
+            },
+        ],
+        "image": "https://logo.clearbit.com/societegenerale.fr"
     },
 ]
 
@@ -127,7 +187,7 @@ export const frEntreprises = [
                 "paragraph2": "Particpation active au cycle de vie de l'application, de la conception jusqu'au deployment",
                 "paragraph3": "Mise en place des méthodes agiles de développement (SCRUM)",
             },
-        "tech": "React, Redux, Redux-Saga, TypeScript, Java Spring Boot ",
+        "tech": "React, Redux, Redux-Saga, TypeScript, Java Spring Boot",
         "image": "sg-logo"
     },
     {
