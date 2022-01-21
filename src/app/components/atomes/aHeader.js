@@ -18,6 +18,7 @@ import {
   useBreakpointValue,
   useDisclosure,
   useColorMode,
+  Link
 } from '@chakra-ui/react';
 
 import {
@@ -46,14 +47,14 @@ const AHeader = () => {
           </Flex>
 
           <Flex flex={{ base: 1 }} px={{ xl: 100, }} justify={{ base: 'center', md: 'start' }} alignItems={'center'}>
-            <RouterLink to="/">
+            <Link href='#hero' _hover={{ textDecoration: 'none', }}>
               <HStack>
                 <GiMoon />
                 <Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })} fontFamily={'heading'} color={useColorModeValue('gray.800', 'white')} fontWeight={'bold'}>
                   HSinp
                 </Text>
               </HStack>
-            </RouterLink>
+            </Link>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav navItem={navItem} />
             </Flex>
@@ -89,10 +90,10 @@ const DesktopNav = ({ navItem }) => {
             <Box key={navItem.label}>
               <Popover trigger={'hover'} placement={'bottom-start'}>
                 <PopoverTrigger>
-                  <Box p={2} fontSize={'sm'} fontWeight={500} color={linkColor} _hover={{ textDecoration: 'none', color: linkHoverColor, }}>
-                    <RouterLink to={navItem.href ?? '#'}>
+                  <Box p={2} fontSize={'sm'} fontWeight={500} color={linkColor}>
+                    <Link href={navItem.href ?? '#'} _hover={{ textDecoration: 'none', color: linkHoverColor, }}>
                       {navItem.label}
-                    </RouterLink>
+                    </Link>
                   </Box>
                 </PopoverTrigger>
     
@@ -163,11 +164,11 @@ const MobileNavItem = ({ navItem }) => {
   return (
       <Stack spacing={4} onClick={navItem.children && onToggle}>
         <Flex py={2} justify={'space-between'} align={'center'} _hover={{ textDecoration: 'none', }}>
-            <RouterLink to={navItem.href ?? '#'}>
+            <Link href={navItem.href ?? '#'}>
               <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
                 {navItem.label}
               </Text>
-            </RouterLink>
+            </Link>
             {
               navItem.children && (
                 <Icon
@@ -202,15 +203,19 @@ const MobileNavItem = ({ navItem }) => {
 const navItem = [
     {
       label: 'Bio',
-      href: '#bioSection',
+      href: '#bio',
     },
     {
-      label: 'Skills & Experience',
+      label: 'Skills',
       href: '#skills',
     },
     {
-      label: 'Project',
-      href: '#project',
+      label: 'Projects',
+      href: '#projects',
+    },
+    {
+      label: 'Experiences',
+      href: '#experiences',
     },
     {
       label: 'Contact',

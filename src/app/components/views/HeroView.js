@@ -4,9 +4,9 @@ import { Container, Flex } from '@chakra-ui/react'
 
 import OHeroSection from '../organisms/oHeroSection';
 
-const MainView = () => {
+const HeroView = ({ id }) => {
     return (
-        <Container maxW="container.xl" p={0}>
+        <Container maxW="container.xl" p={0} id={id}>
             <Flex height={{ base: '100vh' }} align={'center'}>
                 <OHeroSection />
             </Flex>
@@ -14,4 +14,4 @@ const MainView = () => {
     )
 }
 
-export default MainView
+export default HeroView

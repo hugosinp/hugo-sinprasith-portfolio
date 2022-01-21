@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container } from '@chakra-ui/react'
 
-import MainView from './MainView'
+import HeroView from './HeroView'
 import BioView from './BioView'
 import SkillView from './SkillView'
 import ProjectView from './ProjectView'
@@ -12,11 +12,11 @@ import ContactView from './ContactView'
 const HomePageView = () => {
     return (
         <Container maxW="container.xl" p={0}>
-            <MainView id="main"/>
+            <HeroView id="hero"/>
             <BioView id="bio"/>
             <SkillView id="skills"/>
-            <ProjectView id="project"/>
-            <EntrepriseView id="entreprise"/>
+            <ProjectView id="projects"/>
+            <EntrepriseView id="experiences"/>
             <ContactView id="contact"/>
         </Container>
     )

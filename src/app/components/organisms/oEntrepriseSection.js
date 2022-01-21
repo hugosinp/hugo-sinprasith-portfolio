@@ -18,12 +18,16 @@ const OEntrepriseSection = () => {
     }
 
     return (
-        <Container maxW={'4xl'} align={'center'}>
-            <Flex h={{ base: "auto", lg: "100vh" }} py={10} direction={{ base: "column", lg: "column"}} align={'center'}>
+        <Container maxW={'4xl'} py={{ base: 35, md: 30 }} align={'center'}>
+            <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
                 
                 <VStack>
-                    <Heading>Interested in <Text as='span' color={'blue.400'}>collaboration ?</Text></Heading>
-                    <Heading size={'md'}>The companies have trusted me. Why not you ?</Heading>
+                    <Heading>
+                        Interested in <Text as='span' color={'blue.400'}>collaboration ?</Text>
+                    </Heading>
+                    <Heading size={'md'}>
+                        The companies have trusted me. Why not you ?
+                    </Heading>
 
                     <Box pt={10}>
                         <input
@@ -37,7 +41,9 @@ const OEntrepriseSection = () => {
                             <TabList>
                                 {
                                     usEntreprises.map(entreprise => (
-                                        <Tab key={entreprise.id} fontWeight={'bold'}>{entreprise.name}</Tab>
+                                        <Tab key={entreprise.id} zIndex={0} fontWeight={'bold'}>
+                                            {entreprise.name}
+                                        </Tab>
                                     ))
                                 }
                             </TabList>

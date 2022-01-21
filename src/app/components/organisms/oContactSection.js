@@ -27,8 +27,8 @@ const OContactSection = () => {
     const { hasCopied, onCopy } = useClipboard('hugo.sinprasith@gmail.com');
 
     return (
-        <Container maxW={'4xl'} py={20}>
-            <Flex h={{ base: "auto", md: "auto" }} direction={{ base: "column", md: "column"}} align={'center'}>
+        <Container maxW={'4xl'} py={{ base: 35, md: 30 }} centerContent>
+            <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
 
                 <VStack w={'full'} spacing={{ base: 4, md: 8, lg: 8 }}>
                     <Heading
