@@ -19,7 +19,8 @@ import {
     VStack,
     Container,
     useToast,
-    Select
+    Select,
+    FormErrorMessage
 } from '@chakra-ui/react';
 import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
@@ -28,10 +29,14 @@ import emailjs from 'emailjs-com';
 
 const OContactSection = () => {
     
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
+    const [name, setName] = useState(' ')
+    const [email, setEmail] = useState(' ')
     const [inquiry, setInquiry] = useState('')
-    const [message, setMessage] = useState('')
+    const [message, setMessage] = useState(' ')
+
+    const isNameError = name === ''
+    const isEmailError = email === ''
+    const isMessageError = message === ''
 
     const [loading, setLoading] = useState(false)
 
@@ -126,15 +131,22 @@ const OContactSection = () => {
                         <Box w={'full'} bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" p={8} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
                             <VStack spacing={5}>
                                 
-                                <FormControl onChange={(e) => setName(e.target.value)} isRequired>
+                                <FormControl onChange={(e) => setName(e.target.value)} isInvalid={isNameError} isRequired>
                                     <FormLabel>Name</FormLabel>
                                     <InputGroup>
                                         <InputLeftElement zIndex={0} children={<BsPerson />} />
                                         <Input type="text" name="name" placeholder="Your Name" />
                                     </InputGroup>
+                                    {
+                                        isNameError &&
+                                            <FormErrorMessage>
+                                                Name is required.
+                                            </FormErrorMessage>
+                                        
+                                    }
                                 </FormControl>
 
-                                <FormControl onChange={(e) => setEmail(e.target.value)} isRequired>
+                                <FormControl onChange={(e) => setEmail(e.target.value)} isInvalid={isEmailError} isRequired>
                                     <FormLabel>Email</FormLabel>
                                     <InputGroup>
                                         <InputLeftElement zIndex={0} children={<MdOutlineEmail />} />
@@ -145,7 +157,13 @@ const OContactSection = () => {
                                             zIndex={0}
                                         />
                                     </InputGroup>
-                                    
+                                    {
+                                        isEmailError &&
+                                            <FormErrorMessage>
+                                                Email is required.
+                                            </FormErrorMessage>
+                                        
+                                    }
                                 </FormControl>
 
                                 <FormControl onChange={(e) => setInquiry(e.target.value)} isRequired>
@@ -157,7 +175,7 @@ const OContactSection = () => {
                                     </Select>
                                 </FormControl>
 
-                                <FormControl onChange={(e) => setMessage(e.target.value)} isRequired>
+                                <FormControl onChange={(e) => setMessage(e.target.value)} isInvalid={isMessageError} isRequired>
                                     <FormLabel>Message</FormLabel>
                                     <Textarea
                                         name="message"
@@ -165,6 +183,13 @@ const OContactSection = () => {
                                         rows={6}
                                         resize="none"
                                     />
+                                    {
+                                        isMessageError &&
+                                            <FormErrorMessage>
+                                                Message is required.
+                                            </FormErrorMessage>
+                                        
+                                    }
                                 </FormControl>
                                 {
                                     loading ?
@@ -180,7 +205,19 @@ const OContactSection = () => {
                                             isFullWidth>
                                                 Send Message
                                         </Button>
-                                    :
+                                    : isNameError || isEmailError || isMessageError ?
+                                        <Button
+                                            colorScheme="blue"
+                                            bg="blue.400"
+                                            color="white"
+                                            isDisabled
+                                            _hover={{
+                                                bg: 'blue.500',
+                                            }}
+                                            isFullWidth>
+                                                Send Message
+                                        </Button>
+                                    : 
                                         <Button
                                             colorScheme="blue"
                                             bg="blue.400"
