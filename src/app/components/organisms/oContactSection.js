@@ -75,20 +75,20 @@ const OContactSection = () => {
     }
 
     return (
-        <Container maxW={'4xl'} py={{ base: 35, md: 30 }} centerContent>
+        <Container maxW={'4xl'} py={{ base: 35, md: 40 }} centerContent>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
 
                 <VStack w={'full'} spacing={{ base: 4, md: 8, lg: 8 }}>
                     <Heading fontSize={{ base: '4xl', md: '5xl', }}>
-                        Let's talk !
+                        Let's have a talk !
                     </Heading>
 
-                    <Heading>
+                    <Heading fontSize={{ base: 'lg', lg: '2xl' }}>
                         Feel free to contact me 📫
                     </Heading>
 
-                    <Stack w={'full'} spacing={{ base: 4, md: 8, lg: 20 }} p={5} direction={{ base: 'column', md: 'row' }}>
-                        <Stack align="center" justify="space-around" direction={{ base: 'row', md: 'column' }}>
+                    <Stack w={'full'} spacing={{ base: 4, md: 8 }} p={5} direction={{ base: 'column' }}>
+                        <Stack align="center" justify="space-around" direction={{ base: 'row' }}>
                             <Tooltip label={hasCopied ? 'Email Copied!' : 'Copy Email'} closeOnClick={false} hasArrow>
                                 <IconButton aria-label="email" variant="ghost" size="lg" fontSize="3xl" icon={<MdEmail />} _hover={{ bg: 'blue.500', color: useColorModeValue('white', 'gray.700'), }} onClick={onCopy} isRound />
                             </Tooltip>
