@@ -10,7 +10,7 @@ import {
   
 const OHeroSection = () => {
     return (
-        <Container maxW={'4xl'} py={{ base: 30, md: 30 }} centerContent>
+        <Container maxW={'4xl'} py={{ base: 30, md: 40 }} centerContent>
             <Flex h={{ base: "auto" }} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <Stack as={Box} textAlign={{ base: 'center', lg: 'start' }}>
                     <Heading fontWeight={'bold'} fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }} lineHeight={'110%'}>

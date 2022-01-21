@@ -79,15 +79,13 @@ const OContactSection = () => {
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
 
                 <VStack w={'full'} spacing={{ base: 4, md: 8, lg: 8 }}>
-                    <Heading
-                    fontSize={{
-                        base: '4xl',
-                        md: '5xl',
-                    }}>
+                    <Heading fontSize={{ base: '4xl', md: '5xl', }}>
                         Let's talk !
                     </Heading>
 
-                    <Heading></Heading>
+                    <Heading>
+                        Feel free to contact me 📫
+                    </Heading>
 
                     <Stack w={'full'} spacing={{ base: 4, md: 8, lg: 20 }} p={5} direction={{ base: 'column', md: 'row' }}>
                         <Stack align="center" justify="space-around" direction={{ base: 'row', md: 'column' }}>
@@ -127,6 +125,7 @@ const OContactSection = () => {
 
                         <Box w={'full'} bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" p={8} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
                             <VStack spacing={5}>
+                                
                                 <FormControl onChange={(e) => setName(e.target.value)} isRequired>
                                     <FormLabel>Name</FormLabel>
                                     <InputGroup>
@@ -134,6 +133,7 @@ const OContactSection = () => {
                                         <Input type="text" name="name" placeholder="Your Name" />
                                     </InputGroup>
                                 </FormControl>
+
                                 <FormControl onChange={(e) => setEmail(e.target.value)} isRequired>
                                     <FormLabel>Email</FormLabel>
                                     <InputGroup>
@@ -145,6 +145,7 @@ const OContactSection = () => {
                                             zIndex={0}
                                         />
                                     </InputGroup>
+                                    
                                 </FormControl>
 
                                 <FormControl onChange={(e) => setInquiry(e.target.value)} isRequired>
@@ -177,7 +178,7 @@ const OContactSection = () => {
                                             isLoading
                                             loadingText='Submitting'
                                             isFullWidth>
-                                            Send Message
+                                                Send Message
                                         </Button>
                                     :
                                         <Button
@@ -191,7 +192,7 @@ const OContactSection = () => {
                                                 sendEmail(name, email, inquiry, message)
                                             }}
                                             isFullWidth>
-                                            Send Message
+                                                Send Message
                                         </Button>
                                 }
                                 
