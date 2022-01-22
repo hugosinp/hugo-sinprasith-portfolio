@@ -14,14 +14,14 @@ const HomePageView = () => {
         if(inView){
             animation.start({
                 scale: 1,
-                duration: 2
+                duration: 2.5
             })
         }
         
         if(!inView){
             animation.start({
                 scale: 0,
-                duration: 2
+                duration: 2.5
             })
         }
     }

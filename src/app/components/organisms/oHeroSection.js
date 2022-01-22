@@ -17,7 +17,7 @@ const OHeroSection = () => {
                         Hugo Sinprasith
                     </Heading>
                     <Text fontSize={'xl'} as={'span'} color={'blue.300'}>
-                        Full-stack Developer based in Paris.
+                        <Text as="span" fontWeight={'bold'}>Full-stack Developer</Text> based in Paris.
                     </Text>
                 </Stack>
                 <Stack mt={{ base: 10 }}>

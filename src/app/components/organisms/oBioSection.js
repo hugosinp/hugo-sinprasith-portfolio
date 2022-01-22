@@ -5,7 +5,7 @@ import {
     Container,
     Heading,
     Image,
-    Text
+    Text,
 } from '@chakra-ui/react';
 
 import me from '../../static/img/me.png';

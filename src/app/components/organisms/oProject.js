@@ -49,7 +49,7 @@ const OProject = ({ project }) => {
                         {project.head}
                         {
                             project.tech.map(tech => (
-                                <Tag key={tech.name} m={1} bg={'blue.500'} color={'blue.100'} textTransform={'uppercase'} letterSpacing={1.1}>
+                                <Tag key={tech.name} m={1} colorScheme='teal' textTransform={'uppercase'} letterSpacing={1.1}>
                                     {tech.name}
                                 </Tag>
                             ))
