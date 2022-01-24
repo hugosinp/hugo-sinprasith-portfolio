@@ -1,10 +1,10 @@
-# Hugo Sinprasith's Portfolio
+# Hugo Sinprasith's Portfolio 🌘
 
 Welcome to my personal portfolio !    
 Feel free to give me your opinion on every aspects (technical, architecture or design).  
 If you find any problems, bugs do not hesitate to report them !
 
-==> https://www.hugosinprasith.com/
+Link ==> https://www.hugosinprasith.com/
 
 ## Stack
 
