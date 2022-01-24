@@ -1,3 +1,12 @@
-# hugo-sinprasith-portfolio
+# Hugo Sinprasith's Portfolio
 
-https://hugo-sinprasith-portfolio.herokuapp.com/
+Welcome to my personal portfolio !    
+Feel free to give me your opinion on every aspects (technical, architecture or design).  
+If you find any problems, bugs do not hesitate to report them !
+
+==> https://www.hugosinprasith.com/
+
+## Stack
+
+* [ReactJS](https://reactjs.org/)
+* [Chakra UI](https://chakra-ui.com/)
