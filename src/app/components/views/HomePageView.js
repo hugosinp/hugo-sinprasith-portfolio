@@ -14,26 +14,26 @@ const HomePageView = () => {
         if(inView){
             animation.start({
                 scale: 1,
-                duration: 2.5
+                duration: 2
             })
         }
         
         if(!inView){
             animation.start({
                 scale: 0,
-                duration: 2.5
+                duration: 2
             })
         }
     }
 
     return (
         <Container maxW="container.xl" p={0}>
-            <HeroView id="hero" fadeIn={fadeIn}/>
-            <BioView id="bio" fadeIn={fadeIn}/>
-            <SkillView id="skills" fadeIn={fadeIn}/>
-            <ProjectView id="projects" fadeIn={fadeIn}/>
-            <EntrepriseView id="experiences" fadeIn={fadeIn}/>
-            <ContactView id="contact" fadeIn={fadeIn}/>
+            <HeroView id="hero" fadeIn={fadeIn} />
+            <BioView id="bio" />
+            <SkillView id="skills" />
+            <ProjectView id="projects" />
+            <EntrepriseView id="experiences" />
+            <ContactView id="contact" />
         </Container>
     )
 }

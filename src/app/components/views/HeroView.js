@@ -18,14 +18,13 @@ const HeroView = ({ id, fadeIn }) => {
     return (
         <div id={id}>
             <motion.div animate={animation}>
-                <Container maxW="container.xl" p={0}  ref={ref}>
+                <Container maxW="container.xl" p={0} ref={ref}>
                     <Flex height={{ base: '100vh' }} align={'center'}>
                         <OHeroSection />
                     </Flex>
                 </Container>
             </motion.div>
         </div>
-        
     )
 }
 

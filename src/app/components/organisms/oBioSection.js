@@ -4,8 +4,13 @@ import {
     VStack,
     Container,
     Heading,
-    Image,
     Text,
+    Stack,
+    Badge,
+    useColorModeValue,
+    Box,
+    Center,
+    Avatar,
 } from '@chakra-ui/react';
 
 import me from '../../static/img/me.png';
@@ -15,19 +20,33 @@ const OBioSection = () => {
         <Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
             <Flex h={{ base: "auto", lg: "100vh" }} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <VStack p={5}>
-                    <Heading align={'center'}>
-                        Hugo Sinprasith
-                    </Heading>
-                    <Heading pb={5} size={5} color={'gray.400'} fontStyle={'italic'} align={'center'}>
-                        Student, Apprentice & Freelance
-                    </Heading>
-                    <Image
-                        objectFit={'cover'}
-                        borderRadius='full'
-                        boxSize={{ base: '200px', md:'150px' }}
-                        src={me}
-                        alt='Hugo Sinprasith'
-                    />
+                    <Center py={6}>
+                        <Box maxW={'320px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'2xl'} rounded={'xl'} p={6} textAlign={'center'}>
+
+                            <Avatar size="2xl" src={ me } alt={'Hugo Sinprasith'} mb={4} pos={'relative'} css={{ border: '2px solid grey', }}/>
+                            <Heading fontSize={'2xl'} fontFamily={'body'}>
+                                Hugo Sinprasith
+                            </Heading>
+                            <Text fontWeight={600} color={'gray.500'} fontStyle={'italic'} mb={4}>
+                                Student, Apprentice & Freelance
+                            </Text>
+                            <Text textAlign={'center'} color={useColorModeValue('gray.700', 'gray.400')} px={3}>
+                            </Text>
+
+                            <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
+                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')}  fontWeight={'400'}>
+                                    #full-stack
+                                </Badge>
+                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')} fontWeight={'400'}>
+                                    #reactjs
+                                </Badge>
+                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')} fontWeight={'400'}>
+                                    #django
+                                </Badge>
+                            </Stack>
+
+                        </Box>
+                    </Center>
                 </VStack>
                 <VStack p={{ base: 5, lg: 20 }}>
                     <Heading>
