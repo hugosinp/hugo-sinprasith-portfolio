@@ -26,7 +26,7 @@ const OProject = ({ project }) => {
 
     return (
         <Center py={2} onClick={onOpen} cursor={'pointer'} _hover={{ transform: "scale3d(1.05, 1.05, 1)", transition: "transform 0.15s ease-in-out" }}>
-            <Box maxW={'445px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'2xl'} rounded={'md'} p={6} overflow={'hidden'}>
+            <Box maxW={'445px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'xl'} rounded={'md'} p={6} overflow={'hidden'}>
                 <Box h={'210px'} mt={-6} mx={-6} mb={6} pos={'relative'}>
                     <lottie-player src={project.image}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
                 </Box>
