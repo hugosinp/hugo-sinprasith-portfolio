@@ -4,7 +4,7 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     html: {
-      scrollBehavior: 'smooth'
+      scrollBehavior: 'smooth',
     },
     body: {
       bg: mode('#f0e7db', '#1A202C')(props),
@@ -12,10 +12,15 @@ const styles = {
   })
 }
 
+const fonts = {
+  heading: 'Poppins',
+  body: 'Poppins',
+}
+
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: false
 }
 
-const theme = extendTheme({ config, styles })
+const theme = extendTheme({ config, styles, fonts })
 export default theme

@@ -14,7 +14,7 @@ import { usProjects } from '../../static/data';
 
 const OProjectSection = () => {
     return (
-        <Container maxW={'xl'} py={{ base: 35, md: 30 }}>
+        <Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
                 
                 <Stack p={5} align={'center'}>
@@ -29,7 +29,7 @@ const OProjectSection = () => {
                     </Link>
                 </Stack>
                 
-                <Stack direction={{ base: "row", md: "row"}} maxWidth={{ base: '100%', md: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', md: 'hidden'}} px={5} spacing={10}>
+                <Stack direction={{ base: "row", md: "row" }} maxWidth={{ base: '100%', lg: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', lg: 'hidden'}} px={5} spacing={10}>
                     {
                         usProjects.map(project => (
                             <OProject
