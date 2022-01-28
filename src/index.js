@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ChakraProvider } from '@chakra-ui/react'
+import './app/static/index.css';
+
 
 import theme from './app/static/theme';
 import "@fontsource/poppins"
