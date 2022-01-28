@@ -18,7 +18,7 @@ const OEntrepriseSection = () => {
     }
 
     return (
-        <Container maxW={'4xl'} py={{ base: 35, md: 30 }} align={'center'}>
+        <Container maxW={'4xl'} py={{ base: 65, md: 30 }} align={'center'}>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
                 
                 <VStack>
