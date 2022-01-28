@@ -12,10 +12,15 @@ const styles = {
   })
 }
 
+const fonts = {
+  heading: 'Poppins',
+  body: 'Poppins',
+}
+
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: false
 }
 
-const theme = extendTheme({ config, styles })
+const theme = extendTheme({ config, styles, fonts })
 export default theme

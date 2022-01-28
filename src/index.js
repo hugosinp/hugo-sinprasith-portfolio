@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { ChakraProvider } from '@chakra-ui/react'
 
 import theme from './app/static/theme';
+import "@fontsource/poppins"
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
