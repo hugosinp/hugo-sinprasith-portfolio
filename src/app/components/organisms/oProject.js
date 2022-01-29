@@ -18,6 +18,8 @@ import {
     ModalCloseButton,
     Button,
     Tag,
+    VStack,
+    HStack,
 } from '@chakra-ui/react';
 
 const OProject = ({ project }) => {
@@ -26,7 +28,7 @@ const OProject = ({ project }) => {
 
     return (
         <Center py={2} onClick={onOpen} cursor={'pointer'} _hover={{ transform: "scale3d(1.05, 1.05, 1)", transition: "transform 0.15s ease-in-out" }}>
-            <Box maxW={'250px'} w={'250px'} h={'380px'} maxH={'380px'}  bg={useColorModeValue('white', 'gray.900')} boxShadow={'lg'} rounded={'lg'} p={6}>
+            <Box maxW={'300px'} w={'300px'} h={'370px'} maxH={'370px'}  bg={useColorModeValue('white', 'gray.900')} boxShadow={'lg'} rounded={'lg'} p={6}>
                 <Box h={'210px'} mt={-6} mx={-6} mb={6} pos={'relative'}>
                     <lottie-player src={project.image}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
                 </Box>
@@ -42,18 +44,25 @@ const OProject = ({ project }) => {
 
             <Modal onClose={onClose} isOpen={isOpen} isCentered>
                 <ModalOverlay />
-                <ModalContent>
+                <ModalContent p={5}>
                     <ModalHeader>{project.title}</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        {project.head}
-                        {
-                            project.tech.map(tech => (
-                                <Tag key={tech.name} m={1} colorScheme='teal' textTransform={'uppercase'} letterSpacing={1.1}>
-                                    {tech.name}
-                                </Tag>
-                            ))
-                        }
+                        <VStack>
+                            <Text>
+                                {project.description}
+                            </Text>
+                            <HStack>
+                                {
+                                    project.tech.map(tech => (
+                                        <Tag key={tech.name} m={1} colorScheme='teal' textTransform={'uppercase'} letterSpacing={1.1}>
+                                            {tech.name}
+                                        </Tag>
+                                    ))
+                                }
+                            </HStack>
+                        </VStack>
+                        
                     </ModalBody>
                     <ModalFooter>
                         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>

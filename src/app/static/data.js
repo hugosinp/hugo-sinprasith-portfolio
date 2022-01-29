@@ -1,37 +1,40 @@
 export const usProjects = [
     {
         "id": 1,
-        "title": "E-commerce",
+        "title": "E-commerce 🌍",
         "head": "E-commerce website, ready to adapt and deploy",
         "tech": [
             {"name" : "React"}, 
-            {"name" : "Django REST Framework"}, 
+            {"name" : "Django"}, 
             {"name" : "Postgre"}
         ],
+        "description": "ReactJs and Django E-commerce project. Among other functionality, users can create their account, add items to their cart and purchase those items using Stripe and Paypal.",
         "link": "https://github.com/hugosinp",
         "image": "https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json"
     },
     {
         "id": 2,
-        "title": "MoonPortfolio",
+        "title": "MoonPortfolio 🌑",
         "head": "Cryptocurrency & Asset Portfolio Manager web app",
         "tech": [
             {"name" : "Django"}, 
             {"name" : "Python"}, 
             {"name" : "SQLite"}
         ],
+        "description": "User-Friendly Asset Manager which allows users to easily manage their assets whatever the broker is. A MoonUser can create a portfolio, dd new Assets, add transactions (Buy, Sell, Convert, Transfer), follow his portfolio's activity/performance and manage his expenses",
         "link": "https://github.com/hugosinp/MoonPortfolio",
         "image": "https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json"
     },    
     {
         "id": 3,
-        "title": "Neural Network",
-        "head": "Digit recognition neural network model in Python",
+        "title": "Neural Network 🧠",
+        "head": "Digit recognition neural network model creator in Python",
         "tech": [
             {"name" : "Python"}, 
             {"name" : "numpy"}, 
             {"name" : "Tkinter"}
         ],
+        "description": "Neural Network creator made in Python for my graduating project. The goal was to develop an app which allows the user to create a custom Neural Network capable of recognizing hand-written digits. Worked on it as a developer in a team of 4 students.",
         "link": "https://github.com/hugosinp/Neural-Network",
         "image": "https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json"
     },
