@@ -29,7 +29,7 @@ const OProjectSection = () => {
                     </Link>
                 </Stack>
                 
-                <Stack direction={{ base: "row", md: "row" }} maxWidth={{ base: '100%', lg: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', lg: 'hidden'}} px={5} spacing={10}>
+                <Stack direction={{ base: "row", md: "row" }} maxWidth={{ base: '100%', lg: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', lg: 'hidden'}} p={5} spacing={10}>
                     {
                         usProjects.map(project => (
                             <OProject

@@ -28,7 +28,7 @@ const OProject = ({ project }) => {
 
     return (
         <Center py={2} onClick={onOpen} cursor={'pointer'} _hover={{ transform: "scale3d(1.05, 1.05, 1)", transition: "transform 0.15s ease-in-out" }}>
-            <Box maxW={'300px'} w={'300px'} h={'370px'} maxH={'370px'}  bg={useColorModeValue('white', 'gray.900')} boxShadow={'lg'} rounded={'lg'} p={6}>
+            <Box maxW={'300px'} w={'300px'} h={'370px'} maxH={'370px'}  bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'lg'} p={6}>
                 <Box h={'210px'} mt={-6} mx={-6} mb={6} pos={'relative'}>
                     <lottie-player src={project.image}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
                 </Box>
@@ -44,7 +44,7 @@ const OProject = ({ project }) => {
 
             <Modal onClose={onClose} isOpen={isOpen} isCentered>
                 <ModalOverlay />
-                <ModalContent p={5}>
+                <ModalContent p={5} bg={useColorModeValue('#D9C7BA', 'gray.700')} >
                     <ModalHeader>{project.title}</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
@@ -55,7 +55,7 @@ const OProject = ({ project }) => {
                             <HStack>
                                 {
                                     project.tech.map(tech => (
-                                        <Tag key={tech.name} m={1} colorScheme='teal' textTransform={'uppercase'} letterSpacing={1.1}>
+                                        <Tag key={tech.name} m={1} colorScheme='blue' textTransform={'uppercase'} letterSpacing={1.1}>
                                             {tech.name}
                                         </Tag>
                                     ))
@@ -75,7 +75,7 @@ const OProject = ({ project }) => {
                                         Demo
                                     </Link>
                             }
-                            <Button onClick={onClose}>Close</Button>
+                            <Button onClick={onClose} bg={useColorModeValue('#D9C7BA', 'gray.600')}>Close</Button>
                         </Stack>
                     </ModalFooter>
                 </ModalContent>
