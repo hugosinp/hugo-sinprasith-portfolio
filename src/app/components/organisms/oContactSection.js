@@ -128,14 +128,14 @@ const OContactSection = () => {
                             </Link>
                         </Stack>
 
-                        <Box w={'full'} bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" p={8} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
+                        <Box w={'full'} bg={useColorModeValue('#D9C7BA', 'gray.700')} borderRadius="lg" p={8} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
                             <VStack spacing={5}>
                                 
                                 <FormControl onChange={(e) => setName(e.target.value)} isInvalid={isNameError} isRequired>
                                     <FormLabel>Name</FormLabel>
                                     <InputGroup>
                                         <InputLeftElement zIndex={0} children={<BsPerson />} />
-                                        <Input type="text" name="name" placeholder="Your Name" />
+                                        <Input type="text" name="name" placeholder="Your Name" borderColor={useColorModeValue('gray', 'gray.600')}/>
                                     </InputGroup>
                                     {
                                         isNameError &&
@@ -155,6 +155,7 @@ const OContactSection = () => {
                                             name="email"
                                             placeholder="Your Email"
                                             zIndex={0}
+                                            borderColor={useColorModeValue('gray', 'gray.600')}
                                         />
                                     </InputGroup>
                                     {
@@ -168,7 +169,7 @@ const OContactSection = () => {
 
                                 <FormControl onChange={(e) => setInquiry(e.target.value)} isRequired>
                                     <FormLabel>Type of inquiry</FormLabel>
-                                    <Select id='inquiry'>
+                                    <Select id='inquiry' borderColor={useColorModeValue('gray', 'gray.600')}>
                                         <option>Business</option>
                                         <option>Collaboration</option>
                                         <option>Other</option>
@@ -182,6 +183,7 @@ const OContactSection = () => {
                                         placeholder="Your Message"
                                         rows={6}
                                         resize="none"
+                                        borderColor={useColorModeValue('gray', 'gray.600')}
                                     />
                                     {
                                         isMessageError &&
@@ -195,7 +197,7 @@ const OContactSection = () => {
                                     loading ?
                                         <Button
                                             colorScheme="blue"
-                                            bg="blue.400"
+                                            bg="blue.100"
                                             color="white"
                                             _hover={{
                                                 bg: 'blue.500',
@@ -208,7 +210,7 @@ const OContactSection = () => {
                                     : isNameError || isEmailError || isMessageError ?
                                         <Button
                                             colorScheme="blue"
-                                            bg="blue.400"
+                                            bg="blue.100"
                                             color="white"
                                             isDisabled
                                             _hover={{

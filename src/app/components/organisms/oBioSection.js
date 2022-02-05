@@ -21,26 +21,27 @@ const OBioSection = () => {
             <Flex h={{ base: "auto", lg: "100vh" }} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <VStack p={5}>
                     <Center py={6}>
-                        <Box maxW={'320px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'2xl'} rounded={'xl'} p={6} textAlign={'center'}>
+                        <Box maxW={'320px'} w={'full'} bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'xl'} p={6} textAlign={'center'}>
 
                             <Avatar size="2xl" src={ me } alt={'Hugo Sinprasith'} mb={4} pos={'relative'} css={{ border: '2px solid grey', }}/>
-                            <Heading fontSize={'2xl'} fontFamily={'body'}>
-                                Hugo Sinprasith
-                            </Heading>
-                            <Text fontWeight={600} color={'gray.500'} fontStyle={'italic'} mb={4}>
-                                Student, Apprentice & Freelance
-                            </Text>
-                            <Text textAlign={'center'} color={useColorModeValue('gray.700', 'gray.400')} px={3}>
-                            </Text>
+                            
+                            <Stack>
+                                <Heading fontSize={'2xl'} fontFamily={'body'}>
+                                    Hugo Sinprasith
+                                </Heading>
+                                <Text fontWeight={600} color={'gray.500'} fontStyle={'italic'} mb={4}>
+                                    Student, Apprentice & Freelance
+                                </Text>
+                            </Stack>
 
                             <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')}  fontWeight={'400'}>
+                                <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'}  fontWeight={'400'}>
                                     #full-stack
                                 </Badge>
-                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')} fontWeight={'400'}>
+                                <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'} fontWeight={'400'}>
                                     #reactjs
                                 </Badge>
-                                <Badge px={2} py={1} bg={useColorModeValue('gray.50', 'gray.800')} fontWeight={'400'}>
+                                <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'} fontWeight={'400'}>
                                     #django
                                 </Badge>
                             </Stack>
@@ -50,7 +51,7 @@ const OBioSection = () => {
                 </VStack>
                 <VStack p={{ base: 5, lg: 20 }}>
                     <Heading>
-                        About me
+                        About me 🚀
                     </Heading>
                     <Text align={'justify'}>
                         Hi I'm Hugo, a Computer Science Enthusiast. 
