@@ -81,7 +81,7 @@ const OContactSection = () => {
     }
 
     return (
-        <Container maxW={'4xl'} py={{ base: 35, md: 40 }} centerContent>
+        <Container maxW={'4xl'} py={{ base: 35, md: 35 }} centerContent>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
 
                 <VStack w={'full'} spacing={{ base: 4, md: 8, lg: 8 }}>
