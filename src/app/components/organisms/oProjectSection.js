@@ -5,9 +5,11 @@ import {
     Heading,
     Text,
     Stack,
-    Link
+    Link,
+    IconButton,
+    useColorModeValue
 } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
+import { BsGithub } from 'react-icons/bs';
 
 import OProject from '../organisms/oProject';
 import { usProjects } from '../../static/data';
@@ -19,13 +21,23 @@ const OProjectSection = () => {
                 
                 <Stack p={5} align={'center'}>
                     <Heading>
-                        Featured <Text as={'span'} color={'blue.400'}>Projects</Text>
+                        Featured <Text as={'span'} fontWeight={'extrabold'} bgClip='text' bgGradient='linear(to-l, #4DB8FF, #19A3FF)'>Projects</Text>
                     </Heading>
                     <Heading size='md' color={'gray.400'}>
                         Follow my GitHub for more !
                     </Heading>
                     <Link href='https://github.com/hugosinp' isExternal>
-                        <FaGithub size={40}/>
+                        <IconButton
+                            aria-label="github"
+                            variant="ghost"
+                            size="lg"
+                            icon={<BsGithub size={40}/>}
+                            _hover={{
+                                bg: 'blue.500',
+                                color: useColorModeValue('white', 'gray.700'),
+                            }}
+                            isRound
+                        />
                     </Link>
                 </Stack>
                 
