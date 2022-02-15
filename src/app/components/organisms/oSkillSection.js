@@ -34,14 +34,14 @@ const OSkillSection = ({ fadeIn }) => {
         <Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
                 
-                <Stack py={20}>
+                <Stack py={39}>
                     <Heading fontStyle={'italic'} align={'center'}>
                         Learn, experience and 
                         <Text fontWeight={'extrabold'} as={'span'} bgClip='text' bgGradient='linear(to-r, #4DB8FF, #19A3FF)'> repeat.</Text>
                     </Heading>
                 </Stack>
                 
-                <Stack direction={{ base: "column", lg: "row" }} spacing={{ base: 10, lg: 20 }}>
+                <Stack direction={{ base: "column", lg: "row" }} p={5} spacing={{ base: 10, lg: 20 }}>
                     
                     <VStack spacing={10}>
                         <Heading align={'center'}>
