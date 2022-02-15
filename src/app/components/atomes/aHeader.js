@@ -32,7 +32,6 @@ import {
 
 import { GiMoon } from 'react-icons/gi';
 
-
 const AHeader = () => {
 
     const { isOpen, onToggle } = useDisclosure();
@@ -61,7 +60,7 @@ const AHeader = () => {
           </Flex>
   
           <HStack flex={{ base: 1, md: 0 }} px={{ xl: 100, }} justify={'flex-end'} spacing={6}>
-            <Button onClick={toggleColorMode}>
+            <Button onClick={toggleColorMode} borderRadius={'full'}  bg={useColorModeValue('#f4ede4', 'gray.700')}>
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </HStack>
