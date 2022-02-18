@@ -20,7 +20,10 @@ import {
     Tag,
     VStack,
     HStack,
+    Avatar
 } from '@chakra-ui/react';
+
+import swincaLogo from '../../static/img/swinca.png'
 
 const OProject = ({ project }) => {
 
@@ -29,8 +32,15 @@ const OProject = ({ project }) => {
     return (
         <Center py={2} onClick={onOpen} cursor={'pointer'} _hover={{ transform: "scale3d(1.05, 1.05, 1)", transition: "transform 0.15s ease-in-out" }}>
             <Box maxW={'300px'} w={'300px'} h={'370px'} maxH={'370px'}  bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'lg'} p={6}>
-                <Box h={'210px'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-                    <lottie-player src={project.image}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
+                <Box h={'210px'} mt={-6} mx={-6} mb={6} pos={'relative'} align={'center'}>
+                    {
+                        project.lottie_link ?
+                            <lottie-player src={project.lottie_link}  background="transparent" speed="1" style={{ margin:"auto", width: "200px", height: "200px" }} loop autoplay></lottie-player>
+                        : project.image === "swinca" ?
+                            <Avatar size='2xl' name='swinca' src={swincaLogo} my={'10'} />
+                        :
+                            ""
+                    }
                 </Box>
                 <Stack>
                     <Heading color={useColorModeValue('gray.700', 'white')} fontSize={'2xl'} fontFamily={'body'}>
