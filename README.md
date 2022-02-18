@@ -9,6 +9,8 @@
     If you find any problems, bugs do not hesitate to report them !
 </p>
 
+![demo](https://raw.githubusercontent.com/hugosinp/hugo-sinprasith-portfolio/main/src/app/static/img/home.png)
+
 ## Stack
 
 * [ReactJS](https://reactjs.org/)
