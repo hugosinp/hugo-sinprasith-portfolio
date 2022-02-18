@@ -1,10 +1,15 @@
-# Hugo Sinprasith's Portfolio 🌘
+<h1 align="center">
+  🌘 Hugo Sinprasith's Portfolio 🌘
+</h1>
+<p align="center">
+    Here's my personal portfolio ! ==> <a href="https://www.hugosinprasith.com" target="_blank">hugosinprasith.com</a>
+</p>
+<p align="center">
+    Feel free to give me your opinion on every aspects (technical, architecture or design).  
+    If you find any problems, bugs do not hesitate to report them !
+</p>
 
-Welcome to my personal portfolio !    
-Feel free to give me your opinion on every aspects (technical, architecture or design).  
-If you find any problems, bugs do not hesitate to report them !
-
-Link ==> https://www.hugosinprasith.com/
+![demo](https://raw.githubusercontent.com/hugosinp/hugo-sinprasith-portfolio/main/src/app/static/img/home.png)
 
 ## Stack
 
