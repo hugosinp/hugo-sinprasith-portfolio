@@ -7,7 +7,9 @@ import {
     Stack,
     Link,
     IconButton,
-    useColorModeValue
+    useColorModeValue,
+    useBreakpointValue,
+    SimpleGrid,
 } from '@chakra-ui/react';
 import { BsGithub } from 'react-icons/bs';
 
@@ -15,8 +17,12 @@ import OProject from '../organisms/oProject';
 import { usProjects } from '../../static/data';
 
 const OProjectSection = () => {
+
+    const gridDisplay = useBreakpointValue({ base: 'none', lg: 'grid' })
+    const stackDisplay = useBreakpointValue({ base: 'flex', lg: 'none' })
+
     return (
-        <Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
+        <Container maxW={'5xl'} py={{ base: 35, md: 30 }}>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
                 
                 <Stack p={5} align={'center'}>
@@ -40,8 +46,19 @@ const OProjectSection = () => {
                         />
                     </Link>
                 </Stack>
-                
-                <Stack direction={{ base: "row", md: "row" }} maxWidth={{ base: '100%', lg: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', lg: 'hidden'}} p={5} spacing={10}>
+
+                <SimpleGrid pt={5} display={gridDisplay} columns={3} spacing='40px'>
+                    {
+                        usProjects.map(project => (
+                            <OProject
+                                key={project.id}
+                                project={project}
+                            />
+                        ))
+                    }
+                </SimpleGrid>
+
+                <Stack display={stackDisplay} direction={'row'} maxWidth={{ base: '100%', lg: 'none' }} overflowY={'hidden'} overflowX={{ base: 'auto', lg: 'hidden'}} p={5} spacing={5}>
                     {
                         usProjects.map(project => (
                             <OProject
