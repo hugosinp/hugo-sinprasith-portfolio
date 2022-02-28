@@ -33,7 +33,7 @@ const OProject = ({ project }) => {
 
     return (
         <Center py={2} onClick={onOpen} cursor={'pointer'} _hover={{ transform: "scale3d(1.05, 1.05, 1)", transition: "transform 0.15s ease-in-out" }}>
-            <Box maxW={'300px'} w={'300px'} h={{ base: '320px', lg: '350px' }} maxH={{ base: '320px', lg: '350px' }}  bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'lg'} p={6}>
+            <Box maxW={'300px'} w={'300px'} h={'320px'} maxH={'320px'}  bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'lg'} p={6}>
                 <Box h={'180px'} mt={-6} mx={-6} mb={6} pos={'relative'} align={'center'}>
                     {
                         project.lottie_link ?
