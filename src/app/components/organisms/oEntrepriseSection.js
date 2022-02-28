@@ -26,7 +26,7 @@ const OEntrepriseSection = () => {
                         Interested in <Text as='span' fontWeight={'extrabold'} bgClip='text' bgGradient='linear(to-r, #4DB8FF, #19A3FF)'>collaboration ?</Text>
                     </Heading>
                     <Heading size={'md'}>
-                        The companies have trusted me. Why not you ?
+                        These companies have trusted me. Why not you ?
                     </Heading>
 
                     <Box pt={10}>

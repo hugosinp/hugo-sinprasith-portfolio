@@ -1,5 +1,18 @@
 export const usProjects = [
     {
+        "id": 5,
+        "title": "GenkiRender 🖌️",
+        "head": "Solidarity rendering plateform",
+        "tech": [
+            {"name" : "ReactJS"}, 
+            {"name" : "SpringBoot"}, 
+            {"name" : "Neo4j"}, 
+        ],
+        "description": "Working as a Lead Front-end Developer on GenkiRender web app",
+        "link": "https://github.com/hugosinp",
+        "image": "genkirender"
+    },
+    {
         "id": 1,
         "title": "E-commerce 🌍",
         "head": "E-commerce website, ready to adapt and deploy",
@@ -28,7 +41,7 @@ export const usProjects = [
     {
         "id": 3,
         "title": "Neural Network 🧠",
-        "head": "Digit recognition neural network model creator in Python",
+        "head": "Digit recognition neural network model creator",
         "tech": [
             {"name" : "Python"}, 
             {"name" : "numpy"}, 
@@ -41,7 +54,7 @@ export const usProjects = [
     {
         "id": 4,
         "title": "Swinca Coin 🏦",
-        "head": "Blockchain finance through real-estate decentralized projects",
+        "head": "Blockchain finance through real-estate projects",
         "tech": [
             {"name" : "ReactJS"}, 
             {"name" : "Firebase"}, 
