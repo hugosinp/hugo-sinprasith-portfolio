@@ -83,8 +83,7 @@ const OContactSection = () => {
     return (
         <Container maxW={'4xl'} py={{ base: 35, md: 35 }} centerContent>
             <Flex h={{ base: "auto" }} direction={{ base: "column" }} align={'center'}>
-
-                <VStack w={'full'} spacing={{ base: 4, md: 8, lg: 8 }}>
+                <VStack w={'full'} mb={20} spacing={{ base: 4, md: 8, lg: 8 }}>
                     <Heading fontSize={{ base: '4xl', md: '5xl', }}>
                         Let's have a <Text as='span' fontWeight={'extrabold'} bgClip='text' bgGradient='linear(to-r, #4DB8FF, #19A3FF)'>talk !</Text>
                     </Heading>
