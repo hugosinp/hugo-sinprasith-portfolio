@@ -1,4 +1,6 @@
 import React from 'react'
+
+import { motion } from 'framer-motion'
 import {
     Box,
     Heading,
@@ -21,7 +23,15 @@ const OHeroSection = () => {
                     </Text>
                 </Stack>
                 <Stack mt={{ base: 10 }}>
-                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bufblleg.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{
+                            scale: 0.8,
+                            borderRadius: "100%"
+                        }}
+                    >
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_bufblleg.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                    </motion.div>
                 </Stack>
             </Flex>
         </Container>
