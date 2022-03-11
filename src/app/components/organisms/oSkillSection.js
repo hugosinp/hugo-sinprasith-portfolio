@@ -49,13 +49,13 @@ const OSkillSection = ({ fadeIn }) => {
                         <Heading align={'center'}>
                             Skills & Tech Stack
                         </Heading>
-                        <List spacing={4}>
+                        <List spacing={4} align={'justify'}>
                             <ListItem>
                                 🌱 Front-end dev, back-end dev, REST API building, database management, 
                                     I've worked on many web apps from conception to deployment.
                             </ListItem>
                             <ListItem>
-                                ⭐ Python and JavaScript are my favorite programming languages !
+                                ⭐ Python and JavaScript are my favorite scripting languages !
                             </ListItem>
                             <ListItem>
                                 🔭 I remain aware of the newest technologies 
