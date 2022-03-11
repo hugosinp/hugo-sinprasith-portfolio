@@ -11,7 +11,9 @@ import {
     Image,
     HStack,
     VStack,
-    Box
+    Box,
+    List,
+    ListItem,
 } from '@chakra-ui/react';
 
 import reactLogo from '../../static/img/react-logo.svg';
@@ -47,14 +49,19 @@ const OSkillSection = ({ fadeIn }) => {
                         <Heading align={'center'}>
                             Skills & Tech Stack
                         </Heading>
-                        <Text align={'justify'}>
-                            Throughout my programming journey, I've experienced many technologies and IT concepts.
-                            Full-Stack Developpment became my main expertise. <br /> <br />
-                            Front-end dev, back-end dev, REST API building, database management, 
-                            I've worked on many web apps from conception to deployment. <br /><br />
-                            Python and JavaScript are my favorite programming languages but I remain aware of the newest technologies 
-                            on the market and do not miss an occasion to learn more.
-                        </Text>
+                        <List spacing={4}>
+                            <ListItem>
+                                🌱 Front-end dev, back-end dev, REST API building, database management, 
+                                    I've worked on many web apps from conception to deployment.
+                            </ListItem>
+                            <ListItem>
+                                ⭐ Python and JavaScript are my favorite programming languages !
+                            </ListItem>
+                            <ListItem>
+                                🔭 I remain aware of the newest technologies 
+                                on the market and do not miss an occasion to learn more.
+                            </ListItem>
+                        </List>
                     </VStack>
 
                     <VStack spacing={2} align={'center'}>

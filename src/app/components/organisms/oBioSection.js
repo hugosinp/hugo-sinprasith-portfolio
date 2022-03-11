@@ -52,13 +52,13 @@ const OBioSection = () => {
 
                                 <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
                                     <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'}  fontWeight={'400'}>
-                                        #full-stack
+                                        #python
                                     </Badge>
                                     <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'} fontWeight={'400'}>
-                                        #reactjs
+                                        #javascript
                                     </Badge>
                                     <Badge px={2} py={1} colorScheme={'blue'} borderRadius={'md'} fontWeight={'400'}>
-                                        #django
+                                        #java
                                     </Badge>
                                 </Stack>
 
