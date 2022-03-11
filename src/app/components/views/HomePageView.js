@@ -29,9 +29,9 @@ const HomePageView = () => {
     return (
         <Container maxW="container.xl" p={0}>
             <HeroView id="hero" fadeIn={fadeIn} />
-            <BioView id="bio" />
+            <BioView id="bio" fadeIn={fadeIn} />
             <SkillView id="skills" fadeIn={fadeIn} />
-            <ProjectView id="projects" />
+            <ProjectView id="projects" fadeIn={fadeIn} />
             <EntrepriseView id="experiences" />
             <ContactView id="contact" />
         </Container>
