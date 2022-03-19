@@ -3,7 +3,7 @@ import { Container, Flex } from '@chakra-ui/react'
 
 import OEntrepriseSection from '../organisms/oEntrepriseSection';
 
-const EntrepriseView = ({ id, fadeIn }) => {
+const EntrepriseView = ({ id }) => {
 
     return (
         <Container maxW="container.xl" p={0} id={id}>
