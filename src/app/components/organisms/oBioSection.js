@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
-import { motion } from 'framer-motion'
 import {
     Flex,
     VStack,
@@ -17,26 +18,23 @@ import {
 
 import me from '../../static/img/me.png';
 
-const OBioSection = () => {
+const OBioSection = ({ fadeIn }) => {
+
+    const {ref, inView} = useInView({ threshold: 0.4 })
+    const animation = useAnimation()
+
+    useEffect(() => {
+        fadeIn(animation, inView)
+    }, [fadeIn, animation, inView])
+
     return (
         <Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
             <Flex h={{ base: "auto", lg: "100vh" }} direction={{ base: "column", lg: "row"}} align={'center'}>
                 <VStack p={5}>
                     <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{
-                            scale: 0.8,
-                            borderRadius: "100%"
-                        }}
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{
-                            type: "spring",
-                            stiffness: 260,
-                            damping: 20
-                        }}
+                        animate={animation}
                     >
-                        <Center py={6}>
+                        <Center py={6} ref={ref}>
                             <Box maxW={'320px'} w={'full'} bg={useColorModeValue('#D9C7BA', 'gray.900')} boxShadow={'md'} rounded={'xl'} p={6} textAlign={'center'}>
 
                                 <Avatar size="2xl" src={ me } alt={'Hugo Sinprasith'} mb={4} pos={'relative'} css={{ border: '2px solid grey', }}/>
