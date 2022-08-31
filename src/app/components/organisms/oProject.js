@@ -27,6 +27,7 @@ import {
 
 import swincaLogo from '../../static/img/swinca.png'
 import genkirenderLogo from '../../static/img/genkirender.svg'
+import watchelseLogo from '../../static/img/watchelse.png'
 
 const OProject = ({ project }) => {
 
@@ -62,7 +63,14 @@ const OProject = ({ project }) => {
                                     src={genkirenderLogo}
                                     alt='genkirender'
                                 />
-                            :
+                            : project.image === "watchelse" ?
+                                <Image
+                                    boxSize='200px'
+                                    objectFit='contain'
+                                    src={watchelseLogo}
+                                    alt='watchelse'
+                                />
+                            : 
                                 ""
                         }
                     </Box>

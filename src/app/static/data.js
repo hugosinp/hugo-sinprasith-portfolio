@@ -1,5 +1,18 @@
 export const usProjects = [
     {
+        "id": 6,
+        "title": "Watch Else ⌚",
+        "head": "Vinted-like watch selling mobile app",
+        "tech": [
+            {"name" : "React Native"}, 
+            {"name" : "NestJS"}, 
+            {"name" : "MongoDB"}, 
+        ],
+        "description": "Currently working as a Lead FullStack-end Developer on Watch Else mobile app",
+        "link": "https://github.com/hugosinp",
+        "image": "watchelse"
+    },
+    {
         "id": 5,
         "title": "GenkiRender 🖌️",
         "head": "Solidarity rendering plateform",
@@ -8,7 +21,7 @@ export const usProjects = [
             {"name" : "SpringBoot"}, 
             {"name" : "Neo4j"}, 
         ],
-        "description": "Working as a Lead Front-end Developer on GenkiRender web app",
+        "description": "Worked as a Lead Front-end Developer on GenkiRender web app",
         "link": "https://github.com/hugosinp",
         "image": "genkirender"
     },
