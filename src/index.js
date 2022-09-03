@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
 import './app/static/index.css';
 
-
 import theme from './app/static/theme';
-import "@fontsource/poppins"
+import '@fontsource/poppins';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <ChakraProvider theme={theme}>
-    <App />
-  </ChakraProvider>,
-  document.getElementById('root')
+	<ChakraProvider theme={theme}>
+		<App />
+	</ChakraProvider>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
