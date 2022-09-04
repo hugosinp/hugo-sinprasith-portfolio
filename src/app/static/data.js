@@ -67,7 +67,7 @@ export const usEntreprises = [
 		job_type: 'Internship',
 		description: [
 			{
-				paragraph: 'Developed RPA Software with UIPath tools',
+				paragraph: 'Developed RPA Software with UIPath',
 			},
 			{
 				paragraph: 'Automatised Data Extraction',
@@ -103,10 +103,10 @@ export const usEntreprises = [
 		job_type: 'Apprenticeship',
 		description: [
 			{
-				paragraph: 'Implemented an ETL Process from Data Extraction to PowerBI Reporting export',
+				paragraph: 'Implemented an ETL Process from Data Extraction to PowerBI',
 			},
 			{
-				paragraph: 'Created a Data Warehouse',
+				paragraph: 'Created and managed a Data Warehouse',
 			},
 			{
 				paragraph: 'Led Python programming training sessions for new staff',
@@ -139,10 +139,10 @@ export const usEntreprises = [
 		job_type: 'Apprenticeship',
 		description: [
 			{
-				paragraph: "Developed a modern web app for Société Générale's bankers using ReactJS",
+				paragraph: "Developed a modern web app for Société Générale's bankers",
 			},
 			{
-				paragraph: 'Participated actively in the app life cycle, from conception to deployment',
+				paragraph: 'Participated actively in the app life cycle, including production',
 			},
 			{
 				paragraph: 'Operated Agile Software Developpment methods (SCRUM)',
