@@ -6,16 +6,18 @@ const HomePage = () => {
 
 	return (
 		<div>
+			<HomePageView />
 			<div style={{ 
 				display: useBreakpointValue({ base: 'none', lg: 'block' }),
-				width: '400px', 
-				height: '400px', 
+				width: '150px', 
+				height: '150px', 
 				background: '#66a6ff',
-				filter: 'blur(10rem)', 
+				filter: 'blur(5.5rem)', 
 				position: 'absolute', 
-				top: '-7%', 
-				right: '-22%', 
-				borderRadius: '100%', 
+				top: '0%', 
+				right: '0%', 
+				borderRadius: '100%',
+				overflowX: 'hidden',
 				zIndex: 2}}>
 					x
 			</div>
@@ -29,10 +31,10 @@ const HomePage = () => {
 				top: useBreakpointValue({ base: '6.4%', lg: '12%' }), 
 				left: useBreakpointValue({ base: '12%', lg: '-15%' }), 
 				borderRadius: '100%', 
+				overflowX: 'hidden',
 				zIndex: useBreakpointValue({ base: 1, lg: 2 }) }}>
 					x
 			</div>
-			<HomePageView />
 		</div>
 	);
 };
