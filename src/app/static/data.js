@@ -93,7 +93,7 @@ export const usEntreprises = [
 				name: 'Jira',
 			},
 		],
-		image: 'https://logo.clearbit.com/soprasteria.com',
+		image: 'https://scontent.fcdg1-1.fna.fbcdn.net/v/t31.18172-8/1496373_903318573036292_2170516332431007144_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=3hjztgnVmZgAX9TTech&_nc_ht=scontent.fcdg1-1.fna&oh=00_AT-IoSziECP3mrXZjP2HPZ3kTX-HEG6-Q4WRLQwAnPMWdw&oe=634677AF',
 	},
 	{
 		id: 2,
@@ -129,7 +129,7 @@ export const usEntreprises = [
 				name: 'VBA',
 			},
 		],
-		image: 'https://logo.clearbit.com/axamansard.com',
+		image: 'https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.6435-9/35287269_1732909900091231_6863156756013383680_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gLWzeAbWRk4AX8vGV0f&_nc_ht=scontent.fcdg1-1.fna&oh=00_AT8RfAjXTx7Y9RRdGw5P158h3rgMS2oLD7YGgvoEIyQ3sA&oe=6347DD96',
 	},
 	{
 		id: 3,
@@ -162,6 +162,6 @@ export const usEntreprises = [
 				name: 'Java Spring Boot',
 			},
 		],
-		image: 'https://logo.clearbit.com/societegenerale.fr',
+		image: 'https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.18169-9/12494654_1164077326945381_2740450177448685860_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mtcSkthAMBYAX8ce5-I&_nc_ht=scontent.fcdg1-1.fna&oh=00_AT--Z3HkyPwhwTJ6qCGZ-zsQUWwwWOPZrDMTaszDCG80sA&oe=63463FB8',
 	},
 ];
