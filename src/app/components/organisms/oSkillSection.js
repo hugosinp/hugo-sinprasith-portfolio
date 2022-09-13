@@ -49,60 +49,61 @@ const OSkillSection = ({ fadeIn }) => {
 						</List>
 					</VStack>
 
+
 					<VStack spacing={2} align={'center'}>
-						<HStack w={80} justify={'center'}>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="70px" objectFit="fill" src={nextjsLogo} alt="Nextjs" />
-								</Box>
-							</motion.div>
-							<motion.div
-								animate={{ rotate: 360 }}
-								transition={{
-									duration: 3,
-									repeat: Infinity,
-									repeatType: 'mirror',
-								}}
-							>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="80px" objectFit="cover" src={reactLogo} alt="React" />
-								</Box>
-							</motion.div>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="70px" objectFit="fill" src={reduxLogo} alt="Redux" />
-								</Box>
-							</motion.div>
-						</HStack>
-						<HStack justify={'center'}>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="70px" objectFit="fill" src={nestjsLogo} alt="NestJS" />
-								</Box>
-							</motion.div>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="70px" objectFit="fill" src={tsLogo} alt="Typecript" />
-								</Box>
-							</motion.div>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="70px" objectFit="fill" src={graphqlLogo} alt="GraphQl" />
-								</Box>
-							</motion.div>
-						</HStack>
-						<HStack justify={'center'}>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="80px" objectFit="fill" src={mongodb} alt="MongoDB" />
-								</Box>
-							</motion.div>
-							<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
-								<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
-									<Image boxSize="80px" objectFit="fill" src={firebaseLogo} alt="Firebase" />
-								</Box>
-							</motion.div>
-						</HStack>
+							<HStack w={80} justify={'center'}>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="70px" objectFit="fill" src={nextjsLogo} alt="Nextjs" />
+									</Box>
+								</motion.div>
+								<motion.div
+									animate={{ rotate: 360 }}
+									transition={{
+										duration: 3,
+										repeat: Infinity,
+										repeatType: 'mirror',
+									}}
+								>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="80px" objectFit="cover" src={reactLogo} alt="React" />
+									</Box>
+								</motion.div>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="70px" objectFit="fill" src={reduxLogo} alt="Redux" />
+									</Box>
+								</motion.div>
+							</HStack>
+							<HStack justify={'center'}>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="70px" objectFit="fill" src={nestjsLogo} alt="NestJS" />
+									</Box>
+								</motion.div>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="70px" objectFit="fill" src={tsLogo} alt="Typecript" />
+									</Box>
+								</motion.div>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="70px" objectFit="fill" src={graphqlLogo} alt="GraphQl" />
+									</Box>
+								</motion.div>
+							</HStack>
+							<HStack justify={'center'}>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="80px" objectFit="fill" src={mongodb} alt="MongoDB" />
+									</Box>
+								</motion.div>
+								<motion.div animate={animation} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, rotate: 360 }}>
+									<Box ref={ref} cursor={'grab'} borderRadius={'50%'}>
+										<Image boxSize="80px" objectFit="fill" src={firebaseLogo} alt="Firebase" />
+									</Box>
+								</motion.div>
+							</HStack>
 					</VStack>
 				</Stack>
 			</Flex>

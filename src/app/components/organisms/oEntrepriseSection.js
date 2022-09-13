@@ -75,15 +75,15 @@ const OEntrepriseSection = () => {
 											<Heading size={'md'} color={'gray.500'}>
 												{entreprise.date} / {entreprise.job_type}
 											</Heading>
-											<List spacing={3}>
+											<List spacing={3} py={2}>
 												{entreprise.description.map((x) => (
-													<ListItem key={x.paragraph}>
+													<ListItem textAlign={'left'} key={x.paragraph}>
 														<ListIcon as={MdCheckCircle} color="green.500" />
 														{x.paragraph}
 													</ListItem>
 												))}
 											</List>
-											<Container>
+											<Container py={2}>
 												{entreprise.tech.map((tech) => (
 													<Tag key={tech.name} m={1} colorScheme="teal" textTransform={'uppercase'} letterSpacing={1.1}>
 														{tech.name}
