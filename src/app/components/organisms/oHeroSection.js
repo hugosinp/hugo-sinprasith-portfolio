@@ -14,7 +14,7 @@ const OHeroSection = () => {
 						Full-stack Developer based in Paris.
 					</Text>
 				</Stack>
-				<Stack mt={{ base: 8 }} width={'60%'}>
+				<Stack mt={{ base: 8 }} width={'65%'}>
 					<lottie-player
 						src="https://assets1.lottiefiles.com/packages/lf20_bufblleg.json"
 						background="transparent"
