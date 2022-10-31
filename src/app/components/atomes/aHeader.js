@@ -30,7 +30,7 @@ const AHeader = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
-		<Box position={'fixed'} w="100%" zIndex={1}>
+		<Box position={'fixed'} w={"100%"} zIndex={1}>
 			<Flex
 				bg={useColorModeValue('#f0e7db', 'gray.800')}
 				color={useColorModeValue('gray.600', 'white')}
