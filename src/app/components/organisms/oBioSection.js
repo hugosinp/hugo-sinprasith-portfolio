@@ -2,7 +2,19 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 
-import { Flex, VStack, Container, Heading, Text, Stack, Badge, useColorModeValue, Box, Center, Avatar } from '@chakra-ui/react';
+import {
+	Flex,
+	VStack,
+	Container,
+	Heading,
+	Text,
+	Stack,
+	Badge,
+	useColorModeValue,
+	Box,
+	Center,
+	Avatar,
+} from '@chakra-ui/react';
 
 import me from '../../static/img/me.png';
 
@@ -15,8 +27,8 @@ const OBioSection = ({ fadeIn }) => {
 	}, [fadeIn, animation, inView]);
 
 	return (
-		<Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
-			<Flex h={{ base: 'auto', lg: '100vh' }} direction={{ base: 'column', lg: 'row' }} align={'center'}>
+		<Container maxW={'4xl'} py={{ base: 35, lg: 0 }} pt={{ lg: 36 }}>
+			<Flex h={{ base: 'auto', lg: 'auto' }} direction={{ base: 'column', lg: 'row' }} align={'center'}>
 				<VStack p={5}>
 					<motion.div animate={animation}>
 						<Center py={6} ref={ref}>

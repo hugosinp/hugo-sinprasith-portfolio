@@ -24,7 +24,7 @@ const OSkillSection = ({ fadeIn }) => {
 	}, [fadeIn, animation, inView]);
 
 	return (
-		<Container maxW={'4xl'} py={{ base: 35, md: 30 }}>
+		<Container maxW={'4xl'} py={{ base: 35, lg: 0 }} pb={{ lg: 36 }}>
 			<Flex h={{ base: 'auto' }} direction={{ base: 'column' }} align={'center'}>
 				<Stack py={39}>
 					<Heading fontStyle={'italic'} align={'center'}>

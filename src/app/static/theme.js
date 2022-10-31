@@ -7,7 +7,7 @@ const styles = {
 			scrollBehavior: 'smooth',
 		},
 		body: {
-			bg: mode('#f0e7db', '#1A202C')(props),
+			bg: mode('#f0e7db', 'radial-gradient(ellipse, #1A202C 0%, #090a0f 100%)')(props),
 		},
 	}),
 };
