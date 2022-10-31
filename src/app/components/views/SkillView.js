@@ -8,7 +8,7 @@ const SkillView = ({ id, fadeIn }) => {
 	return (
 		<div id={id}>
 			<Container maxW="container.xl" p={0} id={id}>
-				<Flex height={{ base: 'auto', lg: '100vh' }} align={'center'}>
+				<Flex height={{ base: 'auto', lg: 'auto' }} align={'center'}>
 					<OSkillSection fadeIn={fadeIn} />
 				</Flex>
 			</Container>

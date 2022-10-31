@@ -58,7 +58,6 @@ const OEntrepriseSection = () => {
 							</TabList>
 							<TabPanels>
 								{usEntreprises.map((entreprise) => {
-									console.log(require(`../../static/img/${entreprise.image}.png`))
 									return (
 										<TabPanel key={entreprise.id}>
 										<VStack spacing={3}>

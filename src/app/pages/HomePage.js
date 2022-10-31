@@ -27,7 +27,7 @@ const HomePage = () => {
 				<div className={'shooting_star2'}></div>
 			</div>
 			<div style={{ 
-				display: useBreakpointValue({ base: 'none', lg: 'block' }),
+				display: useBreakpointValue({ base: 'none', lg: 'none' }),
 				width: '150px', 
 				height: '150px', 
 				background: '#66a6ff',
@@ -41,9 +41,9 @@ const HomePage = () => {
 					x
 			</div>
 			<div style={{ 
-				display: useBreakpointValue({ base: 'block', lg: 'block' }),
-				width: '300px', 
-				height: '300px', 
+				display: useBreakpointValue({ base: 'block', lg: 'none' }),
+				width: '300px',
+				height: '200px',
 				background: '#66a6ff',
 				filter: 'blur(9rem)', 
 				position: 'absolute', 

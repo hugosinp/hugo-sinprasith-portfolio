@@ -26,14 +26,16 @@ const HomePageView = () => {
 	};
 
 	return (
-		<Container maxW="container.xl" p={0}>
+		<div>
 			<HeroView id="hero" fadeIn={fadeIn} />
-			<BioView id="bio" fadeIn={fadeIn} />
-			<SkillView id="skills" fadeIn={fadeIn} />
-			<ProjectView id="projects" fadeIn={fadeIn} />
-			<EntrepriseView id="experiences" />
-			<ContactView id="contact" />
-		</Container>
+			<Container maxW="container.xl" p={0}>
+				<BioView id="bio" fadeIn={fadeIn} />
+				<SkillView id="skills" fadeIn={fadeIn} />
+				<ProjectView id="projects" fadeIn={fadeIn} />
+				<EntrepriseView id="experiences" />
+				<ContactView id="contact" />
+			</Container>
+		</div>
 	);
 };
 

@@ -6,11 +6,13 @@ import OBioSection from '../organisms/oBioSection';
 
 const BioView = ({ id, fadeIn }) => {
 	return (
-		<Container maxW="container.xl" p={0} id={id}>
-			<Flex height={{ base: 'auto', lg: '100vh' }} align={'center'}>
-				<OBioSection fadeIn={fadeIn} />
-			</Flex>
-		</Container>
+		<div>
+			<Container maxW="container.xl" p={0} id={id}>
+				<Flex height={{ base: 'auto', lg: 'auto' }} align={'center'}>
+					<OBioSection fadeIn={fadeIn} />
+				</Flex>
+			</Container>
+		</div>
 	);
 };
 

@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const AFooter = () => {
 	return (
-		<Box bg={useColorModeValue('#D9C7BA', 'gray.900')} color={useColorModeValue('gray.700', 'gray.200')}>
+		<Box bg={useColorModeValue('#D9C7BA', 'transparent')} color={useColorModeValue('gray.700', 'gray.200')}>
 			<Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
 				<Stack direction={'column'} alignItems="center" py={10} spacing={6}>
 					<Stack direction={'column'} alignItems="center">
@@ -43,7 +43,7 @@ const AFooter = () => {
 				</Stack>
 			</Container>
 
-			<Box borderTopWidth={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.700')}>
+			<Box borderTopWidth={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.800')}>
 				<Container
 					as={Stack}
 					maxW={'6xl'}

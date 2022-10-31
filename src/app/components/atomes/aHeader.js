@@ -6,7 +6,6 @@ import {
 	Flex,
 	Text,
 	IconButton,
-	Button,
 	Stack,
 	HStack,
 	Collapse,
@@ -17,22 +16,21 @@ import {
 	useColorModeValue,
 	useBreakpointValue,
 	useDisclosure,
-	useColorMode,
 	Link,
 } from '@chakra-ui/react';
 
-import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 import { GiMoon } from 'react-icons/gi';
+import {BsGithub, BsLinkedin} from "react-icons/bs";
 
 const AHeader = () => {
 	const { isOpen, onToggle } = useDisclosure();
-	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
-		<Box position={'fixed'} w={"100%"} zIndex={1}>
+		<Box position={'absolute'} w={"100%"} zIndex={3}>
 			<Flex
-				bg={useColorModeValue('#f0e7db', 'gray.800')}
+				bg={useColorModeValue('#f0e7db', 'transparent')}
 				color={useColorModeValue('gray.600', 'white')}
 				minH={'60px'}
 				py={{ base: 2 }}
@@ -67,10 +65,34 @@ const AHeader = () => {
 					</Flex>
 				</Flex>
 
-				<HStack flex={{ base: 1, md: 0 }} px={{ xl: 100 }} justify={'flex-end'} spacing={6}>
-					<Button onClick={toggleColorMode} borderRadius={'full'} bg={useColorModeValue('#f4ede4', 'gray.700')}>
-						{colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-					</Button>
+				<HStack flex={{ base: 1, md: 0 }} px={{ xl: 100 }} justify={'flex-end'} spacing={0}>
+					<Link href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" isExternal>
+						<IconButton
+							aria-label="linkedin"
+							variant="ghost"
+							size="lg"
+							icon={<BsLinkedin size="28px" />}
+							_hover={{
+								bg: 'rgba(95, 145, 255, 1)',
+								color: useColorModeValue('white', 'gray.700'),
+							}}
+							isRound
+						/>
+					</Link>
+					<Link href="https://github.com/hugosinp" isExternal>
+						<IconButton
+							aria-label="github"
+							variant="ghost"
+							size="lg"
+							fontSize="3xl"
+							icon={<BsGithub />}
+							_hover={{
+								bg: 'rgba(95, 145, 255, 1)',
+								color: useColorModeValue('white', 'gray.700'),
+							}}
+							isRound
+						/>
+					</Link>
 				</HStack>
 			</Flex>
 
@@ -148,7 +170,7 @@ const DesktopSubNav = ({ child }) => {
 // Mobile Header Nav
 const MobileNav = ({ navItem }) => {
 	return (
-		<Stack bg={useColorModeValue('#f0e7db', 'gray.800')} p={4} display={{ md: 'none' }}>
+		<Stack bg={useColorModeValue('#f0e7db', 'transparent')} p={4} display={{ md: 'none' }}>
 			{navItem.map((navItem) => (
 				<MobileNavItem navItem={navItem} key={navItem.label} {...navItem} />
 			))}
@@ -191,10 +213,6 @@ const navItem = [
 	{
 		label: 'Bio',
 		href: '#bio',
-	},
-	{
-		label: 'Skills',
-		href: '#skills',
 	},
 	{
 		label: 'Projects',
