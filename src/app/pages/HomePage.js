@@ -27,20 +27,6 @@ const HomePage = () => {
 				<div className={'shooting_star2'}></div>
 			</div>
 			<div style={{ 
-				display: useBreakpointValue({ base: 'none', lg: 'none' }),
-				width: '150px', 
-				height: '150px', 
-				background: '#66a6ff',
-				filter: 'blur(5.5rem)', 
-				position: 'absolute', 
-				top: '25%',
-				right: '0%', 
-				borderRadius: '100%',
-				overflowX: 'hidden',
-				zIndex: 2}}>
-					x
-			</div>
-			<div style={{ 
 				display: useBreakpointValue({ base: 'block', lg: 'none' }),
 				width: '300px',
 				height: '200px',
@@ -51,7 +37,7 @@ const HomePage = () => {
 				left: useBreakpointValue({ base: '12%', lg: '-15%' }), 
 				borderRadius: '100%', 
 				overflowX: 'hidden',
-				zIndex: useBreakpointValue({ base: 1, lg: 2 }) }}>
+				zIndex: useBreakpointValue({ base: -1 }) }}>
 					x
 			</div>
 		</div>
