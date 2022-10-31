@@ -57,18 +57,22 @@ const OEntrepriseSection = () => {
 								))}
 							</TabList>
 							<TabPanels>
-								{usEntreprises.map((entreprise) => (
-									<TabPanel key={entreprise.id}>
+								{usEntreprises.map((entreprise) => {
+									console.log(require(`../../static/img/${entreprise.image}.png`))
+									return (
+										<TabPanel key={entreprise.id}>
 										<VStack spacing={3}>
 											<HStack spacing={2}>
 												<Heading size={'md'} py={5}>
 													{entreprise.job}
 												</Heading>
 												<Image
-													borderRadius="full"
+													p={1}
+													bg={'white'}
+													borderRadius={'xl'}
 													boxSize="50px"
-													objectFit="fill"
-													src={entreprise.image}
+													objectFit="contain"
+													src={require(`../../static/img/${entreprise.image}.png`)}
 													alt={entreprise.name}
 												/>
 											</HStack>
@@ -91,8 +95,8 @@ const OEntrepriseSection = () => {
 												))}
 											</Container>
 										</VStack>
-									</TabPanel>
-								))}
+									</TabPanel>)
+								})}
 							</TabPanels>
 						</Tabs>
 					</Box>
