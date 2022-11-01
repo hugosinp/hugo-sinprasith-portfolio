@@ -99,7 +99,7 @@ export const usEntreprises = [
 		id: 2,
 		name: 'AXA',
 		date: 'October 2020 - September 2021',
-		job: 'Software Engineer',
+		job: 'Data Engineer',
 		job_type: 'Apprenticeship',
 		description: [
 			{
@@ -135,7 +135,7 @@ export const usEntreprises = [
 		id: 3,
 		name: 'Société Générale',
 		date: 'October 2021 - Present',
-		job: 'Full-stack Developer',
+		job: 'Software Engineer',
 		job_type: 'Apprenticeship',
 		description: [
 			{

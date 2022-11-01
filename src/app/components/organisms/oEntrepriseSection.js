@@ -17,18 +17,15 @@ import {
 	VStack,
 	List,
 	ListItem,
-	ListIcon,
+	ListIcon, IconButton, useColorModeValue, Link,
 } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 
 import { usEntreprises } from '../../static/data';
+import {BsLinkedin} from "react-icons/bs";
 
 const OEntrepriseSection = () => {
 	const [tabIndex, setTabIndex] = useState(usEntreprises.length - 1);
-
-	const handleSliderChange = (event) => {
-		setTabIndex(parseInt(event.target.value, 10));
-	};
 
 	const handleTabsChange = (index) => {
 		setTabIndex(index);
@@ -45,9 +42,20 @@ const OEntrepriseSection = () => {
 						</Text>
 					</Heading>
 					<Heading size={'md'}>These companies have trusted me. Why not you ?</Heading>
-
-					<Box pt={10}>
-						<input type="range" min="0" max={usEntreprises.length - 1} value={tabIndex} onChange={handleSliderChange} />
+					<Link href="https://www.linkedin.com/in/hugo-sinprasith-1b5367199/" isExternal>
+						<IconButton
+							aria-label="linkedin"
+							variant="ghost"
+							size="lg"
+							icon={<BsLinkedin size="32px" />}
+							_hover={{
+								bg: 'blue.500',
+								color: useColorModeValue('white', 'gray.700'),
+							}}
+							isRound
+						/>
+					</Link>
+					<Box pt={4}>
 						<Tabs index={tabIndex} onChange={handleTabsChange} align={'center'}>
 							<TabList>
 								{usEntreprises.map((entreprise) => (
