@@ -42,7 +42,6 @@ const OBioSection = ({ fadeIn }) => {
 								textAlign={'center'}
 							>
 								<Avatar size="2xl" src={me} alt={'Hugo Sinprasith'} mb={4} pos={'relative'} css={{ border: '2px solid grey' }} />
-
 								<Stack>
 									<Heading fontSize={'2xl'} fontFamily={'body'}>
 										Hugo Sinprasith
@@ -71,7 +70,7 @@ const OBioSection = ({ fadeIn }) => {
 					<Heading>About me 🚀</Heading>
 					<Text align={'justify'}>
 						Hi I'm Hugo, a Computer Science Enthusiast. I'm currently preparing a Computer Science Master's degree at EFREI Paris
-						Engineering School. Besides that, I am working at Société Générale as a Full-Stack developper apprentice. <br />
+						Engineering School. Besides that, I am working at Société Générale as a Software Engineer apprentice. <br />
 						<br />
 						My passion for IT is such that I decided to begin a freelance activity appart from my studies and apprenticeship. Resolving
 						real-life problems with code actually became a hobby.
