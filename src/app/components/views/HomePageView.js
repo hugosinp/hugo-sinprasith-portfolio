@@ -27,7 +27,7 @@ const HomePageView = () => {
 
 	return (
 		<div>
-			<HeroView id="hero" fadeIn={fadeIn} />
+			<HeroView id="hero" />
 			<Container maxW="container.xl" p={0}>
 				<BioView id="bio" fadeIn={fadeIn} />
 				<SkillView id="skills" fadeIn={fadeIn} />
