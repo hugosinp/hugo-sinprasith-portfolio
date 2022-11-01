@@ -4,9 +4,29 @@ export const usProjects = [
 		title: 'Watch Else ⌚',
 		head: 'Vinted-like watch selling mobile app',
 		tech: [{ name: 'React Native' }, { name: 'NestJS' }, { name: 'MongoDB' }],
-		description: 'Currently working as a Lead FullStack-end Developer on Watch Else mobile app',
+		description: 'Currently working as Project Manger and Tech Lead on Watch Else mobile app',
 		link: 'https://github.com/hugosinp',
 		image: 'watchelse',
+	},
+	{
+		id: 1,
+		title: 'Advency Marketing 🚀',
+		head: 'Digital marketing agency',
+		tech: [{ name: 'ReactJS' }, { name: 'Framer Motion' }, { name: 'Spline' }],
+		description:
+			'Worked on Advency Marketing\'s website redesign.',
+		link: 'https://advency-marketing.netlify.app/',
+		image: 'advency',
+	},
+	{
+		id: 2,
+		title: 'Connecting-U 🫂',
+		head: 'Meet and link with trusted individuals across the world',
+		tech: [{ name: 'NextJS' }, { name: 'GraphQL' }, { name: 'PostgreSQL' }],
+		description:
+			"Currently working as Project Manager and Tech Lead on Connecting-U web app",
+		link: 'https://github.com/hugosinp',
+		image: 'connectingu',
 	},
 	{
 		id: 5,
@@ -18,24 +38,13 @@ export const usProjects = [
 		image: 'genkirender',
 	},
 	{
-		id: 1,
-		title: 'E-commerce 🌍',
-		head: 'E-commerce website, ready to adapt and deploy',
-		tech: [{ name: 'ReactJS' }, { name: 'Django' }, { name: 'Postgre' }],
-		description:
-			'ReactJs and Django E-commerce project. Among other functionality, users can create their account, add items to their cart and purchase those items using Stripe and Paypal.',
-		link: 'https://github.com/hugosinp',
-		lottie_link: 'https://assets10.lottiefiles.com/packages/lf20_hsojyr3p.json',
-	},
-	{
-		id: 2,
-		title: 'MoonPortfolio 🌑',
-		head: 'Cryptocurrency & Asset Portfolio Manager web app',
-		tech: [{ name: 'Django' }, { name: 'Python' }, { name: 'SQLite' }],
-		description:
-			"User-Friendly Asset Manager which allows users to easily manage their assets whatever the broker is. A MoonUser can create a portfolio, dd new Assets, add transactions (Buy, Sell, Convert, Transfer), follow his portfolio's activity/performance and manage his expenses",
-		link: 'https://github.com/hugosinp/MoonPortfolio',
-		lottie_link: 'https://assets10.lottiefiles.com/packages/lf20_pmyyjcm7.json',
+		id: 4,
+		title: 'Swinca Coin 🏦',
+		head: 'Blockchain finance through real-estate projects',
+		tech: [{ name: 'ReactJS' }, { name: 'Firebase' }, { name: 'Web 3.0' }],
+		description: "Worked as a part-time Full-stack Developer on Swinca coin's ICO.",
+		link: 'https://swincacoin.com/',
+		image: 'swinca',
 	},
 	{
 		id: 3,
@@ -46,15 +55,6 @@ export const usProjects = [
 			'Neural Network creator made in Python for my graduating project. The goal was to develop an app which allows the user to create a custom Neural Network capable of recognizing hand-written digits. Worked on it as a developer in a team of 4 students.',
 		link: 'https://github.com/hugosinp/Neural-Network',
 		lottie_link: 'https://assets3.lottiefiles.com/packages/lf20_gdazqlal.json',
-	},
-	{
-		id: 4,
-		title: 'Swinca Coin 🏦',
-		head: 'Blockchain finance through real-estate projects',
-		tech: [{ name: 'ReactJS' }, { name: 'Firebase' }, { name: 'Web 3.0' }],
-		description: "Worked as a part-time Full-stack Developer on Swinca coin's ICO.",
-		link: 'https://github.com/hugosinp/swinca',
-		image: 'swinca',
 	},
 ];
 

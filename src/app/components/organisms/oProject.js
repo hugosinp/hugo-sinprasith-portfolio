@@ -28,6 +28,8 @@ import {
 import swincaLogo from '../../static/img/swinca.png';
 import genkirenderLogo from '../../static/img/genkirender.svg';
 import watchelseLogo from '../../static/img/watchelse.png';
+import advencyLogo from '../../static/img/advency.png';
+import connectinguLogo from '../../static/img/connectingu.png';
 
 const OProject = ({ project }) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -49,10 +51,10 @@ const OProject = ({ project }) => {
 		>
 			<Center py={2} onClick={onOpen} cursor={'pointer'}>
 				<Box
-					maxW={'300px'}
-					w={'300px'}
-					h={'320px'}
-					maxH={'320px'}
+					maxW={'35s0px'}
+					w={'350px'}
+					h={'310px'}
+					maxH={'310px'}
 					bg={useColorModeValue('#D9C7BA', 'gray.900')}
 					boxShadow={'md'}
 					rounded={'lg'}
@@ -74,12 +76,16 @@ const OProject = ({ project }) => {
 							<Image boxSize="200px" objectFit="fill" src={genkirenderLogo} alt="genkirender" />
 						) : project.image === 'watchelse' ? (
 							<Image boxSize="200px" objectFit="contain" src={watchelseLogo} alt="watchelse" />
-						) : (
+						) : project.image === 'advency' ? (
+							<Image boxSize="200px" objectFit="contain" src={advencyLogo} alt="watchelse" />
+						) : project.image === 'connectingu' ? (
+							<Image boxSize="180px" pt={8} objectFit="contain" src={connectinguLogo} alt="watchelse" />
+						) :
 							''
-						)}
+						}
 					</Box>
 					<Stack>
-						<Heading color={useColorModeValue('gray.700', 'white')} fontSize={'2xl'} fontFamily={'body'}>
+						<Heading color={useColorModeValue('gray.700', 'white')} fontSize={'xl'} fontFamily={'body'}>
 							{project.title}
 						</Heading>
 						<Text color={'gray.500'}>{project.head}</Text>
