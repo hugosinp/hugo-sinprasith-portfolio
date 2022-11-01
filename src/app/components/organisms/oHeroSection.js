@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Heading, Container, Text, Stack, Flex, useBreakpointValue} from '@chakra-ui/react';
+import {Box, Heading, Container, Text, Stack, Flex} from '@chakra-ui/react';
 
 const OHeroSection = () => {
 	return (

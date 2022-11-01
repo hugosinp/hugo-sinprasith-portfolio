@@ -5,7 +5,7 @@ import HomePageView from '../components/views/HomePageView';
 const HomePage = () => {
 
 	return (
-		<div style={{ overflow: 'hidden' }}>
+		<div>
 			<div style={{
 				display: useBreakpointValue({ base: 'block', lg: 'none' }),
 				width: '300px',
