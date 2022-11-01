@@ -14,20 +14,7 @@ const OHeroSection = () => {
 						Software Engineer based in Paris.
 					</Text>
 				</Stack>
-				<Stack mt={{ base: 8 }} width={'65%'} _after={{
-					content: '""',
-					display: useBreakpointValue({ base: 'block', lg: 'none' }),
-					width: '300px',
-					height: '200px',
-					background: '#66a6ff',
-					filter: 'blur(9rem)',
-					position: 'absolute',
-					top: useBreakpointValue({ base: '6.8%' }),
-					left: useBreakpointValue({ base: '12%' }),
-					borderRadius: '100%',
-					overflowX: 'hidden',
-					zIndex: useBreakpointValue({ base: -1 })
-				}}>
+				<Stack mt={{ base: 8 }} width={'65%'}>
 					<lottie-player
 						src="https://assets1.lottiefiles.com/packages/lf20_bufblleg.json"
 						background="transparent"
