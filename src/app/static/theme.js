@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
 	global: (props) => ({
@@ -6,7 +7,7 @@ const styles = {
 			scrollBehavior: 'smooth',
 		},
 		body: {
-			bg: 'radial-gradient(ellipse, #1A202C 0%, #090a0f 100%)',
+			bg: mode('radial-gradient(ellipse, #1A202C 0%, #090a0f 100%)', 'radial-gradient(ellipse, #1A202C 0%, #090a0f 100%)')(props),
 		},
 	}),
 };
