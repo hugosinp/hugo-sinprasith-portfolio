@@ -10,13 +10,13 @@ const HeroView = ({ id }) => {
 					<OHeroSection />
 					<div style={{
 						display: useBreakpointValue({ base: 'block', lg: 'none' }),
-						width: '300px',
+						width: '200px',
 						height: '200px',
 						background: '#66a6ff',
 						filter: 'blur(9rem)',
 						position: 'absolute',
 						top: useBreakpointValue({ base: '6.8%' }),
-						left: useBreakpointValue({ base: '12%' }),
+						left: useBreakpointValue({ base: '15%' }),
 						borderRadius: '100%',
 						overflowX: 'hidden',
 						zIndex: useBreakpointValue({ base: -1 }) }}>
