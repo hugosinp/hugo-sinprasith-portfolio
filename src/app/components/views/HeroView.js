@@ -10,16 +10,16 @@ const HeroView = ({ id }) => {
 					<OHeroSection />
 					<div style={{
 						display: useBreakpointValue({ base: 'block', lg: 'none' }),
-						width: '200px',
+						width: '300px',
 						height: '200px',
 						background: '#66a6ff',
 						filter: 'blur(9rem)',
 						position: 'absolute',
 						top: useBreakpointValue({ base: '6.8%' }),
-						left: useBreakpointValue({ base: '15%' }),
+						left: useBreakpointValue({ base: '12%' }),
 						borderRadius: '100%',
 						overflowX: 'hidden',
-						zIndex: useBreakpointValue({ base: -1 }) }}>
+						zIndex: useBreakpointValue({ base: 1 }) }}>
 					</div>
 				</Flex>
 			</Container>
