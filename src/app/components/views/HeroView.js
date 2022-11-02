@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Flex, useBreakpointValue} from '@chakra-ui/react';
+import {Container, Flex} from '@chakra-ui/react';
 import OHeroSection from '../organisms/oHeroSection';
 
 const HeroView = ({ id }) => {
