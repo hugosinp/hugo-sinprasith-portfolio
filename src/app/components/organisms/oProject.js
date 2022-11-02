@@ -51,10 +51,10 @@ const OProject = ({ project }) => {
 		>
 			<Center py={2} onClick={onOpen} cursor={'pointer'}>
 				<Box
-					maxW={'35s0px'}
-					w={'350px'}
-					h={'310px'}
-					maxH={'310px'}
+					maxW={'320px'}
+					w={'320px'}
+					h={'315px'}
+					maxH={'315px'}
 					bg={useColorModeValue('#D9C7BA', 'gray.900')}
 					boxShadow={'md'}
 					rounded={'lg'}
