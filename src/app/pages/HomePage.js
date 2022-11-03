@@ -14,9 +14,11 @@ const HomePage = () => {
 				<div className={'shooting_star'}></div>
 				<div className={'shooting_star'}></div>
 				<div className={'shooting_star'}></div>
+				<div className={'shooting_star'}></div>
 			</div>
 			<HomePageView />
 			<div className={'night2'} style={{ display: useBreakpointValue({ base: 'none', lg: 'block' }) }}>
+				<div className={'shooting_star2'}></div>
 				<div className={'shooting_star2'}></div>
 				<div className={'shooting_star2'}></div>
 				<div className={'shooting_star2'}></div>
