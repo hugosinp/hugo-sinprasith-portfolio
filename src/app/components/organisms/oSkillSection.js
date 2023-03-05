@@ -29,7 +29,7 @@ const OSkillSection = ({ fadeIn }) => {
 				<Stack py={39}>
 					<Heading fontStyle={'italic'} align={'center'}>
 						Learn, experience and
-						<Text fontWeight={'extrabold'} as={'span'} bgClip="text" bgGradient="linear(to-r, #4DB8FF, #19A3FF)">
+						<Text fontWeight={'extrabold'} as={'span'} bgClip="text" bgGradient="linear(to-r, #009DE4, #194BB5)">
 							{' '}
 							repeat.
 						</Text>

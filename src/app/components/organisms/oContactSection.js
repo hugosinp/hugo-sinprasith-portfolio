@@ -88,7 +88,7 @@ const OContactSection = () => {
 				<VStack w={'full'} mb={20} spacing={{ base: 4, md: 8, lg: 8 }}>
 					<Heading fontSize={{ base: '4xl', md: '5xl' }}>
 						Let's have a{' '}
-						<Text as="span" fontWeight={'extrabold'} bgClip="text" bgGradient="linear(to-r, #4DB8FF, #19A3FF)">
+						<Text as="span" fontWeight={'extrabold'} bgClip="text" bgGradient="linear(to-r, #009DE4, #194BB5)">
 							talk !
 						</Text>
 					</Heading>

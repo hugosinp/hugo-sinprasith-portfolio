@@ -37,7 +37,7 @@ const OEntrepriseSection = () => {
 				<VStack>
 					<Heading>
 						Interested in{' '}
-						<Text as="span" fontWeight={'extrabold'} bgClip="text" bgGradient="linear(to-r, #4DB8FF, #19A3FF)">
+						<Text as="span" fontWeight={'extrabold'} bgClip="text" bgGradient="linear(to-r, #009DE4, #194BB5)">
 							collaboration ?
 						</Text>
 					</Heading>

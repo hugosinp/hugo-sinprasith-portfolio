@@ -53,7 +53,7 @@ const AFooter = () => {
 					justify={{ base: 'center', md: 'center' }}
 					align={{ base: 'center', md: 'center' }}
 				>
-					<Text>© 2022 Hugo Sinprasith. All rights reserved</Text>
+					<Text>© {new Date().getFullYear()} Hugo Sinprasith. All rights reserved</Text>
 				</Container>
 			</Box>
 		</Box>
