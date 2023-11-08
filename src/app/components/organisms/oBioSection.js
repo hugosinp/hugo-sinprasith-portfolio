@@ -74,7 +74,7 @@ const OBioSection = ({ fadeIn }) => {
 						I am here to bring a high level of smooth, intuitive interaction and reliability to your software projects. My portfolio is a testament to my expertise.
 						<br />
 						<br />
-						I embrace complex challenges and turn them into innovative digital realities. If you envisage a project that requires analytical- & technical skill, and real commitment, let's connect and engineer your idea into a special digital experience.
+						I embrace complex challenges and turn them into innovative digital realities. If you have a project in mind that demands analytical and technical expertise, along with unwavering dedication, let's join forces to transform your vision into a unique digital experience.
 					</Text>
 				</VStack>
 			</Flex>
