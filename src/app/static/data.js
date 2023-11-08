@@ -4,8 +4,8 @@ export const usProjects = [
 		title: 'Watch Else ⌚',
 		head: 'Vinted-like watch selling mobile app',
 		tech: [{ name: 'React Native' }, { name: 'NestJS' }, { name: 'MongoDB' }],
-		description: 'Currently working as Project Manger and Tech Lead on Watch Else mobile app',
-		link: 'https://github.com/hugosinp',
+		description: 'Now available on App store and Google Play Store! \n Currently working as Project Manger and Tech Lead on Watch Else mobile app',
+		link: 'https://www.watchelse-app.com/',
 		image: 'watchelse',
 	},
 	{
@@ -134,7 +134,7 @@ export const usEntreprises = [
 	{
 		id: 3,
 		name: 'Société Générale',
-		date: 'October 2021 - Present',
+		date: 'October 2021 - September 2023',
 		job: 'Software Engineer',
 		job_type: 'Apprenticeship',
 		description: [

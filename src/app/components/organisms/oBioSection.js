@@ -47,7 +47,7 @@ const OBioSection = ({ fadeIn }) => {
 										Hugo Sinprasith
 									</Heading>
 									<Text fontWeight={600} color={'gray.500'} fontStyle={'italic'} mb={4}>
-										Student, Apprentice & Freelance
+										Freelance Software Engineer
 									</Text>
 								</Stack>
 
@@ -69,11 +69,12 @@ const OBioSection = ({ fadeIn }) => {
 				<VStack p={{ base: 5, lg: 20 }}>
 					<Heading>About me 🚀</Heading>
 					<Text align={'justify'}>
-						Hi I'm Hugo, a Computer Science Enthusiast. I'm currently preparing a Computer Science Master's degree at EFREI Paris
-						Engineering School. Besides that, I am working at Société Générale as a Software Engineer apprentice. <br />
+						Hi I'm Hugo, Computer Science Enthusiast.
 						<br />
-						My passion for IT is such that I decided to begin a freelance activity appart from my studies and apprenticeship. Resolving
-						real-life problems with code actually became a hobby.
+						I am here to bring a high level of smooth, intuitive interaction and reliability to your software projects. My portfolio is a testament to my expertise.
+						<br />
+						<br />
+						I embrace complex challenges and turn them into innovative digital realities. If you envisage a project that requires analytical- & technical skill, and real commitment, let's connect and engineer your idea into a special digital experience.
 					</Text>
 				</VStack>
 			</Flex>
